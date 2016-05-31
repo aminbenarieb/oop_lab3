@@ -32,7 +32,8 @@ HEADERS  += mainwindow.h \
     ListContainer/node.h \
     concretecommand.h \
     baseexception.h \
-    baseobject.h
+    baseobject.h \
+    basemodel.h
 
 FORMS    += mainwindow.ui
 
