@@ -3,10 +3,26 @@
 
 #include "baseobject.h"
 
-class BaseModel : BaseObject
+class ModelImp
 {
-    virtual bool addObject(BaseObject *) = 0;
-    virtual void change(const BaseTransformManager&) = 0;
+    virtual ~ModelImp() {}
+    virtual void transform(const BaseTransformManager&) = 0;
+};
+
+class BaseModel : public BaseObject
+{
+protected:
+    ModelImp* imp;
+
+public:
+    virtual void transform(const BaseTransformManager&) = 0;
+
+    virtual void addPoint(Point&) = 0;
+    virtual void addEdge(Edge&) = 0;
+
+    virtual size_t pointCount() const = 0;
+    virtual size_t edgeCount() const = 0;
+
 };
 
 #endif // BASEMODEL_H

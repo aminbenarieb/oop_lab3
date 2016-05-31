@@ -30,10 +30,17 @@ HEADERS  += mainwindow.h \
     ListContainer/iterator_const.h \
     ListContainer/list.h \
     ListContainer/node.h \
-    concretecommand.h \
     baseexception.h \
     baseobject.h \
-    basemodel.h
+    basemodel.h \
+    basecamera.h \
+    basemanager.h \
+    basepoint.h \
+    baseedge.h \
+    abstractfactory.h \
+    basescene.h \
+    basecomposite.h \
+    basecanvas.h
 
 FORMS    += mainwindow.ui
 

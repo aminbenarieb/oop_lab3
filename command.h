@@ -2,10 +2,10 @@
 #define COMMAND_H
 
 
-class Command
+class BaseCommand
 {
 public:
-    virtual ~Command(){}
+    virtual ~BaseCommand(){}
     virtual void execute() = 0;
 };
 

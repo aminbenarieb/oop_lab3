@@ -3,10 +3,8 @@
 
 class BaseTransformManager;
 class BaseObject{
-
-    virtual bool addObject(BaseObject *) = 0;
-    virtual void change(const BaseTransformManager& transformManager) = 0;
-
+    virtual void addObject(BaseObject *){}
+    virtual void transform(const BaseTransformManager& transformManager) = 0;
 };
 
 
