@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
+CONFIG += c++11
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -13,7 +14,8 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    facade.cpp
 
 HEADERS  += mainwindow.h \
     command.h \
@@ -40,7 +42,9 @@ HEADERS  += mainwindow.h \
     abstractfactory.h \
     basescene.h \
     basecomposite.h \
-    basecanvas.h
+    basecanvas.h \
+    basewindow.h \
+    facade.h
 
 FORMS    += mainwindow.ui
 
