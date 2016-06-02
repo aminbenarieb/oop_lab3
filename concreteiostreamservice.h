@@ -19,7 +19,9 @@ public:
     void showErrorMessage(const char*);
     void showInfoMessage(const char*);
 
-    std::string getFileName() = 0;
+    bool saveFileWithName(const char*);
+
+    std::string selectFile();
 };
 
 

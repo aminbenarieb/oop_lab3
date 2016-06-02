@@ -15,9 +15,15 @@ void AlertWindowService::showInfoMessage(const char *text)
        alertWindow.exec();
 }
 
-std::string AlertWindowService::getFileName()
+std::string AlertWindowService::selectFile()
 {
     fileName = QFileDialog::getOpenFileName(0, "Upload file", "", "*.txt");
 
     return fileName.toStdString();
+}
+
+bool AlertWindowService::saveFileWithName(const char*)
+{
+
+    return false;
 }

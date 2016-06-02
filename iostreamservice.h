@@ -11,7 +11,7 @@ public:
     virtual void showErrorMessage(const char*) = 0;
     virtual void showInfoMessage(const char*) = 0;
 
-    virtual std::string getFileName() = 0;
+    virtual std::string selectFile() = 0;
     virtual bool saveFileWithName(const char*) = 0;
 };
 

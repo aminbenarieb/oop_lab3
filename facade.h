@@ -2,11 +2,17 @@
 #define FACADE_H
 
 #include "action.h"
+#include "concreteiostreamservice.h"
 
 class Facade
 {
+private:
+    AlertWindowService* alertWindowService;
+    Action* action;
+
 public:
     Facade();
+    ~Facade();
 
     void rotateModelX(double);
     void rotateModelY(double);

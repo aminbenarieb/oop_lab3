@@ -39,7 +39,7 @@ void MainWindow::keyPressEvent(QKeyEvent *event)
 
 void MainWindow::on_buttonUploadModel_clicked()
 {
-    this->facade->uploadCameraFromFile();
+    this->facade->uploadModelFromFile();
 }
 
 void MainWindow::on_buttonUploadCamera_clicked()
