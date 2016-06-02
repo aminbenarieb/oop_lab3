@@ -313,7 +313,7 @@
                          </base-DElement>
                          <object>{7c8650e6-691d-4ab6-9d6a-c142cf593685}</object>
                          <name>TransformManager</name>
-                         <pos>x:705;y:1110</pos>
+                         <pos>x:715;y:1110</pos>
                          <rect>x:-55;y:-30;w:110;h:60</rect>
                          <visual-role>8</visual-role>
                         </DObject>
@@ -1553,30 +1553,6 @@
                      </instance>
                     </item>
                     <item>
-                     <instance type="DAssociation">
-                      <DAssociation>
-                       <base-DRelation>
-                        <DRelation>
-                         <base-DElement>
-                          <DElement>
-                           <uid>{b67a690c-d6e0-4a23-9bca-1822d8544b99}</uid>
-                          </DElement>
-                         </base-DElement>
-                         <object>{8033e48b-043d-4f5e-88e3-73519fe62fec}</object>
-                         <a>{8fccbd89-0932-4286-93ba-247557e6f071}</a>
-                         <b>{f74ddd61-99c4-416e-89c7-6ed5053c8f53}</b>
-                        </DRelation>
-                       </base-DRelation>
-                       <a>
-                        <DAssociationEnd>
-                         <navigable>true</navigable>
-                         <kind>1</kind>
-                        </DAssociationEnd>
-                       </a>
-                      </DAssociation>
-                     </instance>
-                    </item>
-                    <item>
                      <instance type="DClass">
                       <DClass>
                        <base-DObject>
@@ -1818,7 +1794,7 @@
                          </base-DElement>
                          <object>{65a1d82f-619d-4218-ab6a-4af767c6b226}</object>
                          <name>IOStreamService</name>
-                         <pos>x:1095;y:120</pos>
+                         <pos>x:1145;y:165</pos>
                          <rect>x:-50;y:-30;w:100;h:60</rect>
                          <visual-role>9</visual-role>
                         </DObject>
@@ -1837,9 +1813,9 @@
                           </DElement>
                          </base-DElement>
                          <object>{2c340eb1-0d92-41fa-85d2-82ace158261d}</object>
-                         <name>ConcreteIOStreamService</name>
-                         <pos>x:1100;y:215</pos>
-                         <rect>x:-75;y:-30;w:150;h:60</rect>
+                         <name>RefinedIOStreamService</name>
+                         <pos>x:1150;y:260</pos>
+                         <rect>x:-70;y:-30;w:140;h:60</rect>
                          <visual-role>9</visual-role>
                         </DObject>
                        </base-DObject>
@@ -1876,7 +1852,7 @@
                          </base-DElement>
                          <object>{cc0c2d29-a7fb-4093-8e8f-9b999e244c17}</object>
                          <name>IOStreamServiceImp</name>
-                         <pos>x:1290;y:125</pos>
+                         <pos>x:1340;y:170</pos>
                          <rect>x:-60;y:-30;w:120;h:60</rect>
                          <visual-role>9</visual-role>
                         </DObject>
@@ -1896,7 +1872,7 @@
                          </base-DElement>
                          <object>{a318bac6-10d9-4f66-a25c-1e2a9516e57b}</object>
                          <name>ConcreteIOStreamServiceImp</name>
-                         <pos>x:1305;y:215</pos>
+                         <pos>x:1355;y:260</pos>
                          <rect>x:-85;y:-30;w:170;h:60</rect>
                          <visual-role>9</visual-role>
                         </DObject>
@@ -1953,11 +1929,11 @@
                         <DRelation>
                          <base-DElement>
                           <DElement>
-                           <uid>{7ee19dee-634e-4af8-89d1-3c134a1f80a3}</uid>
+                           <uid>{227bf2c8-9cf8-47d6-b658-48db7dbb6aa0}</uid>
                           </DElement>
                          </base-DElement>
-                         <object>{0f6fe60c-ce41-4097-9785-d74bed16ed2b}</object>
-                         <a>{8d4d2804-1988-4f4f-9da3-551f61c6a8b0}</a>
+                         <object>{470e409e-253b-4a20-8841-e49bf1d66ef7}</object>
+                         <a>{b93ec9f0-14af-47fc-b247-64804a8a1a4a}</a>
                          <b>{ffac8d69-035b-4a83-9b41-0b13a09a52c9}</b>
                         </DRelation>
                        </base-DRelation>
@@ -1970,9 +1946,33 @@
                       </DAssociation>
                      </instance>
                     </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{7a9eb9f4-455b-42d4-9ead-5187264dbfb9}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{3a7ab523-2583-470e-82e8-648fc1db1d02}</object>
+                         <a>{f74ddd61-99c4-416e-89c7-6ed5053c8f53}</a>
+                         <b>{8fccbd89-0932-4286-93ba-247557e6f071}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <navigable>true</navigable>
+                         <kind>2</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
                    </qlist>
                   </elements>
-                  <last-modified>1464847147673</last-modified>
+                  <last-modified>1464848020929</last-modified>
                  </MDiagram>
                 </base-MDiagram>
                </MCanvasDiagram>
@@ -3677,6 +3677,34 @@
                         </target>
                        </handle>
                       </item>
+                      <item>
+                       <handle>
+                        <uid>{3a7ab523-2583-470e-82e8-648fc1db1d02}</uid>
+                        <target>
+                         <instance type="MAssociation">
+                          <MAssociation>
+                           <base-MRelation>
+                            <MRelation>
+                             <base-MElement>
+                              <MElement>
+                               <uid>{3a7ab523-2583-470e-82e8-648fc1db1d02}</uid>
+                              </MElement>
+                             </base-MElement>
+                             <a>{0619144c-8612-4db2-a219-09b66b70393a}</a>
+                             <b>{adcacb6e-e424-498e-a31b-4a8668c490b9}</b>
+                            </MRelation>
+                           </base-MRelation>
+                           <a>
+                            <MAssociationEnd>
+                             <navigable>true</navigable>
+                             <kind>2</kind>
+                            </MAssociationEnd>
+                           </a>
+                          </MAssociation>
+                         </instance>
+                        </target>
+                       </handle>
+                      </item>
                      </qlist>
                     </handles>
                    </handles>
@@ -3687,7 +3715,7 @@
                  <qlist>
                   <item>
                    <MClassMember>
-                    <uid>{0de8af6e-beac-426e-b48c-0003f9abbcff}</uid>
+                    <uid>{79d8fef4-bb72-4ec1-a4de-ba5bac23c05a}</uid>
                     <visibility>3</visibility>
                     <type>1</type>
                     <declaration>List&lt;SceneObj*&gt; childs</declaration>
@@ -4306,6 +4334,34 @@
                              </base-MElement>
                              <a>{1b1e3047-a4bb-48d5-8fd4-f07f134cf041}</a>
                              <b>{0a674b89-ba21-41fa-9144-9686eaf4f99f}</b>
+                            </MRelation>
+                           </base-MRelation>
+                           <a>
+                            <MAssociationEnd>
+                             <navigable>true</navigable>
+                             <kind>1</kind>
+                            </MAssociationEnd>
+                           </a>
+                          </MAssociation>
+                         </instance>
+                        </target>
+                       </handle>
+                      </item>
+                      <item>
+                       <handle>
+                        <uid>{470e409e-253b-4a20-8841-e49bf1d66ef7}</uid>
+                        <target>
+                         <instance type="MAssociation">
+                          <MAssociation>
+                           <base-MRelation>
+                            <MRelation>
+                             <base-MElement>
+                              <MElement>
+                               <uid>{470e409e-253b-4a20-8841-e49bf1d66ef7}</uid>
+                              </MElement>
+                             </base-MElement>
+                             <a>{1b1e3047-a4bb-48d5-8fd4-f07f134cf041}</a>
+                             <b>{65a1d82f-619d-4218-ab6a-4af767c6b226}</b>
                             </MRelation>
                            </base-MRelation>
                            <a>
@@ -4994,7 +5050,7 @@
                     <uid>{2c340eb1-0d92-41fa-85d2-82ace158261d}</uid>
                    </MElement>
                   </base-MElement>
-                  <name>ConcreteIOStreamService</name>
+                  <name>RefinedIOStreamService</name>
                   <relations>
                    <handles>
                     <handles>

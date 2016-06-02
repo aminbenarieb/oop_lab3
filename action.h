@@ -1,0 +1,16 @@
+#ifndef ACTION_H
+#define ACTION_H
+
+
+class Action
+{
+
+private:
+    //managers
+    //base scene
+
+public:
+    Action();
+};
+
+#endif // ACTION_H

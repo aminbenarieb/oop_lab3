@@ -15,7 +15,9 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    facade.cpp
+    facade.cpp \
+    action.cpp \
+    concreteiostreamservice.cpp
 
 HEADERS  += mainwindow.h \
     concreteexception.h \
@@ -44,7 +46,10 @@ HEADERS  += mainwindow.h \
     basecanvas.h \
     basewindow.h \
     facade.h \
-    basecommand.h
+    basecommand.h \
+    action.h \
+    iostreamservice.h \
+    concreteiostreamservice.h
 
 FORMS    += mainwindow.ui
 

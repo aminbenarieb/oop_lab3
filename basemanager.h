@@ -4,7 +4,7 @@
 class BaseManager()
 {
 public:
-    virtual ~BaseManage() {}
+    virtual ~BaseManager() {}
 }
 
 #endif // BASEMANAGER_H
