@@ -18,7 +18,6 @@ SOURCES += main.cpp\
     facade.cpp
 
 HEADERS  += mainwindow.h \
-    command.h \
     concreteexception.h \
     baseexception.h \
     ListContainer/_iterator.h \
@@ -44,7 +43,8 @@ HEADERS  += mainwindow.h \
     basecomposite.h \
     basecanvas.h \
     basewindow.h \
-    facade.h
+    facade.h \
+    basecommand.h
 
 FORMS    += mainwindow.ui
 
