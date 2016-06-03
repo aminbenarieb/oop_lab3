@@ -1759,30 +1759,6 @@
                      </instance>
                     </item>
                     <item>
-                     <instance type="DAssociation">
-                      <DAssociation>
-                       <base-DRelation>
-                        <DRelation>
-                         <base-DElement>
-                          <DElement>
-                           <uid>{83fedcd4-fc66-40b8-aecf-af0ac9223431}</uid>
-                          </DElement>
-                         </base-DElement>
-                         <object>{6b83ede7-9ee6-493d-9e9f-60592a789208}</object>
-                         <a>{8d4d2804-1988-4f4f-9da3-551f61c6a8b0}</a>
-                         <b>{b93ec9f0-14af-47fc-b247-64804a8a1a4a}</b>
-                        </DRelation>
-                       </base-DRelation>
-                       <a>
-                        <DAssociationEnd>
-                         <navigable>true</navigable>
-                         <kind>1</kind>
-                        </DAssociationEnd>
-                       </a>
-                      </DAssociation>
-                     </instance>
-                    </item>
-                    <item>
                      <instance type="DClass">
                       <DClass>
                        <base-DObject>
@@ -2168,9 +2144,33 @@
                       </DDependency>
                      </instance>
                     </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{72cf92f1-a8b4-4df2-aab6-9e7608e1cef9}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{acc1f7dc-48c4-4b41-80ef-058a05b67fde}</object>
+                         <a>{8d4d2804-1988-4f4f-9da3-551f61c6a8b0}</a>
+                         <b>{b93ec9f0-14af-47fc-b247-64804a8a1a4a}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <navigable>true</navigable>
+                         <kind>1</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
                    </qlist>
                   </elements>
-                  <last-modified>1464878844407</last-modified>
+                  <last-modified>1464882464242</last-modified>
                  </MDiagram>
                 </base-MDiagram>
                </MCanvasDiagram>
@@ -3660,6 +3660,34 @@
                              </base-MElement>
                              <a>{6e55c6f2-2a34-4348-8a18-efac5bcb1dd6}</a>
                              <b>{65a1d82f-619d-4218-ab6a-4af767c6b226}</b>
+                            </MRelation>
+                           </base-MRelation>
+                           <a>
+                            <MAssociationEnd>
+                             <navigable>true</navigable>
+                             <kind>1</kind>
+                            </MAssociationEnd>
+                           </a>
+                          </MAssociation>
+                         </instance>
+                        </target>
+                       </handle>
+                      </item>
+                      <item>
+                       <handle>
+                        <uid>{acc1f7dc-48c4-4b41-80ef-058a05b67fde}</uid>
+                        <target>
+                         <instance type="MAssociation">
+                          <MAssociation>
+                           <base-MRelation>
+                            <MRelation>
+                             <base-MElement>
+                              <MElement>
+                               <uid>{acc1f7dc-48c4-4b41-80ef-058a05b67fde}</uid>
+                              </MElement>
+                             </base-MElement>
+                             <a>{6e55c6f2-2a34-4348-8a18-efac5bcb1dd6}</a>
+                             <b>{1b1e3047-a4bb-48d5-8fd4-f07f134cf041}</b>
                             </MRelation>
                            </base-MRelation>
                            <a>
