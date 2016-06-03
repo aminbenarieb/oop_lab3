@@ -42,13 +42,13 @@ void Facade::clearScene()
 
 }
 
-void Facade::rotateModelX(double angle){}
-void Facade::rotateModelY(double angle){}
-void Facade::rotateModelZ(double angle){}
+void Facade::rotateModelX(double){}
+void Facade::rotateModelY(double){}
+void Facade::rotateModelZ(double ){}
 
-void Facade::rotateCameraX(double angle){}
-void Facade::rotateCameraY(double angle){}
-void Facade::rotateCameraZ(double angle){}
+void Facade::rotateCameraX(double){}
+void Facade::rotateCameraY(double){}
+void Facade::rotateCameraZ(double){}
 
-void Facade::scaleModel(double scale){}
-void Facade::scaleCamera(double scale){}
+void Facade::scaleModel(double){}
+void Facade::scaleCamera(double){}
