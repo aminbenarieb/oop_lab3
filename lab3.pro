@@ -25,7 +25,6 @@ HEADERS  += mainwindow.h \
     ListContainer/_iterator.h \
     ListContainer/_iterator_const.h \
     ListContainer/_list.h \
-    ListContainer/base_error.h \
     ListContainer/base_list.h \
     ListContainer/error_iterator.h \
     ListContainer/error_list.h \

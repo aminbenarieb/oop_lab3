@@ -1,7 +1,7 @@
 #ifndef ERROR_LIST_H
 #define ERROR_LIST_H
 
-#include "base_error.h"
+#include "baseexception.h"
 
 class ExceptionList : BaseException
 {
