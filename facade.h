@@ -14,16 +14,8 @@ public:
     Facade();
     ~Facade();
 
-    void rotateModelX(double);
-    void rotateModelY(double);
-    void rotateModelZ(double);
-
-    void rotateCameraX(double);
-    void rotateCameraY(double);
-    void rotateCameraZ(double);
-
-    void scaleModel(double);
-    void scaleCamera(double);
+    void transformModel(TransformInfo);
+    void transformCamera(TransformInfo);
 
     void uploadModelFromFile();
     void uploadCameraFromFile();
