@@ -207,7 +207,7 @@
                           </DElement>
                          </base-DElement>
                          <object>{0a674b89-ba21-41fa-9144-9686eaf4f99f}</object>
-                         <name>Command</name>
+                         <name>BaseCommand</name>
                          <pos>x:1095;y:390</pos>
                          <rect>x:-55;y:-30;w:110;h:60</rect>
                          <visual-role>5</visual-role>
@@ -2170,7 +2170,7 @@
                     </item>
                    </qlist>
                   </elements>
-                  <last-modified>1464882464242</last-modified>
+                  <last-modified>1464983308087</last-modified>
                  </MDiagram>
                 </base-MDiagram>
                </MCanvasDiagram>
@@ -2439,14 +2439,14 @@
                     <uid>{0a674b89-ba21-41fa-9144-9686eaf4f99f}</uid>
                    </MElement>
                   </base-MElement>
-                  <name>Command</name>
+                  <name>BaseCommand</name>
                  </MObject>
                 </base-MObject>
                 <members>
                  <qlist>
                   <item>
                    <MClassMember>
-                    <uid>{150cb2b4-aa7b-494f-8a1a-43ebb0e208d6}</uid>
+                    <uid>{96c62247-4901-4b58-a6e4-48fc3772c733}</uid>
                     <visibility>1</visibility>
                     <type>2</type>
                     <declaration>void execute()</declaration>
