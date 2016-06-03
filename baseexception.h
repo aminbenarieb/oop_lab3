@@ -6,7 +6,11 @@
 class BaseException : public std::exception
 {
 public:
-    virtual const char* what() = 0;
+    using std::exception::what;
+    const char* what()
+    {
+       return "Unexpected exception occured.";
+    }
 };
 
 
