@@ -3,20 +3,35 @@
 
 #include "basemodel.h"
 
-class RefinedModelImp
+class RefinedModelImp : public ModelImp
 {
-    virtual ~RefinedModelImp() {}
+private:
+    List<Point> points;
+    List<Edge>  edges;
+
+public:
+    ~RefinedModelImp();
+
+    virtual List<Point>& getPoints();
+    virtual List<Edge>& getEdges();
+
+    virtual void addPoint(Point&);
+    virtual void addEdge(Edge&);
+
+    virtual size_t getPointsCount();
+    virtual size_t getEdgesCount();
+
     virtual void transform(const BaseTransformer&);
+
 };
 
 class RefinedModel : public BaseModel
 {
 private:
-    List<Point> points;
-    List<Edge> edges;
+    ModelImp *imp;
 
 public:
-    RefinedModel();
+    RefinedModel(ModelImp*);
     RefinedModel(const RefinedModel&);
     RefinedModel& operator=(const RefinedModel&);
 
