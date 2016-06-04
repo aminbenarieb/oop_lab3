@@ -19,6 +19,9 @@ public:
     virtual  Iterator<BaseObject *> addObject(BaseObject *);
     virtual  Iterator<BaseCamera *> addCamera(BaseCamera *);
 
+    virtual  Iterator<BaseCamera *> cameraBegin();
+    virtual  Iterator<BaseCamera *> cameraEnd();
+
     virtual  Iterator<BaseObject *> compositorBegin();
     virtual  Iterator<BaseObject *> compositorEnd();
 };

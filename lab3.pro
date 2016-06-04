@@ -25,7 +25,8 @@ SOURCES += main.cpp\
     point.cpp \
     matrix.cpp \
     edge.cpp \
-    concretemodel.cpp
+    concretemodel.cpp \
+    scenemanager.cpp
 
 HEADERS  += mainwindow.h \
     concreteexception.h \
@@ -60,7 +61,8 @@ HEADERS  += mainwindow.h \
     basetransformer.h \
     matrix.h \
     edge.h \
-    concretemodel.h
+    concretemodel.h \
+    scenemanager.h
 
 FORMS    += mainwindow.ui
 

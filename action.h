@@ -3,6 +3,7 @@
 
 #include "concretescene.h"
 #include "basemanager.h"
+#include "scenemanager.h"
 
 //--------------
 //TEMP LOCATION
@@ -34,8 +35,7 @@ class Action
 {
 
 private:
-    BaseScene* scene;
-    BaseManager sceneManager;
+    SceneManager sceneManager;
     BaseManager loadManager;
     BaseManager paintManager;
     BaseManager transformManager;

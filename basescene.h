@@ -7,10 +7,6 @@
 
 class BaseScene
 {
-
-private:
-
-
 public:
     virtual ~BaseScene() {}
 
@@ -19,11 +15,11 @@ public:
     virtual Iterator<BaseCamera*>  addCamera(BaseCamera*) = 0;
     virtual Iterator<BaseObject*>  addObject(BaseObject*) = 0;
 
+    virtual  Iterator<BaseCamera *> cameraBegin() = 0;
+    virtual  Iterator<BaseCamera *> cameraEnd() = 0;
+
     virtual  Iterator<BaseObject *> compositorBegin() = 0;
     virtual  Iterator<BaseObject *> compositorEnd() = 0;
-
-//    virtual size_t modelCount() = 0;
-//    virtual size_t viewerCount() = 0;
 };
 
 

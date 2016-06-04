@@ -2,11 +2,10 @@
 
 Action::Action()
 {
-    this->scene = new ConcreteScene();
-    this->loadManager = BaseManager(); //worker
+    this->loadManager = BaseManager();
     this->paintManager = BaseManager();
     this->transformManager = BaseManager();
-    this->sceneManager = BaseManager(); //employe
+    this->sceneManager = SceneManager();
 }
 
 Action::~Action()

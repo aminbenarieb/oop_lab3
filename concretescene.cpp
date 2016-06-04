@@ -7,13 +7,11 @@ ConcreteScene::~ConcreteScene()
     this->clear();
 }
 
-
 void ConcreteScene::clear()
 {
     this->compositor.removeAll();
     this->cameraList.clear();
 }
-
 
 Iterator<BaseObject *> ConcreteScene::addObject(BaseObject *object)
 {
@@ -28,6 +26,18 @@ Iterator<BaseCamera *> ConcreteScene::addCamera(BaseCamera *camera)
     return iterator;
 }
 
+Iterator<BaseCamera *> ConcreteScene::cameraBegin()
+{
+    Iterator<BaseCamera*> iterator(cameraList);
+    iterator.begin();
+    return iterator;
+}
+Iterator<BaseCamera *> ConcreteScene::cameraEnd()
+{
+    Iterator<BaseCamera*> iterator(cameraList);
+    iterator.end();
+    return iterator;
+}
 
 Iterator<BaseObject *> ConcreteScene::compositorBegin()
 {
