@@ -24,7 +24,9 @@ SOURCES += main.cpp\
     compositeobject.cpp \
     concretecamera.cpp \
     point.cpp \
-    matrix.cpp
+    matrix.cpp \
+    edge.cpp \
+    concretemodel.cpp
 
 HEADERS  += mainwindow.h \
     concreteexception.h \
@@ -44,7 +46,6 @@ HEADERS  += mainwindow.h \
     basemodel.h \
     basecamera.h \
     basemanager.h \
-    baseedge.h \
     basescene.h \
     basewindow.h \
     facade.h \
@@ -58,7 +59,9 @@ HEADERS  += mainwindow.h \
     concretecamera.h \
     point.h \
     basetransformer.h \
-    matrix.h
+    matrix.h \
+    edge.h \
+    concretemodel.h
 
 FORMS    += mainwindow.ui
 
