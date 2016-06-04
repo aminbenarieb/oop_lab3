@@ -45,13 +45,13 @@ void Iterator<type_t>::del()
 template <typename type_t>
 void Iterator<type_t>::begin()
 {
-    this->currentItem = this->list->head();
+    this->currentItem = this->list->head;
 }
 
 template <typename type_t>
 void Iterator<type_t>::end()
 {
-    this->currentItem = this->list->tail();
+    this->currentItem = this->list->tail;
 }
 
 template <typename type_t>
