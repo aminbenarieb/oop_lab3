@@ -15,7 +15,7 @@ public:
     ~CompositeObject();
 
     void addObject(BaseObject*);
-    void transform(const BaseTransformer&);
+    void transform(const TransformerManager&);
     void removeAll();
 
     Iterator<BaseObject *> begin();

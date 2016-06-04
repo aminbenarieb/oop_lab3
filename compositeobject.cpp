@@ -35,7 +35,7 @@ void CompositeObject::removeAll()
         this->objects.clear();
     }
 }
-void CompositeObject::transform(const BaseTransformer &transformer)
+void CompositeObject::transform(const TransformerManager &transformer)
 {
 
     Iterator<BaseObject*> iterator(this->objects);
