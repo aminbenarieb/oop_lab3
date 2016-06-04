@@ -51,6 +51,16 @@ void Point::setZ(double value)
 }
 
 
+bool Point::operator==(const Point& point)
+{
+    return ( this->x == point.getX()) && (this->y ==  point.getY()) && ( this->z == point.getZ() );
+}
+bool Point::operator!=(const Point& point)
+{
+    return !(*this == point);
+}
+
+
 void Point::getCoordList(double list[4])
 {
     list[0] = this->x;

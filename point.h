@@ -18,6 +18,11 @@ public:
 
     ~Point();
 
+
+    bool operator==(const Point&);
+    bool operator!=(const Point&);
+
+
     void getCoordList(double lst[4]);
     void setCoordList(double lst[4]);
 
