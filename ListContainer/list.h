@@ -1,6 +1,7 @@
 #ifndef LIST_H
 #define LIST_H
 
+#include "iostream"
 #include "base_list.h"
 #include "error_list.h"
 #include "iterator.h"
