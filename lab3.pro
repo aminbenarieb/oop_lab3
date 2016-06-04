@@ -19,7 +19,6 @@ SOURCES += main.cpp\
     action.cpp \
     concreteiostreamservice.cpp \
     concretecommand.cpp \
-    loadmanager.cpp \
     concretescene.cpp \
     compositeobject.cpp \
     concretecamera.cpp \
