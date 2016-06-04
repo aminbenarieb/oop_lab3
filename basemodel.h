@@ -6,7 +6,7 @@
 class ModelImp
 {
     virtual ~ModelImp() {}
-    virtual void transform(const TransformerManager&) = 0;
+    virtual void transform(const BaseTransformer&) = 0;
 };
 
 class BaseModel : public BaseObject
@@ -15,7 +15,7 @@ protected:
     ModelImp* imp;
 
 public:
-    virtual void transform(const TransformerManager&) = 0;
+    virtual void transform(const BaseTransformer&) = 0;
 
     virtual void addPoint(Point&) = 0;
     virtual void addEdge(Edge&) = 0;
