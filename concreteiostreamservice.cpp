@@ -63,7 +63,7 @@ void AlertWindowService::showInfoMessage(const char *text)
 
 std::string AlertWindowService::selectFile()
 {
-    this->imp->selectFile();
+    return this->imp->selectFile();
 }
 
 bool AlertWindowService::saveFileWithName(const char* fileName)
