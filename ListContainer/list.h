@@ -29,6 +29,8 @@ public:
     bool empty() const;
     bool operator!() const;
 
+    List<type_t>& operator=(const List<type_t> &);
+
     List<type_t>  operator+(const List<type_t> &) const;
     List<type_t>& operator+=(const List<type_t> &);
     List<type_t>& operator=(List<type_t> &&);
@@ -42,8 +44,6 @@ public:
 
 private:
     List(const List<type_t>&);
-
-    List<type_t>& operator=(const List<type_t> &);
 
     void eject(Node <type_t>*);
     void insert(Node<type_t>*, type_t, bool);
