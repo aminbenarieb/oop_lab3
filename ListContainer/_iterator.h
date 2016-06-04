@@ -2,6 +2,9 @@
 #define _ITERATOR_H
 
 template <typename type_t>
+Iterator<type_t>::Iterator(){}
+
+template <typename type_t>
 Iterator<type_t>::Iterator(List<type_t> &list)
 {
     this->list = &list;

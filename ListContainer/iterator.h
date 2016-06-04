@@ -10,6 +10,7 @@ template <typename type_t>
 class Iterator
 {
 public:
+    Iterator();
     Iterator(List<type_t> &);
     ~Iterator();
 
