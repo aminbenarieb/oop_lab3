@@ -1,10 +1,12 @@
 #ifndef BASEOBJECT_H
 #define BASEOBJECT_H
 
-class BaseTransformManager;
+class TransformerManager;
 class BaseObject{
+public:
+    virtual ~BaseObject() {}
     virtual void addObject(BaseObject *){}
-    virtual void transform(const BaseTransformManager& transformManager) = 0;
+    virtual void transform(const TransformerManager&) = 0;
 };
 
 

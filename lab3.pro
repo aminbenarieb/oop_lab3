@@ -17,7 +17,11 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     facade.cpp \
     action.cpp \
-    concreteiostreamservice.cpp
+    concreteiostreamservice.cpp \
+    concretecommand.cpp \
+    loadmanager.cpp \
+    concretescene.cpp \
+    compositeobject.cpp
 
 HEADERS  += mainwindow.h \
     concreteexception.h \
@@ -39,16 +43,16 @@ HEADERS  += mainwindow.h \
     basemanager.h \
     basepoint.h \
     baseedge.h \
-    abstractfactory.h \
     basescene.h \
-    basecomposite.h \
-    basecanvas.h \
     basewindow.h \
     facade.h \
     basecommand.h \
     action.h \
     iostreamservice.h \
-    concreteiostreamservice.h
+    concreteiostreamservice.h \
+    concretecommand.h \
+    compositeobject.h \
+    concretescene.h
 
 FORMS    += mainwindow.ui
 

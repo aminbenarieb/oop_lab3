@@ -270,9 +270,9 @@
                           </DElement>
                          </base-DElement>
                          <object>{c0a26493-a245-42e2-8c29-2403cf0a6d73}</object>
-                         <name>StreamManager</name>
+                         <name>Streamer</name>
                          <pos>x:1180;y:1030</pos>
-                         <rect>x:-50;y:-30;w:100;h:60</rect>
+                         <rect>x:-40;y:-30;w:80;h:60</rect>
                          <visual-role>9</visual-role>
                          <stereotype-display>3</stereotype-display>
                         </DObject>
@@ -2514,7 +2514,7 @@
                     <uid>{c0a26493-a245-42e2-8c29-2403cf0a6d73}</uid>
                    </MElement>
                   </base-MElement>
-                  <name>StreamManager</name>
+                  <name>Streamer</name>
                   <relations>
                    <handles>
                     <handles>

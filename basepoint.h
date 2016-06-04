@@ -7,8 +7,6 @@ class BasePoint : public BaseObject
 {
 public:
 
-    virtual void transform() = 0;
-
     virtual void setX(double) = 0;
     virtual void setY(double) = 0;
     virtual void setZ(double) = 0;
