@@ -21,7 +21,10 @@ SOURCES += main.cpp\
     concretecommand.cpp \
     loadmanager.cpp \
     concretescene.cpp \
-    compositeobject.cpp
+    compositeobject.cpp \
+    concretecamera.cpp \
+    point.cpp \
+    matrix.cpp
 
 HEADERS  += mainwindow.h \
     concreteexception.h \
@@ -41,7 +44,6 @@ HEADERS  += mainwindow.h \
     basemodel.h \
     basecamera.h \
     basemanager.h \
-    basepoint.h \
     baseedge.h \
     basescene.h \
     basewindow.h \
@@ -52,7 +54,11 @@ HEADERS  += mainwindow.h \
     concreteiostreamservice.h \
     concretecommand.h \
     compositeobject.h \
-    concretescene.h
+    concretescene.h \
+    concretecamera.h \
+    point.h \
+    basetransformer.h \
+    matrix.h
 
 FORMS    += mainwindow.ui
 
