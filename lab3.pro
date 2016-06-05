@@ -30,7 +30,8 @@ SOURCES += main.cpp\
     loadmanager.cpp \
     filestream.cpp \
     concretefactory.cpp \
-    tester.cpp
+    tester.cpp \
+    concretetransformer.cpp
 
 HEADERS  += mainwindow.h \
     concreteexception.h \
@@ -72,9 +73,12 @@ HEADERS  += mainwindow.h \
     abstractfactory.h \
     filestream.h \
     concretefactory.h \
-    tester.h
+    tester.h \
+    concretetransformer.h
 
 FORMS    += mainwindow.ui
 
 DISTFILES += \
-    diagram.qmodel
+    diagram.qmodel \
+    camera.txt \
+    model.txt
