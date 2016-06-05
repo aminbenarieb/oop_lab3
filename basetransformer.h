@@ -19,44 +19,36 @@ public:
     virtual ~BaseTransformer() {}
 
     static double convertRadToDeg(double angle) { return (angle * M_PI) / 180.0; }
-    virtual void transformPoint(Point* const p) const = 0;
+    virtual void transformPoint(Point* const) const = 0;
+    virtual void transformParams(double*,double*,double*) const = 0;
 
-    virtual double getBeta() const;
-    virtual void setBeta(double value);
+    virtual double getBeta() const
+    {
+        return beta;
+    }
+    virtual void setBeta(double value)
+    {
+        this->beta = value;
+    }
 
-    virtual double getDelta() const;
-    virtual void setDelta(double value);
+    virtual double getDelta() const
+    {
+        return delta;
+    }
+    virtual void setDelta(double value)
+    {
+        this->delta = value;
+    }
 
-    virtual double getScale() const;
-    virtual void setScale(double value);
+    virtual double getScale() const
+    {
+        return scale;
+    }
+    virtual void setScale(double value)
+    {
+        this->scale = value;
+    }
 
 };
 
 #endif // BASETRANSFORMER_H
-
-double BaseTransformer::getDelta() const
-{
-    return delta;
-}
-void BaseTransformer::setDelta(double value)
-{
-    delta = value;
-}
-
-double BaseTransformer::getScale() const
-{
-return scale;
-}
-void BaseTransformer::setScale(double value)
-{
-scale = value;
-}
-
-double BaseTransformer::getBeta() const
-{
-    return beta;
-}
-void BaseTransformer::setBeta(double value)
-{
-    beta = value;
-}
