@@ -14,7 +14,7 @@ public:
     CompositeObject();
     ~CompositeObject();
 
-    void addObject(BaseObject*);
+    bool addObject(BaseObject*);
     void transform(const BaseTransformer&);
     void removeAll();
 

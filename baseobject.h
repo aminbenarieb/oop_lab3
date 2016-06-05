@@ -5,7 +5,7 @@ class BaseTransformer;
 class BaseObject {
 public:
     virtual ~BaseObject() {}
-    virtual void addObject(BaseObject *){}
+    virtual bool addObject(BaseObject *){ return false; }
     virtual void transform(const BaseTransformer&) = 0;
 };
 

@@ -13,12 +13,14 @@ size_t CompositeObject::getSize()
 }
 
 
-void CompositeObject::addObject(BaseObject *object)
+bool CompositeObject::addObject(BaseObject *object)
 {
     if (object)
     {
         this->objects.push_front(object);
     }
+
+    return true;
 }
 void CompositeObject::removeAll()
 {
