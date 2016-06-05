@@ -29,7 +29,8 @@ SOURCES += main.cpp\
     scenemanager.cpp \
     loadmanager.cpp \
     filestream.cpp \
-    concretefactory.cpp
+    concretefactory.cpp \
+    tester.cpp
 
 HEADERS  += mainwindow.h \
     concreteexception.h \
@@ -70,7 +71,8 @@ HEADERS  += mainwindow.h \
     basestream.h \
     abstractfactory.h \
     filestream.h \
-    concretefactory.h
+    concretefactory.h \
+    tester.h
 
 FORMS    += mainwindow.ui
 
