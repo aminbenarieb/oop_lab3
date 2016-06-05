@@ -24,10 +24,10 @@ public:
 
     IteratorConst<type_t>&   operator =(const IteratorConst<type_t>&);
     IteratorConst<type_t>&   operator ++();								 // ++it
-    IteratorConst<type_t>    operator ++(type_t);                        // it++
+    IteratorConst<type_t>    operator ++(int);                           // it++
     IteratorConst<type_t>&   operator +=(const size_t);
     IteratorConst<type_t>&   operator --();								 // --it
-    IteratorConst<type_t>    operator --(type_t);                        // it--
+    IteratorConst<type_t>    operator --(int);                           // it--
     IteratorConst<type_t>&   operator -=(const size_t);
 
     const type_t*            operator ->() const;
