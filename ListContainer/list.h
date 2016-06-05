@@ -13,6 +13,7 @@ class List : BaseList
 
 public:
     List();
+    List(const List<type_t>&);
     List(List<type_t>&&);
     List(size_t, type_t, ...);
     ~List();
@@ -46,8 +47,6 @@ public:
 
 
 private:
-    List(const List<type_t>&);
-
     void eject(Node <type_t>*);
     void insert(Node<type_t>*, type_t, bool);
 
