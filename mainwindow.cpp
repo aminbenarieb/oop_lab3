@@ -6,10 +6,13 @@
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
-    facade(new Facade()),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    ui->canvas->setScene(new QGraphicsScene);
+
+    CanvasInfo canvasInfo = {ui->canvas->scene()};
+    facade = new Facade(&canvasInfo);
 }
 
 MainWindow::~MainWindow()

@@ -1,9 +1,8 @@
 #include "scenemanager.h"
-#include "concretescene.h"
 
-SceneManager::SceneManager()
+SceneManager::SceneManager(BaseScene *scene)
 {
-    this->scene = new ConcreteScene;
+    this->scene = scene;
 }
 SceneManager::~SceneManager()
 {
@@ -31,4 +30,9 @@ Iterator<BaseObject *> SceneManager::addObject(BaseObject *object)
 Iterator<BaseCamera *> SceneManager::addCamera(BaseCamera *camera)
 {
     return (currentCamera() = this->scene->addCamera(camera));
+}
+
+BaseScene* SceneManager::getScene()
+{
+    return this->scene;
 }

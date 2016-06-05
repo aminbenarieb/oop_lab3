@@ -1,10 +1,10 @@
 #ifndef ACTION_H
 #define ACTION_H
 
-#include "concretescene.h"
 #include "basemanager.h"
 #include "scenemanager.h"
 #include "loadmanager.h"
+#include "paintmanager.h"
 
 //--------------
 //TEMP LOCATION
@@ -28,25 +28,24 @@ class Action
 
 private:
     SceneManager *sceneManager;
-    LoadManager *loadManager;
-    BaseManager paintManager;
+    LoadManager  *loadManager;
+    PaintManager *paintManager;
     BaseManager transformManager;
 
 public:
-    Action();
+    Action(const CanvasInfo *canvasInfo = nullptr);
     Action(BaseScene*);
     ~Action();
 
     void uploadModel(const StreamInfo*);
     void uploadCamera(const StreamInfo*);
 
-//    void setCanvas(const CanvasInfo& info);
-    void drawModel();
+    void drawScene();
+    void clearScene();
 
     void transformModel(const TransformInfo*);
     void transformCamera(const TransformInfo*);
 
-    void clearScene();
 };
 
 #endif // ACTION_H

@@ -31,7 +31,10 @@ SOURCES += main.cpp\
     filestream.cpp \
     concretefactory.cpp \
     tester.cpp \
-    concretetransformer.cpp
+    concretetransformer.cpp \
+    paintmanager.cpp \
+    concretecanvas.cpp \
+    concretepainter.cpp
 
 HEADERS  += mainwindow.h \
     concreteexception.h \
@@ -74,7 +77,12 @@ HEADERS  += mainwindow.h \
     filestream.h \
     concretefactory.h \
     tester.h \
-    concretetransformer.h
+    concretetransformer.h \
+    basepainter.h \
+    basecanvas.h \
+    paintmanager.h \
+    concretecanvas.h \
+    concretepainter.h
 
 FORMS    += mainwindow.ui
 

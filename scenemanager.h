@@ -2,7 +2,7 @@
 #define SCENEMANAGER_H
 
 #include "basemanager.h"
-#include "basescene.h"
+#include "concretescene.h"
 
 class SceneManager : public BaseManager
 {
@@ -12,7 +12,7 @@ private:
     Iterator<BaseObject*> object;
 
 public:
-    SceneManager();
+    SceneManager(BaseScene *);
     ~SceneManager();
 
     Iterator<BaseObject *> addObject(BaseObject *);
@@ -20,6 +20,8 @@ public:
 
     Iterator<BaseCamera *>& currentCamera();
     Iterator<BaseObject *>& currentObject();
+
+    BaseScene *getScene();
 
     void clear();
 };

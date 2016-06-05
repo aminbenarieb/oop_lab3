@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>560</width>
-    <height>430</height>
+    <height>415</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -30,7 +30,7 @@
    <widget class="QPushButton" name="buttonUploadCamera">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>220</x>
       <y>320</y>
       <width>141</width>
       <height>31</height>
@@ -53,7 +53,7 @@
      <string>Quit</string>
     </property>
    </widget>
-   <widget class="QGraphicsView" name="Screen">
+   <widget class="QGraphicsView" name="canvas">
     <property name="geometry">
      <rect>
       <x>30</x>

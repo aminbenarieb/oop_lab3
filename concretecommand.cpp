@@ -1,11 +1,14 @@
 #include "concretecommand.h"
 
-DrawScene::DrawScene(Action *action){
+DrawScene::DrawScene(Action *action)
+{
 
     this->action = action;
 
 }
-void DrawScene::execute(){
+void DrawScene::execute()
+{
+    this->action->drawScene();
 }
 
 ClearScene::ClearScene(Action *action){

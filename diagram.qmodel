@@ -185,7 +185,7 @@
                          </base-DElement>
                          <object>{afb13913-f9d1-4c94-b0c1-5acf66a81079}</object>
                          <name>AbstractFactory</name>
-                         <pos>x:1335;y:950</pos>
+                         <pos>x:1510;y:995</pos>
                          <rect>x:-55;y:-40;w:110;h:80</rect>
                          <visual-role>0</visual-role>
                          <visual-emphasized>true</visual-emphasized>
@@ -229,7 +229,7 @@
                          </base-DElement>
                          <object>{a14fcbfa-1f07-43c6-b473-97cba07ae509}</object>
                          <name>BaseObject</name>
-                         <pos>x:345;y:990</pos>
+                         <pos>x:245;y:990</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
                          <visual-role>5</visual-role>
                         </DObject>
@@ -271,7 +271,7 @@
                          </base-DElement>
                          <object>{c0a26493-a245-42e2-8c29-2403cf0a6d73}</object>
                          <name>BaseStream</name>
-                         <pos>x:1180;y:1030</pos>
+                         <pos>x:1355;y:1075</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
                          <visual-role>9</visual-role>
                          <stereotype-display>3</stereotype-display>
@@ -313,7 +313,7 @@
                          </base-DElement>
                          <object>{7c8650e6-691d-4ab6-9d6a-c142cf593685}</object>
                          <name>TransformManager</name>
-                         <pos>x:715;y:1110</pos>
+                         <pos>x:655;y:1165</pos>
                          <rect>x:-55;y:-30;w:110;h:60</rect>
                          <visual-role>8</visual-role>
                         </DObject>
@@ -479,7 +479,7 @@
                          </base-DElement>
                          <object>{8c167695-cc20-428e-85f6-f07a576a1723}</object>
                          <name>SceneManager</name>
-                         <pos>x:540;y:860</pos>
+                         <pos>x:480;y:860</pos>
                          <rect>x:-45;y:-30;w:90;h:60</rect>
                          <visual-role>8</visual-role>
                         </DObject>
@@ -649,7 +649,7 @@
                          </base-DElement>
                          <object>{81ede031-6bce-4e9d-a616-8a6efdbaf9f9}</object>
                          <name>ConcreteFactory</name>
-                         <pos>x:1425;y:1055</pos>
+                         <pos>x:1665;y:1045</pos>
                          <rect>x:-50;y:-30;w:100;h:60</rect>
                          <visual-role>8</visual-role>
                         </DObject>
@@ -804,7 +804,7 @@
                          </base-DElement>
                          <object>{0619144c-8612-4db2-a219-09b66b70393a}</object>
                          <name>CompositeObj</name>
-                         <pos>x:450;y:1150</pos>
+                         <pos>x:350;y:1150</pos>
                          <rect>x:-45;y:-30;w:90;h:60</rect>
                          <visual-role>6</visual-role>
                         </DObject>
@@ -843,7 +843,7 @@
                          </base-DElement>
                          <object>{4282c30a-da40-4aa3-95b8-90dbfbb488f8}</object>
                          <name>BaseModel</name>
-                         <pos>x:-40;y:1085</pos>
+                         <pos>x:-140;y:1085</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
                          <visual-role>9</visual-role>
                         </DObject>
@@ -863,7 +863,7 @@
                          </base-DElement>
                          <object>{ea58e6bb-9093-464b-85a1-4220fd59f579}</object>
                          <name>BaseCamera</name>
-                         <pos>x:195;y:1095</pos>
+                         <pos>x:95;y:1095</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
                          <visual-role>9</visual-role>
                         </DObject>
@@ -919,7 +919,7 @@
                          </base-DElement>
                          <object>{f3b0bea5-e7c2-49ba-9a77-602303368773}</object>
                          <name>Scene</name>
-                         <pos>x:600;y:1040</pos>
+                         <pos>x:540;y:1040</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
                          <visual-role>8</visual-role>
                         </DObject>
@@ -1011,7 +1011,7 @@
                          </base-DElement>
                          <object>{ddb4ac81-7b55-46dc-9b63-6226e4ebfdb9}</object>
                          <name>FileStream</name>
-                         <pos>x:1110;y:1130</pos>
+                         <pos>x:1290;y:1295</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
                          <visual-role>8</visual-role>
                         </DObject>
@@ -1049,7 +1049,7 @@
                          </base-DElement>
                          <object>{b9edf3c0-a1b3-46d1-8cfd-0329bf6585cf}</object>
                          <name>DataBaseManager</name>
-                         <pos>x:1235;y:1125</pos>
+                         <pos>x:1415;y:1295</pos>
                          <rect>x:-55;y:-30;w:110;h:60</rect>
                          <visual-role>8</visual-role>
                         </DObject>
@@ -1087,7 +1087,7 @@
                          </base-DElement>
                          <object>{40b9776b-f857-4de4-96f3-2c41798759cf}</object>
                          <name>LoadManager</name>
-                         <pos>x:1040;y:920</pos>
+                         <pos>x:1215;y:965</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
                          <visual-role>8</visual-role>
                         </DObject>
@@ -1174,7 +1174,7 @@
                          </base-DElement>
                          <object>{b7670da6-95f8-4fc1-924e-d74654f3a4ac}</object>
                          <name>ModelImp</name>
-                         <pos>x:70;y:1090</pos>
+                         <pos>x:-30;y:1090</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
                          <visual-role>9</visual-role>
                         </DObject>
@@ -1194,7 +1194,7 @@
                          </base-DElement>
                          <object>{b38333ea-bd70-4bf5-bf92-885051c44a85}</object>
                          <name>CameraImp</name>
-                         <pos>x:310;y:1095</pos>
+                         <pos>x:210;y:1095</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
                          <visual-role>9</visual-role>
                         </DObject>
@@ -1262,7 +1262,7 @@
                          </base-DElement>
                          <object>{f9b78977-266e-49cb-8f9a-62844b9cfb1e}</object>
                          <name>BaseScene</name>
-                         <pos>x:585;y:950</pos>
+                         <pos>x:525;y:950</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
                          <visual-role>9</visual-role>
                         </DObject>
@@ -1392,7 +1392,7 @@
                          </base-DElement>
                          <object>{624bf1b9-1129-4ad9-a734-9c84b807de83}</object>
                          <name>RefinedModel</name>
-                         <pos>x:-50;y:1180</pos>
+                         <pos>x:-150;y:1180</pos>
                          <rect>x:-45;y:-30;w:90;h:60</rect>
                          <visual-role>8</visual-role>
                         </DObject>
@@ -1430,7 +1430,7 @@
                          </base-DElement>
                          <object>{89a4d74d-7b83-4ddd-ad22-1ca951194d8f}</object>
                          <name>RefinedModelImp</name>
-                         <pos>x:70;y:1200</pos>
+                         <pos>x:-30;y:1200</pos>
                          <rect>x:-50;y:-30;w:100;h:60</rect>
                          <visual-role>8</visual-role>
                         </DObject>
@@ -1468,7 +1468,7 @@
                          </base-DElement>
                          <object>{7b0fce3e-abc1-4810-a6a4-b9987f12abe1}</object>
                          <name>RefinedCamera</name>
-                         <pos>x:195;y:1195</pos>
+                         <pos>x:95;y:1195</pos>
                          <rect>x:-45;y:-30;w:90;h:60</rect>
                          <visual-role>8</visual-role>
                         </DObject>
@@ -1488,7 +1488,7 @@
                          </base-DElement>
                          <object>{952744cc-cc0a-4f83-8325-3721ed247add}</object>
                          <name>CameraImp</name>
-                         <pos>x:315;y:1195</pos>
+                         <pos>x:215;y:1195</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
                          <visual-role>8</visual-role>
                         </DObject>
@@ -1544,7 +1544,7 @@
                          </base-DElement>
                          <object>{adcacb6e-e424-498e-a31b-4a8668c490b9}</object>
                          <name>BaseObject</name>
-                         <pos>x:430;y:990</pos>
+                         <pos>x:330;y:990</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
                          <visual-role>7</visual-role>
                         </DObject>
@@ -1564,9 +1564,9 @@
                          </base-DElement>
                          <object>{dec26979-253b-4817-a418-07464f9b184d}</object>
                          <name>BaseCanvas</name>
-                         <pos>x:945;y:1065</pos>
+                         <pos>x:1020;y:1165</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
-                         <visual-role>0</visual-role>
+                         <visual-role>9</visual-role>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -1608,7 +1608,7 @@
                          </base-DElement>
                          <object>{9404a180-39f7-4952-a028-8f6634dcb3fe}</object>
                          <name>Canvas</name>
-                         <pos>x:955;y:1175</pos>
+                         <pos>x:1030;y:1275</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
                          <visual-role>9</visual-role>
                         </DObject>
@@ -1646,7 +1646,7 @@
                          </base-DElement>
                          <object>{060f7c08-af71-474e-bc14-fa2e4f7eb1ea}</object>
                          <name>Point</name>
-                         <pos>x:0;y:1395</pos>
+                         <pos>x:-100;y:1395</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
                          <visual-role>0</visual-role>
                         </DObject>
@@ -1666,7 +1666,7 @@
                          </base-DElement>
                          <object>{f6225fb5-9ef9-4f46-a670-5efe48db853f}</object>
                          <name>Edge</name>
-                         <pos>x:115;y:1395</pos>
+                         <pos>x:15;y:1395</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
                          <visual-role>0</visual-role>
                         </DObject>
@@ -2094,7 +2094,7 @@
                          </base-DElement>
                          <object>{e4a10678-ce2c-4c88-aba6-fc6f9627b02d}</object>
                          <name>BaseTransformer</name>
-                         <pos>x:720;y:1235</pos>
+                         <pos>x:660;y:1290</pos>
                          <rect>x:-50;y:-30;w:100;h:60</rect>
                          <visual-role>9</visual-role>
                         </DObject>
@@ -2179,9 +2179,9 @@
                           </DElement>
                          </base-DElement>
                          <object>{31aa2455-43fb-4eb1-8bba-59d1e4faf949}</object>
-                         <name>Transformer</name>
-                         <pos>x:720;y:1330</pos>
-                         <rect>x:-40;y:-30;w:80;h:60</rect>
+                         <name>ConcreteTransformer</name>
+                         <pos>x:660;y:1385</pos>
+                         <rect>x:-60;y:-30;w:120;h:60</rect>
                          <visual-role>9</visual-role>
                         </DObject>
                        </base-DObject>
@@ -2206,9 +2206,174 @@
                       </DInheritance>
                      </instance>
                     </item>
+                    <item>
+                     <instance type="DClass">
+                      <DClass>
+                       <base-DObject>
+                        <DObject>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{159add84-ab49-47e5-88fe-d14d4e814100}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{6eb24053-b1a7-4ac6-a982-c49f73b40cf0}</object>
+                         <name>BaseStreamImp</name>
+                         <pos>x:1510;y:1100</pos>
+                         <rect>x:-50;y:-30;w:100;h:60</rect>
+                         <visual-role>0</visual-role>
+                        </DObject>
+                       </base-DObject>
+                      </DClass>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{e5a5bd3b-b753-488b-b862-7e04fd53e5c5}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{1165cef9-fd1a-46df-aa17-913972a4e973}</object>
+                         <a>{6bcc7925-7ab2-497d-a2a5-59f55ecadfcb}</a>
+                         <b>{159add84-ab49-47e5-88fe-d14d4e814100}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <navigable>true</navigable>
+                         <kind>1</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DClass">
+                      <DClass>
+                       <base-DObject>
+                        <DObject>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{c68c1746-f99b-4883-a6e3-6ccb9f0bc4fe}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{4b11d460-aeb6-4bdf-985f-ce6ac7549361}</object>
+                         <name>FileStreamImp</name>
+                         <pos>x:1505;y:1185</pos>
+                         <rect>x:-45;y:-30;w:90;h:60</rect>
+                         <visual-role>9</visual-role>
+                         <visual-role2>4</visual-role2>
+                        </DObject>
+                       </base-DObject>
+                      </DClass>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DInheritance">
+                      <DInheritance>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{8f63d971-e9b3-4eac-b083-fefc69224251}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{f5b7b21a-b4ad-4fd7-90d9-6de34fe2b159}</object>
+                         <a>{c68c1746-f99b-4883-a6e3-6ccb9f0bc4fe}</a>
+                         <b>{159add84-ab49-47e5-88fe-d14d4e814100}</b>
+                        </DRelation>
+                       </base-DRelation>
+                      </DInheritance>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DClass">
+                      <DClass>
+                       <base-DObject>
+                        <DObject>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{19dae7ea-2dcd-4257-90df-7ee598172652}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{ee47d238-dfd5-42f2-90a5-8f0bd7819c48}</object>
+                         <name>BaseCanvasImp</name>
+                         <pos>x:1140;y:1190</pos>
+                         <rect>x:-50;y:-30;w:100;h:60</rect>
+                         <visual-role>0</visual-role>
+                        </DObject>
+                       </base-DObject>
+                      </DClass>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DClass">
+                      <DClass>
+                       <base-DObject>
+                        <DObject>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{83b9a6c8-77bf-4020-ba47-fb51d5e0dbc3}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{f53bbb27-ea01-4e71-bb20-2ce5f124b725}</object>
+                         <name>QCanvasImp</name>
+                         <pos>x:1140;y:1310</pos>
+                         <rect>x:-40;y:-30;w:80;h:60</rect>
+                         <visual-role>9</visual-role>
+                        </DObject>
+                       </base-DObject>
+                      </DClass>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DInheritance">
+                      <DInheritance>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{5d9aa424-681f-4dea-a657-e77a8f0bfa83}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{55790e1f-8417-4f74-8420-e0bcbe9bb286}</object>
+                         <a>{83b9a6c8-77bf-4020-ba47-fb51d5e0dbc3}</a>
+                         <b>{19dae7ea-2dcd-4257-90df-7ee598172652}</b>
+                        </DRelation>
+                       </base-DRelation>
+                      </DInheritance>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{bb8b9d5c-48bd-4d42-861f-1ba0ce587d2c}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{d79ecc89-ccd1-4ba9-94cc-d4ebb21bcd70}</object>
+                         <a>{cf6b9622-3161-447c-abaf-c2cd8a5e27af}</a>
+                         <b>{19dae7ea-2dcd-4257-90df-7ee598172652}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <navigable>true</navigable>
+                         <kind>1</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
                    </qlist>
                   </elements>
-                  <last-modified>1465060287895</last-modified>
+                  <last-modified>1465135026760</last-modified>
                  </MDiagram>
                 </base-MDiagram>
                </MCanvasDiagram>
@@ -2622,6 +2787,34 @@
                              </base-MElement>
                              <a>{c0a26493-a245-42e2-8c29-2403cf0a6d73}</a>
                              <b>{afb13913-f9d1-4c94-b0c1-5acf66a81079}</b>
+                            </MRelation>
+                           </base-MRelation>
+                           <a>
+                            <MAssociationEnd>
+                             <navigable>true</navigable>
+                             <kind>1</kind>
+                            </MAssociationEnd>
+                           </a>
+                          </MAssociation>
+                         </instance>
+                        </target>
+                       </handle>
+                      </item>
+                      <item>
+                       <handle>
+                        <uid>{1165cef9-fd1a-46df-aa17-913972a4e973}</uid>
+                        <target>
+                         <instance type="MAssociation">
+                          <MAssociation>
+                           <base-MRelation>
+                            <MRelation>
+                             <base-MElement>
+                              <MElement>
+                               <uid>{1165cef9-fd1a-46df-aa17-913972a4e973}</uid>
+                              </MElement>
+                             </base-MElement>
+                             <a>{c0a26493-a245-42e2-8c29-2403cf0a6d73}</a>
+                             <b>{6eb24053-b1a7-4ac6-a982-c49f73b40cf0}</b>
                             </MRelation>
                            </base-MRelation>
                            <a>
@@ -5064,6 +5257,42 @@
                    </MElement>
                   </base-MElement>
                   <name>BaseCanvas</name>
+                  <relations>
+                   <handles>
+                    <handles>
+                     <qlist>
+                      <item>
+                       <handle>
+                        <uid>{d79ecc89-ccd1-4ba9-94cc-d4ebb21bcd70}</uid>
+                        <target>
+                         <instance type="MAssociation">
+                          <MAssociation>
+                           <base-MRelation>
+                            <MRelation>
+                             <base-MElement>
+                              <MElement>
+                               <uid>{d79ecc89-ccd1-4ba9-94cc-d4ebb21bcd70}</uid>
+                              </MElement>
+                             </base-MElement>
+                             <a>{dec26979-253b-4817-a418-07464f9b184d}</a>
+                             <b>{ee47d238-dfd5-42f2-90a5-8f0bd7819c48}</b>
+                            </MRelation>
+                           </base-MRelation>
+                           <a>
+                            <MAssociationEnd>
+                             <navigable>true</navigable>
+                             <kind>1</kind>
+                            </MAssociationEnd>
+                           </a>
+                          </MAssociation>
+                         </instance>
+                        </target>
+                       </handle>
+                      </item>
+                     </qlist>
+                    </handles>
+                   </handles>
+                  </relations>
                  </MObject>
                 </base-MObject>
                </MClass>
@@ -5546,7 +5775,7 @@
                     <uid>{31aa2455-43fb-4eb1-8bba-59d1e4faf949}</uid>
                    </MElement>
                   </base-MElement>
-                  <name>Transformer</name>
+                  <name>ConcreteTransformer</name>
                   <relations>
                    <handles>
                     <handles>
@@ -5566,6 +5795,150 @@
                              </base-MElement>
                              <a>{31aa2455-43fb-4eb1-8bba-59d1e4faf949}</a>
                              <b>{e4a10678-ce2c-4c88-aba6-fc6f9627b02d}</b>
+                            </MRelation>
+                           </base-MRelation>
+                          </MInheritance>
+                         </instance>
+                        </target>
+                       </handle>
+                      </item>
+                     </qlist>
+                    </handles>
+                   </handles>
+                  </relations>
+                 </MObject>
+                </base-MObject>
+               </MClass>
+              </instance>
+             </target>
+            </handle>
+           </item>
+           <item>
+            <handle>
+             <uid>{6eb24053-b1a7-4ac6-a982-c49f73b40cf0}</uid>
+             <target>
+              <instance type="MClass">
+               <MClass>
+                <base-MObject>
+                 <MObject>
+                  <base-MElement>
+                   <MElement>
+                    <uid>{6eb24053-b1a7-4ac6-a982-c49f73b40cf0}</uid>
+                   </MElement>
+                  </base-MElement>
+                  <name>BaseStreamImp</name>
+                 </MObject>
+                </base-MObject>
+               </MClass>
+              </instance>
+             </target>
+            </handle>
+           </item>
+           <item>
+            <handle>
+             <uid>{4b11d460-aeb6-4bdf-985f-ce6ac7549361}</uid>
+             <target>
+              <instance type="MClass">
+               <MClass>
+                <base-MObject>
+                 <MObject>
+                  <base-MElement>
+                   <MElement>
+                    <uid>{4b11d460-aeb6-4bdf-985f-ce6ac7549361}</uid>
+                   </MElement>
+                  </base-MElement>
+                  <name>FileStreamImp</name>
+                  <relations>
+                   <handles>
+                    <handles>
+                     <qlist>
+                      <item>
+                       <handle>
+                        <uid>{f5b7b21a-b4ad-4fd7-90d9-6de34fe2b159}</uid>
+                        <target>
+                         <instance type="MInheritance">
+                          <MInheritance>
+                           <base-MRelation>
+                            <MRelation>
+                             <base-MElement>
+                              <MElement>
+                               <uid>{f5b7b21a-b4ad-4fd7-90d9-6de34fe2b159}</uid>
+                              </MElement>
+                             </base-MElement>
+                             <a>{4b11d460-aeb6-4bdf-985f-ce6ac7549361}</a>
+                             <b>{6eb24053-b1a7-4ac6-a982-c49f73b40cf0}</b>
+                            </MRelation>
+                           </base-MRelation>
+                          </MInheritance>
+                         </instance>
+                        </target>
+                       </handle>
+                      </item>
+                     </qlist>
+                    </handles>
+                   </handles>
+                  </relations>
+                 </MObject>
+                </base-MObject>
+               </MClass>
+              </instance>
+             </target>
+            </handle>
+           </item>
+           <item>
+            <handle>
+             <uid>{ee47d238-dfd5-42f2-90a5-8f0bd7819c48}</uid>
+             <target>
+              <instance type="MClass">
+               <MClass>
+                <base-MObject>
+                 <MObject>
+                  <base-MElement>
+                   <MElement>
+                    <uid>{ee47d238-dfd5-42f2-90a5-8f0bd7819c48}</uid>
+                   </MElement>
+                  </base-MElement>
+                  <name>BaseCanvasImp</name>
+                 </MObject>
+                </base-MObject>
+               </MClass>
+              </instance>
+             </target>
+            </handle>
+           </item>
+           <item>
+            <handle>
+             <uid>{f53bbb27-ea01-4e71-bb20-2ce5f124b725}</uid>
+             <target>
+              <instance type="MClass">
+               <MClass>
+                <base-MObject>
+                 <MObject>
+                  <base-MElement>
+                   <MElement>
+                    <uid>{f53bbb27-ea01-4e71-bb20-2ce5f124b725}</uid>
+                   </MElement>
+                  </base-MElement>
+                  <name>QCanvasImp</name>
+                  <relations>
+                   <handles>
+                    <handles>
+                     <qlist>
+                      <item>
+                       <handle>
+                        <uid>{55790e1f-8417-4f74-8420-e0bcbe9bb286}</uid>
+                        <target>
+                         <instance type="MInheritance">
+                          <MInheritance>
+                           <base-MRelation>
+                            <MRelation>
+                             <base-MElement>
+                              <MElement>
+                               <uid>{55790e1f-8417-4f74-8420-e0bcbe9bb286}</uid>
+                              </MElement>
+                             </base-MElement>
+                             <a>{f53bbb27-ea01-4e71-bb20-2ce5f124b725}</a>
+                             <b>{ee47d238-dfd5-42f2-90a5-8f0bd7819c48}</b>
                             </MRelation>
                            </base-MRelation>
                           </MInheritance>

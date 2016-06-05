@@ -13,7 +13,7 @@ private:
     void processStream(StreamInfo*);
 
 public:
-    Facade();
+    Facade(const CanvasInfo *canvasInfo = nullptr);
     ~Facade();
 
     void transformModel(TransformInfo);

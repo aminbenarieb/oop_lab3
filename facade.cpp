@@ -3,9 +3,9 @@
 #include "concretecommand.h"
 #include "qdebug.h"
 
-Facade::Facade()
+Facade::Facade(const CanvasInfo* canvasInfo)
 {
-    this->action = new Action();
+    this->action = new Action(canvasInfo);
     this->alertWindowService = new AlertWindowService(new AlertWindowServiceImp);
 }
 
@@ -39,6 +39,9 @@ void Facade::uploadModelFromFile(StreamInfo streamInfo)
 
         AddModel addModel(this->action, &streamInfo);
         addModel.execute();
+
+        DrawScene drawScene(this->action);
+        drawScene.execute();
     }
     catch(BaseException& exc)
     {
@@ -54,6 +57,10 @@ void Facade::uploadCameraFromFile(StreamInfo streamInfo)
 
         AddCamera addCamera(this->action, &streamInfo);
         addCamera.execute();
+
+        DrawScene drawScene(this->action);
+        drawScene.execute();
+
     }
     catch(BaseException& exc)
     {
