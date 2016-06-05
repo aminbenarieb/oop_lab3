@@ -16,3 +16,7 @@ BaseObject* LoadManager::loadObject(const StreamInfo *streamInfo)
 {
     return this->stream->loadModel(streamInfo->sourceName);
 }
+BaseCamera* LoadManager::loadCamera(const StreamInfo *streamInfo)
+{
+    return this->stream->loadCamera(streamInfo->sourceName);
+}

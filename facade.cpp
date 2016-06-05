@@ -52,7 +52,7 @@ void Facade::uploadCameraFromFile(StreamInfo streamInfo)
     {
         processStream(&streamInfo);
 
-        AddCamera addCamera(this->action, streamInfo);
+        AddCamera addCamera(this->action, &streamInfo);
         addCamera.execute();
     }
     catch(BaseException& exc)

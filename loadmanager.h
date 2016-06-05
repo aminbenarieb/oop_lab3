@@ -13,6 +13,7 @@ public:
     ~LoadManager();
 
      BaseObject* loadObject(const StreamInfo*);
+     BaseCamera* loadCamera(const StreamInfo *);
 };
 
 #endif // LOADMANAGER_H

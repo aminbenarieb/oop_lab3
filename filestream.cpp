@@ -90,6 +90,18 @@ bool FileStream::processEdges(BaseModel *model)
     return true;
 }
 
+
+bool FileStream::readParams(double &alpha, double &beta, double &scale)
+{
+    return fscanf(this->file, "%lf %lf %lf", &alpha, &beta, &scale) == 3;
+}
+
+bool FileStream::processParams(double &x, double &y, double &z, double &alpha, double &beta, double &scale)
+{
+    return readPoint(x,y,z) && readParams(alpha, beta, scale);
+}
+
+
 BaseObject* FileStream::loadModel(const char *fileName)
 {
     BaseModel* model = this->factory->createModel();
@@ -110,7 +122,25 @@ BaseObject* FileStream::loadModel(const char *fileName)
     return model;
 
 }
-BaseObject* FileStream::loadCamera(const char*)
+BaseCamera* FileStream::loadCamera(const char*fileName)
 {
+    double x, y, z, alpha,beta,scale;
 
+    openFile(fileName);
+    if ( !this->processParams(x, y, z, alpha, beta, scale) )
+    {
+        closeFile();
+        throw InvalidFileException();
+    }
+
+    BaseCamera* camera = this->factory->createCamera(x,y,z,alpha,beta,scale);
+    if (!camera)
+    {
+        closeFile();
+        throw MemoryException();
+    }
+
+    closeFile();
+
+    return camera;
 }

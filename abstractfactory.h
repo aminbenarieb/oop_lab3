@@ -9,7 +9,7 @@ class AbstractFactory
 public:
     ~AbstractFactory();
 
-    virtual BaseCamera *createCamera() = 0;
+    virtual BaseCamera *createCamera(double, double, double, double, double, double) = 0;
     virtual BaseModel  *createModel() = 0;
 
 };

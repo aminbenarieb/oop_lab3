@@ -36,6 +36,11 @@ private:
     bool processPoints(BaseModel *);
     bool processEdges(BaseModel *);
 
+
+    bool readParams(double &,double &,double &);
+    bool processParams(double &,double &,double &, double &,double &,double &);
+
+
     void openFile(const char*);
     void closeFile();
 
@@ -44,7 +49,7 @@ public:
     ~FileStream();
 
     virtual BaseObject* loadModel(const char*);
-    virtual BaseObject* loadCamera(const char*);
+    virtual BaseCamera* loadCamera(const char*);
 };
 
 #endif // FILESTREAM_H

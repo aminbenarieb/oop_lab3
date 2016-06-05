@@ -36,9 +36,9 @@ class AddCamera : public BaseCommand
 {
 private:
     Action *action;
-    StreamInfo streamInfo;
+    StreamInfo *streamInfo;
 public:
-    AddCamera(Action*, StreamInfo);
+    AddCamera(Action*, StreamInfo*);
     virtual void execute();
 };
 

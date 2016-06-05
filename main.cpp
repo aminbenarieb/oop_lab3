@@ -8,8 +8,9 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.show();
 
-    Tester t(w.facade);
+    Tester t(w.facade, &a);
     t.loadModel();
+    t.loadCamera();
 
     return a.exec();
 }

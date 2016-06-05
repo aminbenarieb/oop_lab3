@@ -29,7 +29,7 @@ void AddModel::execute()
     this->action->uploadModel(streamInfo);
 }
 
-AddCamera::AddCamera(Action *action, StreamInfo streamInfo){
+AddCamera::AddCamera(Action *action, StreamInfo* streamInfo){
 
     this->action = action;
     this->streamInfo = streamInfo;
@@ -37,7 +37,7 @@ AddCamera::AddCamera(Action *action, StreamInfo streamInfo){
 }
 void AddCamera::execute()
 {
-
+    this->action->uploadCamera(streamInfo);
 }
 
 TransformModel::TransformModel(Action *action, TransformInfo transformInfo){

@@ -7,13 +7,15 @@ class Tester
 {
 private:
     Facade *facade;
+    QApplication *app;
 
 public:
-    Tester(Facade *);
+    Tester(Facade *, QApplication*);
     ~Tester();
 
     void setFacade(Facade *);
     void loadModel();
+    void loadCamera();
 };
 
 #endif // TESTER_H

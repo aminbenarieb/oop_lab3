@@ -20,7 +20,7 @@ void Action::uploadModel(const StreamInfo *streamInfo)
     this->sceneManager->addObject(  this->loadManager->loadObject(streamInfo) );
 }
 
-void Action::uploadCamera(const StreamInfo*)
+void Action::uploadCamera(const StreamInfo *streamInfo)
 {
-
+    this->sceneManager->addCamera( this->loadManager->loadCamera( streamInfo ) );
 }
