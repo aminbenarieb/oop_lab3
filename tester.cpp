@@ -20,5 +20,5 @@ void Tester::loadModel()
 
 void Tester::loadCamera()
 {
-    facade->uploadModelFromFile({SOURCE_FILE, "/Users/aminbenarieb/GitHub/uni/oop/lab3/camera.txt"});
+    facade->uploadCameraFromFile({SOURCE_FILE, "/Users/aminbenarieb/GitHub/uni/oop/lab3/camera.txt"});
 }

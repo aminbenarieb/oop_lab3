@@ -25,7 +25,7 @@ void FileStream::closeFile()
 
 bool FileStream::readCount(size_t& count)
 {
-    return fscanf(this->file, "%lu:", &count) == 1;
+    return fscanf(this->file, "%lu", &count) == 1;
 }
 bool FileStream::readPoint(double &x, double &y, double &z)
 {
@@ -115,7 +115,7 @@ BaseObject* FileStream::loadModel(const char *fileName)
     {
         delete model;
         closeFile();
-        throw InvalidFileException();
+        throw InvalidModelFileException();
     }
     closeFile();
 
@@ -130,7 +130,7 @@ BaseCamera* FileStream::loadCamera(const char*fileName)
     if ( !this->processParams(x, y, z, alpha, beta, scale) )
     {
         closeFile();
-        throw InvalidFileException();
+        throw InvalidCameraFileException();
     }
 
     BaseCamera* camera = this->factory->createCamera(x,y,z,alpha,beta,scale);

@@ -12,12 +12,28 @@ public:
         return "Unable to open file.";
     }
 };
+
 class InvalidFileException : public BaseException
+{
+    virtual const char* what()
+    {
+        return "File is corrupted or has unsupported format.";
+    }
+};
+class InvalidModelFileException : public InvalidFileException
 {
 public:
     virtual const char* what()
     {
-        return "File is corrupted or has unsupported format.";
+        return "Model file is corrupted or has unsupported format.";
+    }
+};
+class InvalidCameraFileException : public InvalidFileException
+{
+public:
+    virtual const char* what()
+    {
+        return "Camera file is corrupted or has unsupported format.";
     }
 };
 
