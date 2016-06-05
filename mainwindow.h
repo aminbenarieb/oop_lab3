@@ -16,7 +16,6 @@ class MainWindow : public QMainWindow, public BaseWindow
 
 public:
     Facade *facade;
-//    IOStreamService *uiStreamService;
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
