@@ -33,3 +33,7 @@ void Action::drawScene()
                 this->sceneManager->currentCamera()
                 );
 }
+void Action::clearScene()
+{
+    this->sceneManager->clear();
+}

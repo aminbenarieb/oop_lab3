@@ -25,11 +25,11 @@ Iterator<BaseObject *>& SceneManager::currentObject()
 
 Iterator<BaseObject *> SceneManager::addObject(BaseObject *object)
 {
-    return (currentObject() = this->scene->addObject(object));
+    return (this->object = this->scene->addObject(object));
 }
 Iterator<BaseCamera *> SceneManager::addCamera(BaseCamera *camera)
 {
-    return (currentCamera() = this->scene->addCamera(camera));
+    return (this->camera = this->scene->addCamera(camera));
 }
 
 BaseScene* SceneManager::getScene()

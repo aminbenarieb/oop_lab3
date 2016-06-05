@@ -29,6 +29,7 @@ private slots:
     void on_buttonUploadCamera_clicked();
     void on_buttonUploadModel_clicked();
     void on_buttonDrawScene_clicked();
+    void on_buttonClearScene_clicked();
     void on_buttonQuit_clicked();
 
 };

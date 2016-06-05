@@ -18,7 +18,7 @@ ClearScene::ClearScene(Action *action){
 }
 void ClearScene::execute()
 {
-
+    this->action->clearScene();
 }
 
 AddModel::AddModel(Action *action, const StreamInfo* streamInfo){

@@ -55,6 +55,11 @@ void MainWindow::on_buttonDrawScene_clicked()
     this->facade->drawScene();
 }
 
+void MainWindow::on_buttonClearScene_clicked()
+{
+    this->facade->clearScene();
+}
+
 
 void MainWindow::on_buttonQuit_clicked()
 {
