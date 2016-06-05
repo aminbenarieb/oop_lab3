@@ -30,7 +30,7 @@
    <widget class="QPushButton" name="buttonUploadCamera">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>160</x>
       <y>320</y>
       <width>141</width>
       <height>31</height>
@@ -73,6 +73,19 @@
       <width>16777215</width>
       <height>16777215</height>
      </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonDrawScene">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>320</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Draw Scene</string>
     </property>
    </widget>
   </widget>

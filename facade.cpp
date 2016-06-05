@@ -39,9 +39,6 @@ void Facade::uploadModelFromFile(StreamInfo streamInfo)
 
         AddModel addModel(this->action, &streamInfo);
         addModel.execute();
-
-        DrawScene drawScene(this->action);
-        drawScene.execute();
     }
     catch(BaseException& exc)
     {
@@ -58,9 +55,6 @@ void Facade::uploadCameraFromFile(StreamInfo streamInfo)
         AddCamera addCamera(this->action, &streamInfo);
         addCamera.execute();
 
-        DrawScene drawScene(this->action);
-        drawScene.execute();
-
     }
     catch(BaseException& exc)
     {
@@ -68,6 +62,19 @@ void Facade::uploadCameraFromFile(StreamInfo streamInfo)
     }
 }
 
+
+void Facade::drawScene()
+{
+    try
+    {
+        DrawScene drawScene(this->action);
+        drawScene.execute();
+    }
+    catch(BaseException& exc)
+    {
+        this->alertWindowService->showErrorMessage(exc.what());
+    }
+}
 void Facade::clearScene()
 {
     try

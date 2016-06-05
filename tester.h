@@ -16,6 +16,7 @@ public:
     void setFacade(Facade *);
     void loadModel();
     void loadCamera();
+    void drawScene();
 };
 
 #endif // TESTER_H

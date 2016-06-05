@@ -22,3 +22,8 @@ void Tester::loadCamera()
 {
     facade->uploadCameraFromFile({SOURCE_FILE, "/Users/aminbenarieb/GitHub/uni/oop/lab3/camera.txt"});
 }
+
+void Tester::drawScene()
+{
+    facade->drawScene();
+}

@@ -22,6 +22,7 @@ public:
     void uploadModelFromFile(StreamInfo streamInfo = {SOURCE_UNDEFINED, NULL});
     void uploadCameraFromFile(StreamInfo streamInfo = {SOURCE_UNDEFINED, NULL});
 
+    void drawScene();
     void clearScene();
 
 };

@@ -50,6 +50,12 @@ void MainWindow::on_buttonUploadCamera_clicked()
     this->facade->uploadCameraFromFile({SOURCE_FILE, NULL});
 }
 
+void MainWindow::on_buttonDrawScene_clicked()
+{
+    this->facade->drawScene();
+}
+
+
 void MainWindow::on_buttonQuit_clicked()
 {
     this->facade->clearScene();
