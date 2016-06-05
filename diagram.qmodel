@@ -270,7 +270,7 @@
                           </DElement>
                          </base-DElement>
                          <object>{c0a26493-a245-42e2-8c29-2403cf0a6d73}</object>
-                         <name>Streamer</name>
+                         <name>BaseStream</name>
                          <pos>x:1180;y:1030</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
                          <visual-role>9</visual-role>
@@ -1010,7 +1010,7 @@
                           </DElement>
                          </base-DElement>
                          <object>{ddb4ac81-7b55-46dc-9b63-6226e4ebfdb9}</object>
-                         <name>FileManager</name>
+                         <name>FileStream</name>
                          <pos>x:1110;y:1130</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
                          <visual-role>8</visual-role>
@@ -2208,7 +2208,7 @@
                     </item>
                    </qlist>
                   </elements>
-                  <last-modified>1465052207245</last-modified>
+                  <last-modified>1465060287895</last-modified>
                  </MDiagram>
                 </base-MDiagram>
                </MCanvasDiagram>
@@ -2443,7 +2443,7 @@
                  <qlist>
                   <item>
                    <MClassMember>
-                    <uid>{16b849d2-053c-42d8-88a9-e3c88d1dc865}</uid>
+                    <uid>{53fc3270-4244-4d34-bbbe-eb922805e64f}</uid>
                     <visibility>1</visibility>
                     <type>2</type>
                     <declaration>createModel()</declaration>
@@ -2451,7 +2451,7 @@
                   </item>
                   <item>
                    <MClassMember>
-                    <uid>{6b945c96-5420-460e-9422-ad20d585c51d}</uid>
+                    <uid>{ba8fe309-270e-40e1-8292-89d43b396354}</uid>
                     <visibility>1</visibility>
                     <type>2</type>
                     <declaration>createCamera()</declaration>
@@ -2552,7 +2552,7 @@
                     <uid>{c0a26493-a245-42e2-8c29-2403cf0a6d73}</uid>
                    </MElement>
                   </base-MElement>
-                  <name>Streamer</name>
+                  <name>BaseStream</name>
                   <relations>
                    <handles>
                     <handles>
@@ -3752,58 +3752,6 @@
            </item>
            <item>
             <handle>
-             <uid>{fa9d747f-e50d-4965-8f4f-00103c9bec73}</uid>
-             <target>
-              <instance type="MItem">
-               <MItem>
-                <base-MObject>
-                 <MObject>
-                  <base-MElement>
-                   <MElement>
-                    <uid>{fa9d747f-e50d-4965-8f4f-00103c9bec73}</uid>
-                   </MElement>
-                  </base-MElement>
-                  <relations>
-                   <handles>
-                    <handles>
-                     <qlist>
-                      <item>
-                       <handle>
-                        <uid>{61ce8d81-e312-4bf2-abbc-c4f0164b9b7a}</uid>
-                        <target>
-                         <instance type="MDependency">
-                          <MDependency>
-                           <base-MRelation>
-                            <MRelation>
-                             <base-MElement>
-                              <MElement>
-                               <uid>{61ce8d81-e312-4bf2-abbc-c4f0164b9b7a}</uid>
-                              </MElement>
-                             </base-MElement>
-                             <a>{fa9d747f-e50d-4965-8f4f-00103c9bec73}</a>
-                             <b>{41996b0a-5766-4190-ada7-c6c26f6a7a48}</b>
-                            </MRelation>
-                           </base-MRelation>
-                          </MDependency>
-                         </instance>
-                        </target>
-                       </handle>
-                      </item>
-                     </qlist>
-                    </handles>
-                   </handles>
-                  </relations>
-                 </MObject>
-                </base-MObject>
-                <variety-editable>false</variety-editable>
-                <variety>actor</variety>
-               </MItem>
-              </instance>
-             </target>
-            </handle>
-           </item>
-           <item>
-            <handle>
              <uid>{5e606fb6-5618-4418-a303-64efd4aa9329}</uid>
              <target>
               <instance type="MClass">
@@ -4320,7 +4268,7 @@
                     <uid>{ddb4ac81-7b55-46dc-9b63-6226e4ebfdb9}</uid>
                    </MElement>
                   </base-MElement>
-                  <name>FileManager</name>
+                  <name>FileStream</name>
                   <relations>
                    <handles>
                     <handles>
@@ -4996,27 +4944,6 @@
            </item>
            <item>
             <handle>
-             <uid>{b307e1d9-d8bf-41a3-a0c9-8cd9206e044f}</uid>
-             <target>
-              <instance type="MClass">
-               <MClass>
-                <base-MObject>
-                 <MObject>
-                  <base-MElement>
-                   <MElement>
-                    <uid>{b307e1d9-d8bf-41a3-a0c9-8cd9206e044f}</uid>
-                   </MElement>
-                  </base-MElement>
-                  <name>New Class</name>
-                 </MObject>
-                </base-MObject>
-               </MClass>
-              </instance>
-             </target>
-            </handle>
-           </item>
-           <item>
-            <handle>
              <uid>{952744cc-cc0a-4f83-8325-3721ed247add}</uid>
              <target>
               <instance type="MClass">
@@ -5125,27 +5052,6 @@
            </item>
            <item>
             <handle>
-             <uid>{b79055a4-f3a4-49df-a84d-448327bc1cbf}</uid>
-             <target>
-              <instance type="MClass">
-               <MClass>
-                <base-MObject>
-                 <MObject>
-                  <base-MElement>
-                   <MElement>
-                    <uid>{b79055a4-f3a4-49df-a84d-448327bc1cbf}</uid>
-                   </MElement>
-                  </base-MElement>
-                  <name>New Class</name>
-                 </MObject>
-                </base-MObject>
-               </MClass>
-              </instance>
-             </target>
-            </handle>
-           </item>
-           <item>
-            <handle>
              <uid>{dec26979-253b-4817-a418-07464f9b184d}</uid>
              <target>
               <instance type="MClass">
@@ -5209,48 +5115,6 @@
                     </handles>
                    </handles>
                   </relations>
-                 </MObject>
-                </base-MObject>
-               </MClass>
-              </instance>
-             </target>
-            </handle>
-           </item>
-           <item>
-            <handle>
-             <uid>{4ba6d0ff-1c07-4f9b-82ae-59cd01387f2c}</uid>
-             <target>
-              <instance type="MClass">
-               <MClass>
-                <base-MObject>
-                 <MObject>
-                  <base-MElement>
-                   <MElement>
-                    <uid>{4ba6d0ff-1c07-4f9b-82ae-59cd01387f2c}</uid>
-                   </MElement>
-                  </base-MElement>
-                  <name>New Class</name>
-                 </MObject>
-                </base-MObject>
-               </MClass>
-              </instance>
-             </target>
-            </handle>
-           </item>
-           <item>
-            <handle>
-             <uid>{416a9ba8-5d51-4845-9f3b-104a493a708c}</uid>
-             <target>
-              <instance type="MClass">
-               <MClass>
-                <base-MObject>
-                 <MObject>
-                  <base-MElement>
-                   <MElement>
-                    <uid>{416a9ba8-5d51-4845-9f3b-104a493a708c}</uid>
-                   </MElement>
-                  </base-MElement>
-                  <name>New Class</name>
                  </MObject>
                 </base-MObject>
                </MClass>

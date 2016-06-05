@@ -10,6 +10,8 @@ private:
     AlertWindowService* alertWindowService;
     Action* action;
 
+    void processStream(StreamInfo);
+
 public:
     Facade();
     ~Facade();
@@ -17,8 +19,8 @@ public:
     void transformModel(TransformInfo);
     void transformCamera(TransformInfo);
 
-    void uploadModelFromFile();
-    void uploadCameraFromFile();
+    void uploadModelFromFile(StreamInfo streamInfo = {SOURCE_UNDEFINED, NULL});
+    void uploadCameraFromFile(StreamInfo streamInfo = {SOURCE_UNDEFINED, NULL});
 
     void clearScene();
 

@@ -35,8 +35,11 @@ public:
     List<type_t>& operator+=(const List<type_t> &);
     List<type_t>& operator=(List<type_t> &&);
 
-    bool          operator==(const List<type_t> &) const;
-    bool          operator!=(const List<type_t> &) const;
+
+    type_t&        operator[](size_t);
+    const type_t&  operator[](size_t) const;
+    bool           operator==(const List<type_t> &) const;
+    bool           operator!=(const List<type_t> &) const;
 
     friend class Iterator<type_t>;
     friend class IteratorConst<type_t>;

@@ -4,6 +4,7 @@
 #include "concretescene.h"
 #include "basemanager.h"
 #include "scenemanager.h"
+#include "loadmanager.h"
 
 //--------------
 //TEMP LOCATION
@@ -19,15 +20,6 @@ struct TransformInfo
     TransformType type;
     double delta;
 };
-enum SourceType
-{
-    SOURCE_FILE
-};
-struct StreamInfo
-{
-    SourceType sourceType;
-    const char *sourceName;
-};
 //--------------
 
 
@@ -36,7 +28,7 @@ class Action
 
 private:
     SceneManager sceneManager;
-    BaseManager loadManager;
+    LoadManager loadManager;
     BaseManager paintManager;
     BaseManager transformManager;
 

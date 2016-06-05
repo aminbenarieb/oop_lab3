@@ -14,12 +14,28 @@ Facade::~Facade()
     delete alertWindowService;
 }
 
-void Facade::uploadModelFromFile()
+void Facade::processStream(StreamInfo streamInfo)
+{
+    switch(streamInfo.sourceType)
+    {
+        case SOURCE_FILE:
+            if(streamInfo.sourceName == NULL)
+            {
+                streamInfo.sourceName = alertWindowService->selectFile().c_str();;
+            }
+            break;
+        default:
+            throw EmptyStreamSourceException();
+            break;
+    }
+}
+
+void Facade::uploadModelFromFile(StreamInfo streamInfo)
 {
     try
     {
-        const char* fileName = alertWindowService->selectFile().c_str();
-        StreamInfo streamInfo = {SOURCE_FILE, fileName};
+        processStream(streamInfo);
+
         AddModel addModel(this->action, streamInfo);
         addModel.execute();
     }
@@ -28,12 +44,12 @@ void Facade::uploadModelFromFile()
         this->alertWindowService->showErrorMessage(exc.what());
     }
 }
-void Facade::uploadCameraFromFile()
+void Facade::uploadCameraFromFile(StreamInfo streamInfo)
 {
     try
     {
-        const char* fileName = alertWindowService->selectFile().c_str();
-        StreamInfo streamInfo = {SOURCE_FILE, fileName};
+        processStream(streamInfo);
+
         AddCamera addCamera(this->action, streamInfo);
         addCamera.execute();
     }

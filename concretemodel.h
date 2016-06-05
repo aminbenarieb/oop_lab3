@@ -10,16 +10,19 @@ private:
     List<Edge>  edges;
 
 public:
+    RefinedModelImp();
     ~RefinedModelImp();
 
     virtual List<Point>& getPoints();
     virtual List<Edge>& getEdges();
 
     virtual void addPoint(Point&);
+    virtual void addPoint(double,double,double);
     virtual void addEdge(Edge&);
+    virtual void addEdge(Point*,Point*);
 
-    virtual size_t getPointsCount();
-    virtual size_t getEdgesCount();
+    virtual size_t getPointsCount() const;
+    virtual size_t getEdgesCount() const;
 
     virtual void transform(const BaseTransformer&);
 
@@ -41,10 +44,12 @@ public:
     List<Edge>& getEdges();
 
     void addPoint(Point&);
+    void addPoint(double,double,double);
     void addEdge(Edge&);
+    void addEdge(Point*,Point*);
 
-    size_t getPointsCount();
-    size_t getEdgesCount();
+    size_t getPointsCount() const;
+    size_t getEdgesCount() const;
 
     virtual void transform(const BaseTransformer&);
 

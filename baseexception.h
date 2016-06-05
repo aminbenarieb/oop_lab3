@@ -13,5 +13,17 @@ public:
     }
 };
 
+class MemoryException : public BaseException
+{
+public:
+    using std::exception::what;
+    const char* what()
+    {
+       return "Unable to allocate memory";
+    }
+};
+
+
+
 
 #endif // EXCEPTION_H

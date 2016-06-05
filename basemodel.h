@@ -13,10 +13,12 @@ public:
     virtual void transform(const BaseTransformer&) = 0;
 
     virtual void addPoint(Point&) = 0;
+    virtual void addPoint(double,double,double) = 0;
     virtual void addEdge(Edge&) = 0;
+    virtual void addEdge(Point*,Point*) = 0;
 
-    virtual List<Point>& getPoints() const = 0;
-    virtual List<Edge>& getEdges() const = 0;
+    virtual List<Point>& getPoints() = 0;
+    virtual List<Edge>& getEdges()  = 0;
 
     virtual size_t getPointsCount() const = 0;
     virtual size_t getEdgesCount() const = 0;
@@ -33,7 +35,9 @@ public:
     virtual void transform(const BaseTransformer&) = 0;
 
     virtual void addPoint(Point&) = 0;
+    virtual void addPoint(double,double,double) = 0;
     virtual void addEdge(Edge&) = 0;
+    virtual void addEdge(Point*,Point*) = 0;
 
     virtual List<Point>& getPoints() = 0;
     virtual List<Edge>& getEdges() = 0;

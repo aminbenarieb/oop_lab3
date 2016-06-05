@@ -26,6 +26,7 @@ AddModel::AddModel(Action *action, StreamInfo streamInfo){
 }
 void AddModel::execute()
 {
+    this->action->uploadModel(streamInfo);
 }
 
 AddCamera::AddCamera(Action *action, StreamInfo streamInfo){

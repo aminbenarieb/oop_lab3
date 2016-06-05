@@ -26,7 +26,10 @@ SOURCES += main.cpp\
     matrix.cpp \
     edge.cpp \
     concretemodel.cpp \
-    scenemanager.cpp
+    scenemanager.cpp \
+    loadmanager.cpp \
+    filestream.cpp \
+    concretefactory.cpp
 
 HEADERS  += mainwindow.h \
     concreteexception.h \
@@ -62,7 +65,12 @@ HEADERS  += mainwindow.h \
     matrix.h \
     edge.h \
     concretemodel.h \
-    scenemanager.h
+    scenemanager.h \
+    loadmanager.h \
+    basestream.h \
+    abstractfactory.h \
+    filestream.h \
+    concretefactory.h
 
 FORMS    += mainwindow.ui
 

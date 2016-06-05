@@ -319,6 +319,32 @@ bool List<type_t>::operator!=(const List<type_t> &list) const
     return false;
 }
 
+template <typename type_t>
+type_t& List<type_t>::operator[](size_t n)
+{
+    if (n >= this->size())
+    {
+        throw ExceptionRange();
+    }
+    size_t i = 0;
+    Iterator<type_t> it(*this);
+    for (;i < n ;i++, it++);
+    return *it;
+}
+
+template <typename type_t>
+const type_t& List<type_t>::operator[](size_t n) const
+{
+    if (n >= this->size())
+        throw ExceptionRange();
+    size_t i = 0;
+    IteratorConst<type_t> it(*this);
+    for (;i <= n ;i++, it++);
+    return *it;
+}
+
+
+
 template<typename type_t>
 std::ostream& operator<<(std::ostream& stream, const List<type_t>& list)
 {
