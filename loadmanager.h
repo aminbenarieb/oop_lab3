@@ -12,7 +12,7 @@ public:
     LoadManager();
     ~LoadManager();
 
-     BaseObject* loadObject(const StreamInfo);
+     BaseObject* loadObject(const StreamInfo*);
 };
 
 #endif // LOADMANAGER_H

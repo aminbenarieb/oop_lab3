@@ -10,7 +10,7 @@ private:
     AlertWindowService* alertWindowService;
     Action* action;
 
-    void processStream(StreamInfo);
+    void processStream(StreamInfo*);
 
 public:
     Facade();

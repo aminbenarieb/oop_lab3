@@ -43,8 +43,8 @@ public:
     FileStream(AbstractFactory *);
     ~FileStream();
 
-    virtual BaseObject* loadModel(const  StreamInfo);
-    virtual BaseObject* loadCamera(const  StreamInfo);
+    virtual BaseObject* loadModel(const char*);
+    virtual BaseObject* loadCamera(const char*);
 };
 
 #endif // FILESTREAM_H

@@ -2,7 +2,7 @@
 #define BASEOBJECT_H
 
 class BaseTransformer;
-class BaseObject{
+class BaseObject {
 public:
     virtual ~BaseObject() {}
     virtual void addObject(BaseObject *){}

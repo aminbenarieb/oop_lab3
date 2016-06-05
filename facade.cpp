@@ -1,6 +1,7 @@
 #include "facade.h"
 #include "baseexception.h"
 #include "concretecommand.h"
+#include "qdebug.h"
 
 Facade::Facade()
 {
@@ -14,14 +15,14 @@ Facade::~Facade()
     delete alertWindowService;
 }
 
-void Facade::processStream(StreamInfo streamInfo)
+void Facade::processStream(StreamInfo *streamInfo)
 {
-    switch(streamInfo.sourceType)
+    switch(streamInfo->sourceType)
     {
         case SOURCE_FILE:
-            if(streamInfo.sourceName == NULL)
+            if(streamInfo->sourceName == NULL)
             {
-                streamInfo.sourceName = alertWindowService->selectFile().c_str();;
+                streamInfo->sourceName = alertWindowService->selectFile().c_str();;
             }
             break;
         default:
@@ -34,13 +35,14 @@ void Facade::uploadModelFromFile(StreamInfo streamInfo)
 {
     try
     {
-        processStream(streamInfo);
+        processStream(&streamInfo);
 
-        AddModel addModel(this->action, streamInfo);
+        AddModel addModel(this->action, &streamInfo);
         addModel.execute();
     }
     catch(BaseException& exc)
     {
+        qDebug()<<exc.what();
         this->alertWindowService->showErrorMessage(exc.what());
     }
 }
@@ -48,7 +50,7 @@ void Facade::uploadCameraFromFile(StreamInfo streamInfo)
 {
     try
     {
-        processStream(streamInfo);
+        processStream(&streamInfo);
 
         AddCamera addCamera(this->action, streamInfo);
         addCamera.execute();

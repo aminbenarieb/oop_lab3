@@ -4,6 +4,8 @@
 #import "baseobject.h"
 #include "abstractfactory.h"
 
+#include "qdebug.h"
+
 enum SourceType
 {
     SOURCE_UNDEFINED,
@@ -32,7 +34,8 @@ protected:
 
 public:
     virtual ~BaseStream() {}
-    virtual BaseObject* loadModel(const StreamInfo) = 0;
+    virtual BaseObject* loadModel(const char*) = 0;
+    virtual BaseObject* loadCamera(const char*) = 0;
 };
 
 #endif // BASESTREAM_H

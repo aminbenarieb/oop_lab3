@@ -3,21 +3,24 @@
 
 Action::Action()
 {
-    this->loadManager = LoadManager();
+    this->loadManager = new LoadManager();
     this->paintManager = BaseManager();
     this->transformManager = BaseManager();
-    this->sceneManager = SceneManager();
+    this->sceneManager = new SceneManager();
 }
 
-Action::~Action(){}
+Action::~Action(){
 
-void Action::uploadModel(StreamInfo streamInfo)
+    delete this->loadManager;
+    delete this->sceneManager;
+}
+
+void Action::uploadModel(const StreamInfo *streamInfo)
 {
-    this->sceneManager.addObject( this->loadManager.loadObject(streamInfo) );
-    qDebug()<<*(this->sceneManager.currentCamera());
+    this->sceneManager->addObject(  this->loadManager->loadObject(streamInfo) );
 }
 
-void Action::uploadCamera(StreamInfo)
+void Action::uploadCamera(const StreamInfo*)
 {
 
 }

@@ -70,6 +70,8 @@ bool FileStream::processPoints(BaseModel *model)
     {
         return false;
     }
+
+    return true;
 }
 bool FileStream::processEdges(BaseModel *model)
 {
@@ -84,9 +86,11 @@ bool FileStream::processEdges(BaseModel *model)
     {
         return false;
     }
+
+    return true;
 }
 
-BaseObject* FileStream::loadModel(const StreamInfo)
+BaseObject* FileStream::loadModel(const char *fileName)
 {
     BaseModel* model = this->factory->createModel();
     if (!model)
@@ -94,16 +98,19 @@ BaseObject* FileStream::loadModel(const StreamInfo)
         throw MemoryException();
     }
 
+    openFile(fileName);
     if (!this->processPoints(model) || !this->processEdges(model))
     {
         delete model;
+        closeFile();
         throw InvalidFileException();
     }
+    closeFile();
 
     return model;
 
 }
-BaseObject* FileStream::loadCamera(const StreamInfo)
+BaseObject* FileStream::loadCamera(const char*)
 {
 
 }

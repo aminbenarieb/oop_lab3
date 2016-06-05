@@ -26,9 +26,9 @@ class AddModel : public BaseCommand
 {
 private:
     Action *action;
-    StreamInfo streamInfo;
+    const StreamInfo *streamInfo;
 public:
-    AddModel(Action*, StreamInfo);
+    AddModel(Action*, const StreamInfo*);
     virtual void execute();
 };
 

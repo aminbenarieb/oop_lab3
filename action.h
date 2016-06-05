@@ -27,8 +27,8 @@ class Action
 {
 
 private:
-    SceneManager sceneManager;
-    LoadManager loadManager;
+    SceneManager *sceneManager;
+    LoadManager *loadManager;
     BaseManager paintManager;
     BaseManager transformManager;
 
@@ -37,14 +37,14 @@ public:
     Action(BaseScene*);
     ~Action();
 
-    void uploadModel(StreamInfo);
-    void uploadCamera(StreamInfo);
+    void uploadModel(const StreamInfo*);
+    void uploadCamera(const StreamInfo*);
 
 //    void setCanvas(const CanvasInfo& info);
     void drawModel();
 
-    void transformModel(TransformInfo);
-    void transformCamera(TransformInfo);
+    void transformModel(const TransformInfo*);
+    void transformCamera(const TransformInfo*);
 
     void clearScene();
 };

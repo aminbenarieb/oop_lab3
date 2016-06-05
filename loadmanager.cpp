@@ -12,7 +12,7 @@ LoadManager::~LoadManager()
     delete this->stream;
 }
 
-BaseObject* LoadManager::loadObject(const StreamInfo streamInfo)
+BaseObject* LoadManager::loadObject(const StreamInfo *streamInfo)
 {
-    return this->stream->loadModel(streamInfo);
+    return this->stream->loadModel(streamInfo->sourceName);
 }
