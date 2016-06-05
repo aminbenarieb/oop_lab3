@@ -11,7 +11,7 @@ public:
 
     virtual Point getCenter() = 0;
     virtual double getAlpha() = 0;
-    virtual double geetBeta() = 0;
+    virtual double getBeta() = 0;
     virtual double getScale() = 0;
 
     virtual void transform(const BaseTransformer&) = 0;

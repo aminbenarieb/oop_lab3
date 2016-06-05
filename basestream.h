@@ -35,7 +35,7 @@ protected:
 public:
     virtual ~BaseStream() {}
     virtual BaseObject* loadModel(const char*) = 0;
-    virtual BaseObject* loadCamera(const char*) = 0;
+    virtual BaseCamera* loadCamera(const char*) = 0;
 };
 
 #endif // BASESTREAM_H

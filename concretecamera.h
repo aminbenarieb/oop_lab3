@@ -3,7 +3,7 @@
 
 #include "basecamera.h"
 
-class RefinedCameraImp : CameraImp
+class RefinedCameraImp : public CameraImp
 {
 private:
     Point center;

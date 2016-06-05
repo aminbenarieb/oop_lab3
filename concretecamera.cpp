@@ -1,27 +1,36 @@
 #include "concretecamera.h"
+#include "basetransformer.h"
 
-
-RefinedCameraImp::RefinedCameraImp(Point,double, double, double)
+RefinedCameraImp::RefinedCameraImp(Point center, double alpha, double beta, double scale)
 {
+    this->center = center;
+    this->alpha = alpha;
+    this->beta = beta;
+    this->scale = scale;
 }
 RefinedCameraImp::~RefinedCameraImp()
 {
 }
 
-double    RefinedCameraImp::getAlpha(){
-
+double    RefinedCameraImp::getAlpha()
+{
+    return this->alpha;
 }
-double    RefinedCameraImp::getBeta(){
-
+double    RefinedCameraImp::getBeta()
+{
+    return this->beta;
 }
-double    RefinedCameraImp::getScale(){
-
+double    RefinedCameraImp::getScale()
+{
+    return this->scale;
 }
-Point RefinedCameraImp::getCenter(){
-
+Point RefinedCameraImp::getCenter()
+{
+    return this->center;
 }
-void      RefinedCameraImp::transform(const BaseTransformer&){
-
+void      RefinedCameraImp::transform(const BaseTransformer& transformer)
+{
+    transformer.transformParams(&alpha, &beta, &scale);
 }
 
 
@@ -41,7 +50,7 @@ double    RefinedCamera::getAlpha()
 }
 double    RefinedCamera::getBeta()
 {
-    return this->imp->geetBeta();
+    return this->imp->getBeta();
 }
 double    RefinedCamera::getScale()
 {
