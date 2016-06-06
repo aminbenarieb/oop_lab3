@@ -1,13 +1,12 @@
 #include "transformmanager.h"
-#include "concretetransformer.h"
 
 #include "basemodel.h"
 #include "basecamera.h"
 
 
-TransformManager::TransformManager()
+TransformManager::TransformManager(BaseTransformer *transformer)
 {
-    this->transformer = new ConcreteTransformer();
+    this->transformer = transformer;
 }
 TransformManager::~TransformManager()
 {

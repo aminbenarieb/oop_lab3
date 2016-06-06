@@ -1,10 +1,9 @@
 #include "loadmanager.h"
-#include "filestream.h"
-#include "concretefactory.h"
 
-LoadManager::LoadManager()
+
+LoadManager::LoadManager(BaseStream *stream)
 {
-    this->stream = new FileStream(new FileStreamImp, new ConcreteFactory);
+    this->stream = stream;
 }
 
 LoadManager::~LoadManager()

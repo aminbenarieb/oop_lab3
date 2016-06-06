@@ -3,9 +3,9 @@
 
 Action::Action(const CanvasInfo *canvasInfo)
 {
-    this->loadManager      = new LoadManager();
+    this->loadManager      = new LoadManager(new FileStream(new FileStreamImp, new ConcreteFactory));
     this->paintManager     = new PaintManager(canvasInfo);
-    this->transformManager = new TransformManager();
+    this->transformManager = new TransformManager(new ConcreteTransformer);
     this->sceneManager     = new SceneManager(new ConcreteScene);
 }
 

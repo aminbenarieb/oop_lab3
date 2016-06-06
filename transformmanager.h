@@ -2,7 +2,7 @@
 #define TRANSFORMMANAGER_H
 
 #include "basemanager.h"
-#include "basetransformer.h"
+#include "concretetransformer.h"
 
 class TransformManager : BaseManager
 {
@@ -10,7 +10,7 @@ private:
     BaseTransformer *transformer;
 
 public:
-    TransformManager();
+    TransformManager(BaseTransformer *);
     ~TransformManager();
 
     void transformModel(BaseObject*, const TransformInfo*);

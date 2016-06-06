@@ -2,6 +2,8 @@
 #define LOADMANAGER_H
 
 #include "basestream.h"
+#include "filestream.h"
+#include "concretefactory.h"
 
 class LoadManager
 {
@@ -9,7 +11,7 @@ private:
     BaseStream *stream;
 
 public:
-    LoadManager();
+    LoadManager(BaseStream *);
     ~LoadManager();
 
      BaseObject* loadObject(const StreamInfo*);
