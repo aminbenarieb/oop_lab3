@@ -4,6 +4,8 @@
 #include <QKeyEvent>
 #include <QApplication>
 
+#define TRANSFORM_DELTA 5
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -32,11 +34,64 @@ void MainWindow::keyPressEvent(QKeyEvent *event)
 
     switch(event->key())
     {
-        case Qt::Key_Escape:
-            this->close();
-            break;
-        default:
-            QWidget::keyPressEvent(event);
+    case Qt::Key_W:
+        facade->transformModel({TRANSFORM_ROTATE_X, TRANSFORM_DELTA});
+        break;
+    case Qt::Key_S:
+        facade->transformModel({TRANSFORM_ROTATE_X, -TRANSFORM_DELTA});
+        break;
+    case Qt::Key_A:
+        facade->transformModel({TRANSFORM_ROTATE_Y, TRANSFORM_DELTA});
+        break;
+    case Qt::Key_D:
+        facade->transformModel({TRANSFORM_ROTATE_Y, -TRANSFORM_DELTA});
+        break;
+    case Qt::Key_Q:
+        facade->transformModel({TRANSFORM_ROTATE_Z, TRANSFORM_DELTA});
+        break;
+    case Qt::Key_R:
+        facade->transformModel({TRANSFORM_ROTATE_Z, -TRANSFORM_DELTA});
+        break;
+
+    case Qt::Key_I:
+        facade->transformCamera({TRANSFORM_ROTATE_X, TRANSFORM_DELTA});
+        break;
+    case Qt::Key_K:
+        facade->transformCamera({TRANSFORM_ROTATE_X, -TRANSFORM_DELTA});
+        break;
+    case Qt::Key_J:
+        facade->transformCamera({TRANSFORM_ROTATE_Y, TRANSFORM_DELTA});
+        break;
+    case Qt::Key_L:
+        facade->transformCamera({TRANSFORM_ROTATE_Y, -TRANSFORM_DELTA});
+        break;
+    case Qt::Key_U:
+        facade->transformCamera({TRANSFORM_ROTATE_Z, TRANSFORM_DELTA});
+        break;
+    case Qt::Key_O:
+        facade->transformCamera({TRANSFORM_ROTATE_Z, -TRANSFORM_DELTA});
+        break;
+
+
+    case Qt::Key_Z:
+        facade->transformCamera({TRANSFORM_SCALE, TRANSFORM_DELTA});
+        break;
+    case Qt::Key_X:
+        facade->transformCamera({TRANSFORM_SCALE, -TRANSFORM_DELTA});
+        break;
+
+    case Qt::Key_N:
+        facade->transformCamera({TRANSFORM_SCALE, TRANSFORM_DELTA});
+        break;
+    case Qt::Key_M:
+        facade->transformCamera({TRANSFORM_SCALE, -TRANSFORM_DELTA});
+        break;
+
+    case Qt::Key_Escape:
+        this->close();
+        break;
+    default:
+        QWidget::keyPressEvent(event);
     }
 }
 
