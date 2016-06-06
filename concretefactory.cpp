@@ -5,11 +5,11 @@ ConcreteFactory::ConcreteFactory()
 
 }
 
-RefinedCamera * ConcreteFactory::createCamera(double x, double y, double z, double alpha, double beta, double scale)
+ConcreteCamera * ConcreteFactory::createCamera(double x, double y, double z, double alpha, double beta, double scale)
 {
-    return new RefinedCamera(new RefinedCameraImp(Point(x,y,z),alpha,beta,scale));
+    return new ConcreteCamera(new ConcreteCameraImp(Point(x,y,z),alpha,beta,scale));
 }
-RefinedModel  *ConcreteFactory::createModel()
+ConcreteModel  *ConcreteFactory::createModel()
 {
-    return new RefinedModel(new RefinedModelImp);
+    return new ConcreteModel(new ConcreteModelImp);
 }

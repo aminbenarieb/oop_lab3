@@ -29,7 +29,7 @@ private:
     const StreamInfo *streamInfo;
 public:
     AddModel(Action*, const StreamInfo*);
-    virtual void execute();
+    virtual void execute() override;
 };
 
 class AddCamera : public BaseCommand
@@ -39,7 +39,7 @@ private:
     StreamInfo *streamInfo;
 public:
     AddCamera(Action*, StreamInfo*);
-    virtual void execute();
+    virtual void execute() override;
 };
 
 class TransformModel : public BaseCommand
@@ -49,7 +49,7 @@ private:
     TransformInfo transformInfo;
 public:
     TransformModel(Action*, TransformInfo);
-    virtual void execute();
+    virtual void execute() override;
 };
 
 class TransformCamera : public BaseCommand
@@ -59,7 +59,7 @@ private:
     TransformInfo transformInfo;
 public:
     TransformCamera(Action*, TransformInfo);
-    virtual void execute();
+    virtual void execute() override;
 };
 
 #endif // CONCRETECOMMAND_H
