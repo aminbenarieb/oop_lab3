@@ -24,7 +24,7 @@ void PaintManager::drawObject(BaseObject *object, BaseCamera *camera)
 void PaintManager::drawObject(CompositeObject *object, BaseCamera *camera)
 {
     for (Iterator<BaseObject*> it = object->begin(); it != object->end(); it++)
-        this->painter->draw(this->canvas, *it, camera);
+        this->drawObject(*it, camera);
 }
 
 void PaintManager::drawScene(BaseScene *scene, Iterator<BaseCamera *> &cameraIterator)
