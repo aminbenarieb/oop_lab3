@@ -19,11 +19,6 @@ bool Edge::operator!=(const Edge& edge)
     return !(*this == edge);
 }
 
-void Edge::transform(const BaseTransformer &transformer)
-{
-    this->firstPoint->transform(transformer);
-    this->lastPoint->transform(transformer);
-}
 
 Point* Edge::getLastPoint() const
 {

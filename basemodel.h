@@ -10,7 +10,6 @@ class ModelImp
 {
 public:
     virtual ~ModelImp() {}
-    virtual void transform(const BaseTransformer&) = 0;
 
     virtual void addPoint(Point&) = 0;
     virtual void addPoint(double,double,double) = 0;
@@ -31,8 +30,6 @@ protected:
 
 public:
     virtual ~BaseModel() {}
-
-    virtual void transform(const BaseTransformer&) = 0;
 
     virtual void addPoint(Point&) = 0;
     virtual void addPoint(double,double,double) = 0;

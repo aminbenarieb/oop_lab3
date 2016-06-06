@@ -44,15 +44,6 @@ size_t ConcreteModelImp::getEdgesCount() const
     return this->edges.size();
 }
 
-void ConcreteModelImp::transform(const BaseTransformer &transformer)
-{
-    Iterator<Point> iterator(this->points);
-    while (!iterator.isDone())
-    {
-        (*iterator++).transform(transformer);
-    }
-}
-
 
 ConcreteModel::ConcreteModel(ModelImp* imp){
     this->imp = imp;
@@ -106,9 +97,4 @@ size_t ConcreteModel::getPointsCount() const
 size_t ConcreteModel::getEdgesCount() const
 {
     return this->imp->getEdgesCount();
-}
-
-void ConcreteModel::transform(const BaseTransformer &transformer)
-{
-    this->transform(transformer);
 }

@@ -19,8 +19,6 @@ public:
     virtual double getBeta();
     virtual double getScale();
     virtual Point getCenter();
-
-    virtual void transform(const BaseTransformer&);
 };
 
 
@@ -34,8 +32,6 @@ public:
     double getBeta();
     double getScale();
     virtual Point getCenter();
-
-    virtual void transform(const BaseTransformer&);
 
 };
 

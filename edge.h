@@ -26,8 +26,6 @@ public:
     void setFirstPoint(Point *value);
     Point *getLastPoint() const;
     void setLastPoint(Point *value);
-
-    virtual void transform(const BaseTransformer&);
 };
 
 #endif // BASEEDGE_H

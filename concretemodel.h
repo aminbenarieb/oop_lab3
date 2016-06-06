@@ -24,8 +24,6 @@ public:
     virtual size_t getPointsCount() const;
     virtual size_t getEdgesCount() const;
 
-    virtual void transform(const BaseTransformer&);
-
 };
 
 class ConcreteModel : public BaseModel
@@ -50,8 +48,6 @@ public:
 
     size_t getPointsCount() const;
     size_t getEdgesCount() const;
-
-    virtual void transform(const BaseTransformer&);
 
 };
 

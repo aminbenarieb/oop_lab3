@@ -43,7 +43,7 @@ void AddCamera::execute()
     this->action->uploadCamera(streamInfo);
 }
 
-TransformModel::TransformModel(Action *action, TransformInfo transformInfo){
+TransformModel::TransformModel(Action *action, const TransformInfo *transformInfo){
 
     this->action = action;
     this->transformInfo = transformInfo;
@@ -51,10 +51,10 @@ TransformModel::TransformModel(Action *action, TransformInfo transformInfo){
 }
 void TransformModel::execute()
 {
-
+    this->action->transformModel(transformInfo);
 }
 
-TransformCamera::TransformCamera(Action *action, TransformInfo transformInfo){
+TransformCamera::TransformCamera(Action *action, const TransformInfo *transformInfo){
 
     this->action = action;
     this->transformInfo = transformInfo;
@@ -62,5 +62,5 @@ TransformCamera::TransformCamera(Action *action, TransformInfo transformInfo){
 }
 void TransformCamera::execute()
 {
-
+    this->action->transformCamera(transformInfo);
 }

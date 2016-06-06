@@ -14,7 +14,6 @@ public:
     virtual double getBeta() = 0;
     virtual double getScale() = 0;
 
-    virtual void transform(const BaseTransformer&) = 0;
 };
 
 class BaseCamera : public BaseObject
@@ -26,7 +25,6 @@ public:
     virtual ~BaseCamera(){};
 
     virtual Point getCenter() = 0;
-    virtual void transform(const BaseTransformer&) = 0;
 };
 
 #endif // BASECAMERA_H

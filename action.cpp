@@ -42,9 +42,9 @@ void Action::clearScene()
 
 void Action::transformModel(const TransformInfo *transformInfo)
 {
-    this->transformManager->transformObject( *this->sceneManager->currentObject(), transformInfo);
+    this->transformManager->transformModel( *this->sceneManager->currentObject(), transformInfo);
 }
 void Action::transformCamera(const TransformInfo *transformInfo)
 {
-    this->transformManager->transformObject( *this->sceneManager->currentCamera(), transformInfo);
+    this->transformManager->transformCamera( *this->sceneManager->currentCamera(), transformInfo);
 }

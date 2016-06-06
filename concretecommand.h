@@ -46,9 +46,9 @@ class TransformModel : public BaseCommand
 {
 private:
     Action *action;
-    TransformInfo transformInfo;
+    const TransformInfo *transformInfo;
 public:
-    TransformModel(Action*, TransformInfo);
+    TransformModel(Action*, const TransformInfo*);
     virtual void execute() override;
 };
 
@@ -56,9 +56,9 @@ class TransformCamera : public BaseCommand
 {
 private:
     Action *action;
-    TransformInfo transformInfo;
+    const TransformInfo *transformInfo;
 public:
-    TransformCamera(Action*, TransformInfo);
+    TransformCamera(Action*, const TransformInfo*);
     virtual void execute() override;
 };
 

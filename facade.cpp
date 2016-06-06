@@ -96,7 +96,7 @@ void Facade::transformModel(TransformInfo transformInfo){
 
     try
     {
-        TransformModel transformModel(this->action, transformInfo);
+        TransformModel transformModel(this->action, &transformInfo);
         transformModel.execute();
     }
     catch(BaseException& exc)
@@ -108,7 +108,7 @@ void Facade::transformCamera(TransformInfo transformInfo){
 
     try
     {
-        TransformCamera transformCamera(this->action, transformInfo);
+        TransformCamera transformCamera(this->action, &transformInfo);
         transformCamera.execute();
     }
     catch(BaseException& exc)

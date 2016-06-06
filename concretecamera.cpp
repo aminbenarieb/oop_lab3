@@ -28,10 +28,6 @@ Point ConcreteCameraImp::getCenter()
 {
     return this->center;
 }
-void      ConcreteCameraImp::transform(const BaseTransformer& transformer)
-{
-    transformer.transformParams(&alpha, &beta, &scale);
-}
 
 
 
@@ -59,8 +55,4 @@ double    ConcreteCamera::getScale()
 Point ConcreteCamera::getCenter()
 {
     return this->imp->getCenter();
-}
-void      ConcreteCamera::transform(const BaseTransformer& transformManager)
-{
-    this->imp->transform(transformManager);
 }

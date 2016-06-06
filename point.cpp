@@ -74,8 +74,3 @@ void Point::setCoordList(double list[4])
     this->y = list[1];
     this->z = list[2];
 }
-
-void Point::transform(const BaseTransformer& transformer)
-{
-    transformer.transformPoint(this);
-}

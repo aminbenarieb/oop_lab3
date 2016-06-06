@@ -26,8 +26,6 @@ public:
     void getCoordList(double lst[4]);
     void setCoordList(double lst[4]);
 
-    void transform(const BaseTransformer&);
-
     double getX() const;
     void setX(double value);
     double getY() const;
