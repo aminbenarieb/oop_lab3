@@ -17,6 +17,8 @@ public:
     void loadModel();
     void loadCamera();
     void drawScene();
+    void transformModel();
+    void transformCamera();
 };
 
 #endif // TESTER_H

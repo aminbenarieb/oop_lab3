@@ -27,3 +27,20 @@ void Tester::drawScene()
 {
     facade->drawScene();
 }
+
+void Tester::transformModel()
+{
+    facade->transformModel({TRANSFORM_ROTATE_X, 1});
+    facade->transformModel({TRANSFORM_ROTATE_Y, 1});
+    facade->transformModel({TRANSFORM_ROTATE_Z, 1});
+    facade->transformModel({TRANSFORM_SCALE, 1});
+}
+
+
+void Tester::transformCamera()
+{
+    facade->transformCamera({TRANSFORM_ROTATE_X, 1});
+    facade->transformCamera({TRANSFORM_ROTATE_Y, 1});
+    facade->transformCamera({TRANSFORM_ROTATE_Z, 1});
+    facade->transformCamera({TRANSFORM_SCALE, 1});
+}
