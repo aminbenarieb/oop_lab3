@@ -19,8 +19,7 @@ void Painter::setCoordsForProjection(List<Point> &pointList, BaseCamera *camera)
         point.setY((tmp.getY() * camera->getCenter().getZ() + tmp.getZ()*camera->getCenter().getY()) /
                 (tmp.getZ() + camera->getCenter().getZ()));
 
-        tmp.setX(point.getX());
-        tmp.setY(point.getY());
+        iterator<<point;
         iterator++;
     }
 }
@@ -43,10 +42,10 @@ void Painter::drawEdges(BaseCanvas *canvas, BaseModel *model)
 void Painter::draw(BaseCanvas *canvas, BaseObject *object, BaseCamera *camera)
 {
     BaseModel* model = static_cast<BaseModel*>(object);
-    List<Point> tmp_p = model->getPoints();
+    List<Point> pointList = model->getPoints();
 
     this->setCoordsForProjection(model->getPoints(), camera);
     this->drawEdges(canvas, model);
 
-    model->getPoints() = tmp_p;
+    model->getPoints() = pointList;
 }

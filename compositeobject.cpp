@@ -29,7 +29,7 @@ void CompositeObject::removeAll()
     while(!iterator.isDone())
     {
         delete *iterator;
-        iterator.del();
+        iterator++;
     }
 
     if (this->getSize())
