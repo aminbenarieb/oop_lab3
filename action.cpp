@@ -13,6 +13,7 @@ Action::~Action(){
 
     delete this->loadManager;
     delete this->sceneManager;
+    delete this->paintManager;
 }
 
 void Action::uploadModel(const StreamInfo *streamInfo)
