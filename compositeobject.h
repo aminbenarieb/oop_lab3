@@ -14,7 +14,7 @@ public:
     CompositeObject();
     ~CompositeObject();
 
-    bool addObject(BaseObject*);
+    virtual bool addObject(BaseObject*) override;
     void removeAll();
 
     Iterator<BaseObject *> begin();

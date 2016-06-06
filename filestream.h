@@ -63,8 +63,8 @@ private:
 public:
     FileStreamImp();
     ~FileStreamImp();
-    virtual BaseObject* loadModel(const char*, BaseModel *);
-    virtual void loadCameraParams(const char*, double &,double &,double &, double &,double &,double &);
+    virtual BaseObject* loadModel(const char*, BaseModel *) override;
+    virtual void loadCameraParams(const char*, double &,double &,double &, double &,double &,double &) override;
 };
 
 class FileStream : public BaseStream
@@ -73,8 +73,8 @@ public:
     FileStream(FileStreamImp *, AbstractFactory *);
     ~FileStream();
 
-    virtual BaseObject* loadModel(const char*);
-    virtual BaseCamera* loadCamera(const char*);
+    virtual BaseObject* loadModel(const char*) override;
+    virtual BaseCamera* loadCamera(const char*) override;
 };
 
 #endif // FILESTREAM_H

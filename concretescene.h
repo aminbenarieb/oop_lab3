@@ -14,16 +14,16 @@ public:
     ConcreteScene();
     ~ConcreteScene();
 
-    virtual void clear();
+    virtual void clear() override;
 
-    virtual  Iterator<BaseObject *> addObject(BaseObject *);
-    virtual  Iterator<BaseCamera *> addCamera(BaseCamera *);
+    virtual  Iterator<BaseObject *> addObject(BaseObject *) override;
+    virtual  Iterator<BaseCamera *> addCamera(BaseCamera *) override;
 
-    virtual  Iterator<BaseCamera *> cameraBegin();
-    virtual  Iterator<BaseCamera *> cameraEnd();
+    virtual  Iterator<BaseCamera *> cameraBegin() override;
+    virtual  Iterator<BaseCamera *> cameraEnd() override;
 
-    virtual  Iterator<BaseObject *> compositorBegin();
-    virtual  Iterator<BaseObject *> compositorEnd();
+    virtual  Iterator<BaseObject *> compositorBegin() override;
+    virtual  Iterator<BaseObject *> compositorEnd() override;
 };
 
 #endif // CONCRETESCENE_H

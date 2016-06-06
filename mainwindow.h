@@ -19,7 +19,7 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
-    void display() override;
+    virtual void display() override;
 
 private:
     Ui::MainWindow *ui;

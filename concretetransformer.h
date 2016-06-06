@@ -9,8 +9,8 @@ public:
     ConcreteTransformer();
 
 
-    virtual void transformPoint(Point* const p) const;
-    virtual void transformParams(double*,double*,double*) const;
+    virtual void transformPoint(Point* const p) const override;
+    virtual void transformParams(double*,double*,double*) const override;
 };
 
 #endif // CONCRETETRANSFORMER_H

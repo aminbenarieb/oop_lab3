@@ -933,9 +933,9 @@
                           </DElement>
                          </base-DElement>
                          <object>{f3b0bea5-e7c2-49ba-9a77-602303368773}</object>
-                         <name>Scene</name>
+                         <name>ConcreteScene</name>
                          <pos>x:590;y:1165</pos>
-                         <rect>x:-40;y:-30;w:80;h:60</rect>
+                         <rect>x:-45;y:-30;w:90;h:60</rect>
                          <visual-role>6</visual-role>
                         </DObject>
                        </base-DObject>
@@ -1412,7 +1412,7 @@
                           </DElement>
                          </base-DElement>
                          <object>{624bf1b9-1129-4ad9-a734-9c84b807de83}</object>
-                         <name>RefinedModel</name>
+                         <name>ConcreteModel</name>
                          <pos>x:470;y:1480</pos>
                          <rect>x:-45;y:-30;w:90;h:60</rect>
                          <visual-role>6</visual-role>
@@ -1450,9 +1450,9 @@
                           </DElement>
                          </base-DElement>
                          <object>{89a4d74d-7b83-4ddd-ad22-1ca951194d8f}</object>
-                         <name>RefinedModelImp</name>
+                         <name>ConcreteModelImp</name>
                          <pos>x:580;y:1520</pos>
-                         <rect>x:-50;y:-30;w:100;h:60</rect>
+                         <rect>x:-55;y:-30;w:110;h:60</rect>
                          <visual-role>6</visual-role>
                         </DObject>
                        </base-DObject>
@@ -1488,7 +1488,7 @@
                           </DElement>
                          </base-DElement>
                          <object>{7b0fce3e-abc1-4810-a6a4-b9987f12abe1}</object>
-                         <name>ConreteCamera</name>
+                         <name>ConcreteCamera</name>
                          <pos>x:740;y:1535</pos>
                          <rect>x:-50;y:-30;w:100;h:60</rect>
                          <visual-role>6</visual-role>
@@ -4395,7 +4395,7 @@
                  <qlist>
                   <item>
                    <MClassMember>
-                    <uid>{ea965569-dc8b-4324-b0c1-4de8d1cb4d99}</uid>
+                    <uid>{89bc61b4-7efb-4892-b87a-b4167a776b7b}</uid>
                     <visibility>3</visibility>
                     <type>1</type>
                     <declaration>List&lt;BaseObject*&gt; object</declaration>
@@ -4601,7 +4601,7 @@
                     <uid>{f3b0bea5-e7c2-49ba-9a77-602303368773}</uid>
                    </MElement>
                   </base-MElement>
-                  <name>Scene</name>
+                  <name>ConcreteScene</name>
                   <relations>
                    <handles>
                     <handles>
@@ -5191,7 +5191,7 @@
                     <uid>{624bf1b9-1129-4ad9-a734-9c84b807de83}</uid>
                    </MElement>
                   </base-MElement>
-                  <name>RefinedModel</name>
+                  <name>ConcreteModel</name>
                   <relations>
                    <handles>
                     <handles>
@@ -5242,7 +5242,7 @@
                     <uid>{89a4d74d-7b83-4ddd-ad22-1ca951194d8f}</uid>
                    </MElement>
                   </base-MElement>
-                  <name>RefinedModelImp</name>
+                  <name>ConcreteModelImp</name>
                   <relations>
                    <handles>
                     <handles>
@@ -5349,7 +5349,7 @@
                     <uid>{7b0fce3e-abc1-4810-a6a4-b9987f12abe1}</uid>
                    </MElement>
                   </base-MElement>
-                  <name>ConreteCamera</name>
+                  <name>ConcreteCamera</name>
                   <relations>
                    <handles>
                     <handles>
@@ -6180,7 +6180,7 @@
                  <qlist>
                   <item>
                    <MClassMember>
-                    <uid>{c8b9a551-882c-41e3-9ef9-1a87c04ff92d}</uid>
+                    <uid>{d87ea709-6f58-41eb-9372-e57e6772bccc}</uid>
                     <type>1</type>
                     <declaration>asdasd</declaration>
                    </MClassMember>

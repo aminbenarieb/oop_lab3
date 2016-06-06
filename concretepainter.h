@@ -14,7 +14,7 @@ public:
     Painter();
     ~Painter();
 
-    virtual void draw(BaseCanvas *, BaseObject *, BaseCamera *);
+    virtual void draw(BaseCanvas *, BaseObject *, BaseCamera *) override;
 };
 
 #endif // PAINTER_H

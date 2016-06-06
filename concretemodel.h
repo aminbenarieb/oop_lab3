@@ -13,16 +13,16 @@ public:
     ConcreteModelImp();
     ~ConcreteModelImp();
 
-    virtual List<Point>& getPoints();
-    virtual List<Edge>& getEdges();
+    virtual List<Point>& getPoints() override;
+    virtual List<Edge>& getEdges() override;
 
-    virtual void addPoint(Point&);
-    virtual void addPoint(double,double,double);
-    virtual void addEdge(Edge&);
-    virtual void addEdge(Point*,Point*);
+    virtual void addPoint(Point&) override;
+    virtual void addPoint(double,double,double) override;
+    virtual void addEdge(Edge&) override;
+    virtual void addEdge(Point*,Point*) override;
 
-    virtual size_t getPointsCount() const;
-    virtual size_t getEdgesCount() const;
+    virtual size_t getPointsCount() const override;
+    virtual size_t getEdgesCount() const override;
 
 };
 
@@ -38,16 +38,16 @@ public:
 
     ~ConcreteModel();
 
-    List<Point>& getPoints();
-    List<Edge>& getEdges();
+    virtual List<Point>& getPoints() override;
+    virtual List<Edge>& getEdges() override;
 
-    void addPoint(Point&);
-    void addPoint(double,double,double);
-    void addEdge(Edge&);
-    void addEdge(Point*,Point*);
+    virtual void addPoint(Point&) override;
+    virtual void addPoint(double,double,double) override;
+    virtual void addEdge(Edge&) override;
+    virtual void addEdge(Point*,Point*) override;
 
-    size_t getPointsCount() const;
-    size_t getEdgesCount() const;
+    virtual size_t getPointsCount() const override;
+    virtual size_t getEdgesCount() const override;
 
 };
 

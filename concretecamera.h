@@ -15,10 +15,10 @@ public:
     ConcreteCameraImp(Point,double, double, double);
     ~ConcreteCameraImp();
 
-    virtual double getAlpha();
-    virtual double getBeta();
-    virtual double getScale();
-    virtual Point getCenter();
+    virtual double getAlpha() override;
+    virtual double getBeta() override;
+    virtual double getScale() override;
+    virtual Point getCenter() override;
 };
 
 
@@ -31,7 +31,7 @@ public:
     double getAlpha();
     double getBeta();
     double getScale();
-    virtual Point getCenter();
+    virtual Point getCenter() override;
 
 };
 

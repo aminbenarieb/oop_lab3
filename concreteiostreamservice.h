@@ -17,11 +17,12 @@ public:
     QAlertWindowServiceImp();
     ~QAlertWindowServiceImp();
 
-    void showErrorMessage(const char*);
-    void showInfoMessage(const char*);
+    virtual void showErrorMessage(const char*) override;
+    virtual void showInfoMessage(const char*) override;
 
-    std::string selectFile();
-    bool saveFileWithName(const char*);
+    virtual std::string selectFile() override;
+    virtual bool saveFileWithName(const char*) override;
+
 };
 
 class QAlertWindowService :  public IOStreamService
@@ -31,12 +32,12 @@ public:
     QAlertWindowService(IOStreamServiceImp *);
     ~QAlertWindowService();
 
-    void showErrorMessage(const char*);
-    void showInfoMessage(const char*);
+    virtual void showErrorMessage(const char*) override;
+    virtual void showInfoMessage(const char*) override;
 
-    bool saveFileWithName(const char*);
+    virtual bool saveFileWithName(const char*) override;
 
-    std::string selectFile();
+    virtual std::string selectFile() override;
 };
 
 

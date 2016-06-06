@@ -24,9 +24,9 @@ public:
     QCanvasImp(const CanvasInfo*);
     ~QCanvasImp();
 
-    void clear();
-    void drawEdge(double, double, double, double);
-    void drawPoint(double, double);
+    virtual void clear() override;
+    virtual void drawEdge(double, double, double, double) override;
+    virtual void drawPoint(double, double) override;
 };
 class Canvas : public BaseCanvas
 {
@@ -34,9 +34,9 @@ public:
     Canvas(BaseCanvasImp*);
     ~Canvas();
 
-    void clear();
-    void drawEdge(double, double, double, double);
-    void drawPoint(double, double);
+    virtual void clear() override;
+    virtual void drawEdge(double, double, double, double) override;
+    virtual void drawPoint(double, double) override;
 
 };
 
