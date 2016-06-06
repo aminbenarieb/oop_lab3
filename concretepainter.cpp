@@ -45,39 +45,11 @@ void Painter::draw(BaseCanvas *canvas, BaseObject *object, BaseCamera *camera)
     BaseModel* model = static_cast<BaseModel*>(object);
     List<Point> pointList = model->getPoints();
 
-    for (Iterator<Edge> it(model->getEdges()); !it.isDone(); it++)
-    {
-        Edge edge = (*it);
-        Point *fromPoint = edge.getFirstPoint();
-        Point *toPoint   = edge.getLastPoint();
-
-        qDebug()<<"Edge("<<fromPoint->getX()<<" "<<fromPoint->getY()<<") ("<<toPoint->getX()<<" "<<toPoint->getY()<<")";
-    }
-    qDebug()<<"\n\n";
-
     this->setCoordsForProjection(model->getPoints(), camera);
-
-    for (Iterator<Edge> it(model->getEdges()); !it.isDone(); it++)
-    {
-        Edge edge = (*it);
-        Point *fromPoint = edge.getFirstPoint();
-        Point *toPoint   = edge.getLastPoint();
-
-        qDebug()<<"Edge("<<fromPoint->getX()<<" "<<fromPoint->getY()<<") ("<<toPoint->getX()<<" "<<toPoint->getY()<<")";
-    }
-    qDebug()<<"\n\n";
-
     this->drawEdges(canvas, model);
 
-    model->getPoints() = pointList;
-
-    for (Iterator<Edge> it(model->getEdges()); !it.isDone(); it++)
+    for (size_t i = 0; i < pointList.size(); i++)
     {
-        Edge edge = (*it);
-        Point *fromPoint = edge.getFirstPoint();
-        Point *toPoint   = edge.getLastPoint();
-
-        qDebug()<<"Edge("<<fromPoint->getX()<<" "<<fromPoint->getY()<<") ("<<toPoint->getX()<<" "<<toPoint->getY()<<")";
+        model->getPoints()[i] = pointList[i];
     }
-    qDebug()<<"\n\n";
 }
