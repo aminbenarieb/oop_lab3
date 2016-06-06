@@ -31,7 +31,7 @@ void PaintManager::drawScene(BaseScene *scene, Iterator<BaseCamera *> &cameraIte
 {
     this->canvas->clear();
 
-    for (Iterator<BaseObject*> it = scene->compositorBegin(); it != scene->compositorEnd(); it++)
+    for (Iterator<BaseObject*> it = scene->compositorBegin(); !it.isDone(); it++)
     {
         if ((*it)->addObject(nullptr))
             this->drawObject(static_cast<CompositeObject*>(*it), *cameraIterator);
