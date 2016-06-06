@@ -37,7 +37,7 @@ public:
     }
 };
 
-class FileStream : public BaseStream
+class FileStreamImp : public BaseStreamImp
 {
 private:
     FILE* file;
@@ -61,7 +61,16 @@ private:
     void closeFile();
 
 public:
-    FileStream(AbstractFactory *);
+    FileStreamImp();
+    ~FileStreamImp();
+    virtual BaseObject* loadModel(const char*, BaseModel *);
+    virtual void loadCameraParams(const char*, double &,double &,double &, double &,double &,double &);
+};
+
+class FileStream : public BaseStream
+{
+public:
+    FileStream(FileStreamImp *, AbstractFactory *);
     ~FileStream();
 
     virtual BaseObject* loadModel(const char*);

@@ -4,7 +4,7 @@
 
 LoadManager::LoadManager()
 {
-    this->stream = new FileStream(new ConcreteFactory);
+    this->stream = new FileStream(new FileStreamImp, new ConcreteFactory);
 }
 
 LoadManager::~LoadManager()

@@ -1,42 +1,35 @@
 #include "filestream.h"
 #include <stdio.h>
 
-FileStream::FileStream(AbstractFactory *factory)
-{
-    this->factory = factory;
-}
+FileStreamImp::FileStreamImp(){}
+FileStreamImp::~FileStreamImp(){}
 
-FileStream::~FileStream()
-{
-
-}
-
-void FileStream::openFile(const char* fileName)
+void FileStreamImp::openFile(const char* fileName)
 {
     if ((this->file = fopen(fileName, "r")) == NULL)
     {
         throw FileOpenException();
     }
 }
-void FileStream::closeFile()
+void FileStreamImp::closeFile()
 {
     fclose(this->file);
 }
 
-bool FileStream::readCount(size_t& count)
+bool FileStreamImp::readCount(size_t& count)
 {
     return fscanf(this->file, "%lu", &count) == 1;
 }
-bool FileStream::readPoint(double &x, double &y, double &z)
+bool FileStreamImp::readPoint(double &x, double &y, double &z)
 {
     return fscanf(this->file, "%lf %lf %lf", &x, &y, &z) == 3;
 }
-bool FileStream::readEdge(size_t& from , size_t& to)
+bool FileStreamImp::readEdge(size_t& from , size_t& to)
 {
     return fscanf(this->file, "%lu %lu", &from, &to) == 2;
 }
 
-size_t FileStream::readPoints(size_t count, BaseModel* model)
+size_t FileStreamImp::readPoints(size_t count, BaseModel* model)
 {
     size_t i = 0;
     double x,y,z;
@@ -44,7 +37,7 @@ size_t FileStream::readPoints(size_t count, BaseModel* model)
         model->addPoint(x, y, z);
     return i;
 }
-size_t FileStream::readEdges(size_t count, size_t pointsCount, BaseModel*model)
+size_t FileStreamImp::readEdges(size_t count, size_t pointsCount, BaseModel*model)
 {
     size_t from, to, i;
     for (i = 0; i < count && readEdge(from, to) && from - 1 < pointsCount && to - 1 < pointsCount; i++)
@@ -55,7 +48,7 @@ size_t FileStream::readEdges(size_t count, size_t pointsCount, BaseModel*model)
     return i;
 }
 
-bool FileStream::processPoints(BaseModel *model)
+bool FileStreamImp::processPoints(BaseModel *model)
 {
     size_t count;
     if (!this->readCount(count))
@@ -71,7 +64,7 @@ bool FileStream::processPoints(BaseModel *model)
 
     return true;
 }
-bool FileStream::processEdges(BaseModel *model)
+bool FileStreamImp::processEdges(BaseModel *model)
 {
     size_t count;
     if (!this->readCount(count))
@@ -90,14 +83,53 @@ bool FileStream::processEdges(BaseModel *model)
 }
 
 
-bool FileStream::readParams(double &alpha, double &beta, double &scale)
+bool FileStreamImp::readParams(double &alpha, double &beta, double &scale)
 {
     return fscanf(this->file, "%lf %lf %lf", &alpha, &beta, &scale) == 3;
 }
-
-bool FileStream::processParams(double &x, double &y, double &z, double &alpha, double &beta, double &scale)
+bool FileStreamImp::processParams(double &x, double &y, double &z, double &alpha, double &beta, double &scale)
 {
     return readPoint(x,y,z) && readParams(alpha, beta, scale);
+}
+
+
+BaseObject* FileStreamImp::loadModel(const char *fileName, BaseModel *model)
+{
+
+    openFile(fileName);
+    if (!this->processPoints(model) || !this->processEdges(model))
+    {
+        delete model;
+        closeFile();
+        throw InvalidModelFileException();
+    }
+    closeFile();
+
+    return model;
+
+}
+void FileStreamImp::loadCameraParams(const char*fileName, double &x, double &y, double &z, double &alpha, double &beta, double &scale)
+{
+    openFile(fileName);
+    if ( !this->processParams(x, y, z, alpha, beta, scale) )
+    {
+        closeFile();
+        throw InvalidCameraFileException();
+    }
+    closeFile();
+}
+
+
+
+
+FileStream::FileStream(FileStreamImp *imp, AbstractFactory *factory)
+{
+    this->imp = imp;
+    this->factory = factory;
+}
+FileStream::~FileStream()
+{
+
 }
 
 
@@ -109,38 +141,19 @@ BaseObject* FileStream::loadModel(const char *fileName)
         throw MemoryException();
     }
 
-    openFile(fileName);
-    if (!this->processPoints(model) || !this->processEdges(model))
-    {
-        delete model;
-        closeFile();
-        throw InvalidModelFileException();
-    }
-    closeFile();
-
-
-    return model;
-
+    return this->imp->loadModel(fileName, model);
 }
 BaseCamera* FileStream::loadCamera(const char*fileName)
 {
+
     double x, y, z, alpha,beta,scale;
+    this->imp->loadCameraParams(fileName, x, y, z, alpha,beta,scale);
 
-    openFile(fileName);
-    if ( !this->processParams(x, y, z, alpha, beta, scale) )
-    {
-        closeFile();
-        throw InvalidCameraFileException();
-    }
-
-    BaseCamera* camera = this->factory->createCamera(x,y,z,alpha,beta,scale);
+    BaseCamera* camera = this->factory->createCamera(x, y, z, alpha,beta,scale);
     if (!camera)
     {
-        closeFile();
         throw MemoryException();
     }
-
-    closeFile();
 
     return camera;
 }

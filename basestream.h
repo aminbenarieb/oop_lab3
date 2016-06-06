@@ -27,10 +27,19 @@ public:
 };
 
 
+class BaseStreamImp
+{
+public:
+    virtual ~BaseStreamImp() {}
+    virtual BaseObject* loadModel(const char*, BaseModel*) = 0;
+    virtual void loadCameraParams(const char*, double &,double &,double &, double &,double &,double &) = 0;
+};
+
 class BaseStream
 {
 protected:
     AbstractFactory *factory;
+    BaseStreamImp *imp;
 
 public:
     virtual ~BaseStream() {}
