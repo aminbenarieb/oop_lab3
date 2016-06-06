@@ -6,7 +6,7 @@
 Facade::Facade(const CanvasInfo* canvasInfo)
 {
     this->action = new Action(canvasInfo);
-    this->alertWindowService = new AlertWindowService(new AlertWindowServiceImp);
+    this->alertWindowService = new QAlertWindowService(new QAlertWindowServiceImp);
 }
 
 Facade::~Facade()
@@ -81,6 +81,10 @@ void Facade::clearScene()
     {
         ClearScene clearScene(this->action);
         clearScene.execute();
+
+        DrawScene drawScene(this->action);
+        drawScene.execute();
+
     }
     catch(BaseException& exc)
     {

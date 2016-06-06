@@ -1789,9 +1789,9 @@
                           </DElement>
                          </base-DElement>
                          <object>{2c340eb1-0d92-41fa-85d2-82ace158261d}</object>
-                         <name>RefinedIOStreamService</name>
+                         <name>QAlertWindowService</name>
                          <pos>x:1080;y:325</pos>
-                         <rect>x:-70;y:-30;w:140;h:60</rect>
+                         <rect>x:-65;y:-30;w:130;h:60</rect>
                          <visual-role>9</visual-role>
                         </DObject>
                        </base-DObject>
@@ -1847,9 +1847,9 @@
                           </DElement>
                          </base-DElement>
                          <object>{a318bac6-10d9-4f66-a25c-1e2a9516e57b}</object>
-                         <name>ConcreteIOStreamServiceImp</name>
-                         <pos>x:1285;y:325</pos>
-                         <rect>x:-85;y:-30;w:170;h:60</rect>
+                         <name>QAlertWindowServiceImp</name>
+                         <pos>x:1280;y:320</pos>
+                         <rect>x:-75;y:-30;w:150;h:60</rect>
                          <visual-role>9</visual-role>
                         </DObject>
                        </base-DObject>
@@ -2373,7 +2373,7 @@
                     </item>
                    </qlist>
                   </elements>
-                  <last-modified>1465135026760</last-modified>
+                  <last-modified>1465201836353</last-modified>
                  </MDiagram>
                 </base-MDiagram>
                </MCanvasDiagram>
@@ -5463,7 +5463,7 @@
                     <uid>{2c340eb1-0d92-41fa-85d2-82ace158261d}</uid>
                    </MElement>
                   </base-MElement>
-                  <name>RefinedIOStreamService</name>
+                  <name>QAlertWindowService</name>
                   <relations>
                    <handles>
                     <handles>
@@ -5535,7 +5535,7 @@
                     <uid>{a318bac6-10d9-4f66-a25c-1e2a9516e57b}</uid>
                    </MElement>
                   </base-MElement>
-                  <name>ConcreteIOStreamServiceImp</name>
+                  <name>QAlertWindowServiceImp</name>
                   <relations>
                    <handles>
                     <handles>

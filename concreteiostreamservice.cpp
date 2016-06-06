@@ -3,36 +3,36 @@
 
 //MARK: Implementor
 
-AlertWindowServiceImp::AlertWindowServiceImp()
+QAlertWindowServiceImp::QAlertWindowServiceImp()
 {
 
 }
 
-AlertWindowServiceImp::~AlertWindowServiceImp()
+QAlertWindowServiceImp::~QAlertWindowServiceImp()
 {
 
 }
 
-void AlertWindowServiceImp::showErrorMessage(const char* text)
+void QAlertWindowServiceImp::showErrorMessage(const char* text)
 {
     QMessageBox::warning(this,"Unexpecter error occured", QString(text), QMessageBox::Ok);
 }
 
-void AlertWindowServiceImp::showInfoMessage(const char *text)
+void QAlertWindowServiceImp::showInfoMessage(const char *text)
 {
        QMessageBox alertWindow;
        alertWindow.setText(text);
        alertWindow.exec();
 }
 
-std::string AlertWindowServiceImp::selectFile()
+std::string QAlertWindowServiceImp::selectFile()
 {
     fileName = QFileDialog::getOpenFileName(0, "Upload file", "", "*.txt");
 
     return fileName.toStdString();
 }
 
-bool AlertWindowServiceImp::saveFileWithName(const char*)
+bool QAlertWindowServiceImp::saveFileWithName(const char*)
 {
 
     return false;
@@ -40,33 +40,33 @@ bool AlertWindowServiceImp::saveFileWithName(const char*)
 
 //MARK: Refined Class
 
-AlertWindowService::AlertWindowService(IOStreamServiceImp *imp){
+QAlertWindowService::QAlertWindowService(IOStreamServiceImp *imp){
 
     this->imp = imp;
 
 }
 
-AlertWindowService::~AlertWindowService()
+QAlertWindowService::~QAlertWindowService()
 {
     this->imp = nullptr;
 }
 
-void AlertWindowService::showErrorMessage(const char* text)
+void QAlertWindowService::showErrorMessage(const char* text)
 {
     this->imp->showErrorMessage(text);
 }
 
-void AlertWindowService::showInfoMessage(const char *text)
+void QAlertWindowService::showInfoMessage(const char *text)
 {
        this->imp->showInfoMessage(text);
 }
 
-std::string AlertWindowService::selectFile()
+std::string QAlertWindowService::selectFile()
 {
     return this->imp->selectFile();
 }
 
-bool AlertWindowService::saveFileWithName(const char* fileName)
+bool QAlertWindowService::saveFileWithName(const char* fileName)
 {
     return imp->saveFileWithName(fileName);
 }
