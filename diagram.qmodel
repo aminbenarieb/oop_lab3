@@ -185,7 +185,7 @@
                          </base-DElement>
                          <object>{afb13913-f9d1-4c94-b0c1-5acf66a81079}</object>
                          <name>AbstractFactory</name>
-                         <pos>x:1510;y:995</pos>
+                         <pos>x:1290;y:1295</pos>
                          <rect>x:-55;y:-40;w:110;h:80</rect>
                          <visual-role>0</visual-role>
                          <visual-emphasized>true</visual-emphasized>
@@ -211,6 +211,7 @@
                          <pos>x:1025;y:455</pos>
                          <rect>x:-55;y:-30;w:110;h:60</rect>
                          <visual-role>5</visual-role>
+                         <visual-emphasized>true</visual-emphasized>
                         </DObject>
                        </base-DObject>
                        <show-all-members>true</show-all-members>
@@ -229,9 +230,10 @@
                          </base-DElement>
                          <object>{a14fcbfa-1f07-43c6-b473-97cba07ae509}</object>
                          <name>BaseObject</name>
-                         <pos>x:245;y:990</pos>
+                         <pos>x:250;y:1280</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
                          <visual-role>5</visual-role>
+                         <visual-emphasized>true</visual-emphasized>
                         </DObject>
                        </base-DObject>
                        <show-all-members>true</show-all-members>
@@ -250,7 +252,7 @@
                          </base-DElement>
                          <object>{2abedcc8-534d-4299-a278-9fd85312c1c9}</object>
                          <name>BaseManager</name>
-                         <pos>x:1120;y:735</pos>
+                         <pos>x:975;y:710</pos>
                          <rect>x:-45;y:-30;w:90;h:60</rect>
                          <visual-role>5</visual-role>
                          <visual-emphasized>true</visual-emphasized>
@@ -271,9 +273,10 @@
                          </base-DElement>
                          <object>{c0a26493-a245-42e2-8c29-2403cf0a6d73}</object>
                          <name>BaseStream</name>
-                         <pos>x:1355;y:1075</pos>
+                         <pos>x:1315;y:1015</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
-                         <visual-role>9</visual-role>
+                         <visual-role>5</visual-role>
+                         <visual-emphasized>true</visual-emphasized>
                          <stereotype-display>3</stereotype-display>
                         </DObject>
                        </base-DObject>
@@ -293,9 +296,11 @@
                          </base-DElement>
                          <object>{c9e7a066-f80a-47b2-b426-d6ea6d16952d}</object>
                          <name>PaintManager</name>
-                         <pos>x:850;y:885</pos>
-                         <rect>x:-40;y:-30;w:80;h:60</rect>
+                         <pos>x:850;y:840</pos>
+                         <rect>x:-45;y:-30;w:90;h:60</rect>
                          <visual-role>8</visual-role>
+                         <visual-role2>2</visual-role2>
+                         <visual-emphasized>true</visual-emphasized>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -313,9 +318,11 @@
                          </base-DElement>
                          <object>{7c8650e6-691d-4ab6-9d6a-c142cf593685}</object>
                          <name>TransformManager</name>
-                         <pos>x:655;y:1165</pos>
-                         <rect>x:-55;y:-30;w:110;h:60</rect>
+                         <pos>x:385;y:850</pos>
+                         <rect>x:-60;y:-30;w:120;h:60</rect>
                          <visual-role>8</visual-role>
+                         <visual-role2>2</visual-role2>
+                         <visual-emphasized>true</visual-emphasized>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -373,6 +380,7 @@
                          <rect>x:-40;y:-25;w:80;h:50</rect>
                          <auto-sized>false</auto-sized>
                          <visual-role>9</visual-role>
+                         <visual-emphasized>true</visual-emphasized>
                         </DObject>
                        </base-DObject>
                        <show-all-members>true</show-all-members>
@@ -440,9 +448,9 @@
                          <object>{0ddc9a2c-6265-4563-99c9-ddf80d5902f7}</object>
                          <name>ConcreteCommand</name>
                          <pos>x:930;y:560</pos>
-                         <rect>x:-55;y:-30;w:110;h:60</rect>
+                         <rect>x:-60;y:-30;w:120;h:60</rect>
                          <auto-sized>false</auto-sized>
-                         <visual-role>9</visual-role>
+                         <visual-role>6</visual-role>
                         </DObject>
                        </base-DObject>
                        <show-all-members>true</show-all-members>
@@ -479,9 +487,11 @@
                          </base-DElement>
                          <object>{8c167695-cc20-428e-85f6-f07a576a1723}</object>
                          <name>SceneManager</name>
-                         <pos>x:480;y:860</pos>
-                         <rect>x:-45;y:-30;w:90;h:60</rect>
+                         <pos>x:670;y:840</pos>
+                         <rect>x:-50;y:-30;w:100;h:60</rect>
                          <visual-role>8</visual-role>
+                         <visual-role2>2</visual-role2>
+                         <visual-emphasized>true</visual-emphasized>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -649,9 +659,9 @@
                          </base-DElement>
                          <object>{81ede031-6bce-4e9d-a616-8a6efdbaf9f9}</object>
                          <name>ConcreteFactory</name>
-                         <pos>x:1665;y:1045</pos>
+                         <pos>x:1200;y:1420</pos>
                          <rect>x:-50;y:-30;w:100;h:60</rect>
-                         <visual-role>8</visual-role>
+                         <visual-role>6</visual-role>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -689,7 +699,8 @@
                          <name>BaseWindow</name>
                          <pos>x:715;y:130</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
-                         <visual-role>9</visual-role>
+                         <visual-role>5</visual-role>
+                         <visual-emphasized>true</visual-emphasized>
                         </DObject>
                        </base-DObject>
                        <show-all-members>true</show-all-members>
@@ -710,7 +721,7 @@
                          <name>MainWindow</name>
                          <pos>x:715;y:270</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
-                         <visual-role>8</visual-role>
+                         <visual-role>6</visual-role>
                         </DObject>
                        </base-DObject>
                        <show-all-members>true</show-all-members>
@@ -803,10 +814,12 @@
                           </DElement>
                          </base-DElement>
                          <object>{0619144c-8612-4db2-a219-09b66b70393a}</object>
-                         <name>CompositeObj</name>
-                         <pos>x:350;y:1150</pos>
-                         <rect>x:-45;y:-30;w:90;h:60</rect>
-                         <visual-role>6</visual-role>
+                         <name>CompositeObject</name>
+                         <pos>x:590;y:1260</pos>
+                         <rect>x:-55;y:-30;w:110;h:60</rect>
+                         <visual-role>9</visual-role>
+                         <visual-role2>2</visual-role2>
+                         <visual-emphasized>true</visual-emphasized>
                         </DObject>
                        </base-DObject>
                        <show-all-members>true</show-all-members>
@@ -843,9 +856,10 @@
                          </base-DElement>
                          <object>{4282c30a-da40-4aa3-95b8-90dbfbb488f8}</object>
                          <name>BaseModel</name>
-                         <pos>x:-140;y:1085</pos>
+                         <pos>x:465;y:1385</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
-                         <visual-role>9</visual-role>
+                         <visual-role>7</visual-role>
+                         <visual-emphasized>true</visual-emphasized>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -863,9 +877,10 @@
                          </base-DElement>
                          <object>{ea58e6bb-9093-464b-85a1-4220fd59f579}</object>
                          <name>BaseCamera</name>
-                         <pos>x:95;y:1095</pos>
+                         <pos>x:735;y:1395</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
-                         <visual-role>9</visual-role>
+                         <visual-role>7</visual-role>
+                         <visual-emphasized>true</visual-emphasized>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -919,9 +934,9 @@
                          </base-DElement>
                          <object>{f3b0bea5-e7c2-49ba-9a77-602303368773}</object>
                          <name>Scene</name>
-                         <pos>x:540;y:1040</pos>
+                         <pos>x:590;y:1165</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
-                         <visual-role>8</visual-role>
+                         <visual-role>6</visual-role>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -1011,9 +1026,9 @@
                          </base-DElement>
                          <object>{ddb4ac81-7b55-46dc-9b63-6226e4ebfdb9}</object>
                          <name>FileStream</name>
-                         <pos>x:1290;y:1295</pos>
+                         <pos>x:1495;y:1260</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
-                         <visual-role>8</visual-role>
+                         <visual-role>6</visual-role>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -1049,9 +1064,9 @@
                          </base-DElement>
                          <object>{b9edf3c0-a1b3-46d1-8cfd-0329bf6585cf}</object>
                          <name>DataBaseManager</name>
-                         <pos>x:1415;y:1295</pos>
+                         <pos>x:1645;y:1265</pos>
                          <rect>x:-55;y:-30;w:110;h:60</rect>
-                         <visual-role>8</visual-role>
+                         <visual-role>6</visual-role>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -1087,9 +1102,11 @@
                          </base-DElement>
                          <object>{40b9776b-f857-4de4-96f3-2c41798759cf}</object>
                          <name>LoadManager</name>
-                         <pos>x:1215;y:965</pos>
-                         <rect>x:-40;y:-30;w:80;h:60</rect>
+                         <pos>x:970;y:840</pos>
+                         <rect>x:-45;y:-30;w:90;h:60</rect>
                          <visual-role>8</visual-role>
+                         <visual-role2>2</visual-role2>
+                         <visual-emphasized>true</visual-emphasized>
                         </DObject>
                        </base-DObject>
                        <show-all-members>true</show-all-members>
@@ -1156,7 +1173,7 @@
                        <a>
                         <DAssociationEnd>
                          <navigable>true</navigable>
-                         <kind>2</kind>
+                         <kind>1</kind>
                         </DAssociationEnd>
                        </a>
                       </DAssociation>
@@ -1174,9 +1191,10 @@
                          </base-DElement>
                          <object>{b7670da6-95f8-4fc1-924e-d74654f3a4ac}</object>
                          <name>ModelImp</name>
-                         <pos>x:-30;y:1090</pos>
+                         <pos>x:575;y:1385</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
-                         <visual-role>9</visual-role>
+                         <visual-role>7</visual-role>
+                         <visual-emphasized>true</visual-emphasized>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -1194,9 +1212,10 @@
                          </base-DElement>
                          <object>{b38333ea-bd70-4bf5-bf92-885051c44a85}</object>
                          <name>CameraImp</name>
-                         <pos>x:210;y:1095</pos>
+                         <pos>x:850;y:1405</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
-                         <visual-role>9</visual-role>
+                         <visual-role>7</visual-role>
+                         <visual-emphasized>true</visual-emphasized>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -1262,9 +1281,10 @@
                          </base-DElement>
                          <object>{f9b78977-266e-49cb-8f9a-62844b9cfb1e}</object>
                          <name>BaseScene</name>
-                         <pos>x:525;y:950</pos>
+                         <pos>x:595;y:1020</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
-                         <visual-role>9</visual-role>
+                         <visual-role>5</visual-role>
+                         <visual-emphasized>true</visual-emphasized>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -1303,6 +1323,7 @@
                          <pos>x:875;y:365</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
                          <visual-role>9</visual-role>
+                         <visual-emphasized>true</visual-emphasized>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -1392,9 +1413,9 @@
                          </base-DElement>
                          <object>{624bf1b9-1129-4ad9-a734-9c84b807de83}</object>
                          <name>RefinedModel</name>
-                         <pos>x:-150;y:1180</pos>
+                         <pos>x:470;y:1480</pos>
                          <rect>x:-45;y:-30;w:90;h:60</rect>
-                         <visual-role>8</visual-role>
+                         <visual-role>6</visual-role>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -1430,9 +1451,9 @@
                          </base-DElement>
                          <object>{89a4d74d-7b83-4ddd-ad22-1ca951194d8f}</object>
                          <name>RefinedModelImp</name>
-                         <pos>x:-30;y:1200</pos>
+                         <pos>x:580;y:1520</pos>
                          <rect>x:-50;y:-30;w:100;h:60</rect>
-                         <visual-role>8</visual-role>
+                         <visual-role>6</visual-role>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -1467,10 +1488,10 @@
                           </DElement>
                          </base-DElement>
                          <object>{7b0fce3e-abc1-4810-a6a4-b9987f12abe1}</object>
-                         <name>RefinedCamera</name>
-                         <pos>x:95;y:1195</pos>
-                         <rect>x:-45;y:-30;w:90;h:60</rect>
-                         <visual-role>8</visual-role>
+                         <name>ConreteCamera</name>
+                         <pos>x:740;y:1535</pos>
+                         <rect>x:-50;y:-30;w:100;h:60</rect>
+                         <visual-role>6</visual-role>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -1487,10 +1508,10 @@
                           </DElement>
                          </base-DElement>
                          <object>{952744cc-cc0a-4f83-8325-3721ed247add}</object>
-                         <name>CameraImp</name>
-                         <pos>x:215;y:1195</pos>
+                         <name>ConcreteImp</name>
+                         <pos>x:855;y:1555</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
-                         <visual-role>8</visual-role>
+                         <visual-role>6</visual-role>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -1544,9 +1565,10 @@
                          </base-DElement>
                          <object>{adcacb6e-e424-498e-a31b-4a8668c490b9}</object>
                          <name>BaseObject</name>
-                         <pos>x:330;y:990</pos>
+                         <pos>x:250;y:1220</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
-                         <visual-role>7</visual-role>
+                         <visual-role>5</visual-role>
+                         <visual-emphasized>true</visual-emphasized>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -1564,9 +1586,10 @@
                          </base-DElement>
                          <object>{dec26979-253b-4817-a418-07464f9b184d}</object>
                          <name>BaseCanvas</name>
-                         <pos>x:1020;y:1165</pos>
+                         <pos>x:950;y:1025</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
-                         <visual-role>9</visual-role>
+                         <visual-role>5</visual-role>
+                         <visual-emphasized>true</visual-emphasized>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -1608,9 +1631,9 @@
                          </base-DElement>
                          <object>{9404a180-39f7-4952-a028-8f6634dcb3fe}</object>
                          <name>Canvas</name>
-                         <pos>x:1030;y:1275</pos>
+                         <pos>x:950;y:1170</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
-                         <visual-role>9</visual-role>
+                         <visual-role>6</visual-role>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -1646,9 +1669,10 @@
                          </base-DElement>
                          <object>{060f7c08-af71-474e-bc14-fa2e4f7eb1ea}</object>
                          <name>Point</name>
-                         <pos>x:-100;y:1395</pos>
+                         <pos>x:475;y:1615</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
-                         <visual-role>0</visual-role>
+                         <auto-sized>false</auto-sized>
+                         <visual-role>6</visual-role>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -1666,9 +1690,9 @@
                          </base-DElement>
                          <object>{f6225fb5-9ef9-4f46-a670-5efe48db853f}</object>
                          <name>Edge</name>
-                         <pos>x:15;y:1395</pos>
+                         <pos>x:590;y:1615</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
-                         <visual-role>0</visual-role>
+                         <visual-role>6</visual-role>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -1770,9 +1794,10 @@
                          </base-DElement>
                          <object>{65a1d82f-619d-4218-ab6a-4af767c6b226}</object>
                          <name>IOStreamService</name>
-                         <pos>x:1075;y:230</pos>
-                         <rect>x:-50;y:-30;w:100;h:60</rect>
-                         <visual-role>9</visual-role>
+                         <pos>x:1080;y:235</pos>
+                         <rect>x:-55;y:-30;w:110;h:60</rect>
+                         <visual-role>5</visual-role>
+                         <visual-emphasized>true</visual-emphasized>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -1790,9 +1815,10 @@
                          </base-DElement>
                          <object>{2c340eb1-0d92-41fa-85d2-82ace158261d}</object>
                          <name>QAlertWindowService</name>
-                         <pos>x:1080;y:325</pos>
-                         <rect>x:-65;y:-30;w:130;h:60</rect>
+                         <pos>x:1085;y:330</pos>
+                         <rect>x:-70;y:-30;w:140;h:60</rect>
                          <visual-role>9</visual-role>
+                         <visual-emphasized>true</visual-emphasized>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -1828,9 +1854,10 @@
                          </base-DElement>
                          <object>{cc0c2d29-a7fb-4093-8e8f-9b999e244c17}</object>
                          <name>IOStreamServiceImp</name>
-                         <pos>x:1270;y:235</pos>
-                         <rect>x:-60;y:-30;w:120;h:60</rect>
-                         <visual-role>9</visual-role>
+                         <pos>x:1275;y:240</pos>
+                         <rect>x:-65;y:-30;w:130;h:60</rect>
+                         <visual-role>5</visual-role>
+                         <visual-emphasized>true</visual-emphasized>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -1848,9 +1875,10 @@
                          </base-DElement>
                          <object>{a318bac6-10d9-4f66-a25c-1e2a9516e57b}</object>
                          <name>QAlertWindowServiceImp</name>
-                         <pos>x:1280;y:320</pos>
-                         <rect>x:-75;y:-30;w:150;h:60</rect>
+                         <pos>x:1270;y:330</pos>
+                         <rect>x:-80;y:-30;w:160;h:60</rect>
                          <visual-role>9</visual-role>
+                         <visual-emphasized>true</visual-emphasized>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -1958,9 +1986,10 @@
                          </base-DElement>
                          <object>{9cf7a43b-8699-4f88-a307-33a7fbcc2147}</object>
                          <name>BasePainter</name>
-                         <pos>x:840;y:1080</pos>
+                         <pos>x:800;y:1030</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
-                         <visual-role>0</visual-role>
+                         <visual-role>5</visual-role>
+                         <visual-emphasized>true</visual-emphasized>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -2002,9 +2031,9 @@
                          </base-DElement>
                          <object>{7f2596ef-b23e-4a48-9262-57bc1133cd85}</object>
                          <name>Painter</name>
-                         <pos>x:840;y:1215</pos>
+                         <pos>x:800;y:1165</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
-                         <visual-role>7</visual-role>
+                         <visual-role>6</visual-role>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -2094,9 +2123,10 @@
                          </base-DElement>
                          <object>{e4a10678-ce2c-4c88-aba6-fc6f9627b02d}</object>
                          <name>BaseTransformer</name>
-                         <pos>x:660;y:1290</pos>
-                         <rect>x:-50;y:-30;w:100;h:60</rect>
-                         <visual-role>9</visual-role>
+                         <pos>x:255;y:1020</pos>
+                         <rect>x:-55;y:-30;w:110;h:60</rect>
+                         <visual-role>5</visual-role>
+                         <visual-emphasized>true</visual-emphasized>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -2124,24 +2154,6 @@
                         </DAssociationEnd>
                        </a>
                       </DAssociation>
-                     </instance>
-                    </item>
-                    <item>
-                     <instance type="DDependency">
-                      <DDependency>
-                       <base-DRelation>
-                        <DRelation>
-                         <base-DElement>
-                          <DElement>
-                           <uid>{55cff7a7-c734-4ae4-bf05-526376a3ba17}</uid>
-                          </DElement>
-                         </base-DElement>
-                         <object>{65713700-b245-46c3-a00d-59bea412e1ee}</object>
-                         <a>{b70f1022-6f65-4ed2-a84f-86be23ba9f5e}</a>
-                         <b>{a557137e-ac9d-4936-9b8b-7ca61986f5de}</b>
-                        </DRelation>
-                       </base-DRelation>
-                      </DDependency>
                      </instance>
                     </item>
                     <item>
@@ -2180,9 +2192,9 @@
                          </base-DElement>
                          <object>{31aa2455-43fb-4eb1-8bba-59d1e4faf949}</object>
                          <name>ConcreteTransformer</name>
-                         <pos>x:660;y:1385</pos>
+                         <pos>x:350;y:1115</pos>
                          <rect>x:-60;y:-30;w:120;h:60</rect>
-                         <visual-role>9</visual-role>
+                         <visual-role>6</visual-role>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -2218,9 +2230,10 @@
                          </base-DElement>
                          <object>{6eb24053-b1a7-4ac6-a982-c49f73b40cf0}</object>
                          <name>BaseStreamImp</name>
-                         <pos>x:1510;y:1100</pos>
+                         <pos>x:1735;y:1060</pos>
                          <rect>x:-50;y:-30;w:100;h:60</rect>
-                         <visual-role>0</visual-role>
+                         <visual-role>5</visual-role>
+                         <visual-emphasized>true</visual-emphasized>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -2262,10 +2275,9 @@
                          </base-DElement>
                          <object>{4b11d460-aeb6-4bdf-985f-ce6ac7549361}</object>
                          <name>FileStreamImp</name>
-                         <pos>x:1505;y:1185</pos>
+                         <pos>x:1730;y:1145</pos>
                          <rect>x:-45;y:-30;w:90;h:60</rect>
-                         <visual-role>9</visual-role>
-                         <visual-role2>4</visual-role2>
+                         <visual-role>6</visual-role>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -2301,9 +2313,10 @@
                          </base-DElement>
                          <object>{ee47d238-dfd5-42f2-90a5-8f0bd7819c48}</object>
                          <name>BaseCanvasImp</name>
-                         <pos>x:1140;y:1190</pos>
+                         <pos>x:1065;y:1025</pos>
                          <rect>x:-50;y:-30;w:100;h:60</rect>
-                         <visual-role>0</visual-role>
+                         <visual-role>5</visual-role>
+                         <visual-emphasized>true</visual-emphasized>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -2321,9 +2334,9 @@
                          </base-DElement>
                          <object>{f53bbb27-ea01-4e71-bb20-2ce5f124b725}</object>
                          <name>QCanvasImp</name>
-                         <pos>x:1140;y:1310</pos>
+                         <pos>x:1070;y:1165</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
-                         <visual-role>9</visual-role>
+                         <visual-role>6</visual-role>
                         </DObject>
                        </base-DObject>
                       </DClass>
@@ -2371,9 +2384,127 @@
                       </DAssociation>
                      </instance>
                     </item>
+                    <item>
+                     <instance type="DDependency">
+                      <DDependency>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{756c743c-1fbf-4ef6-b96b-4578afcebf6e}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{f015b6e4-762e-4cf1-bbc3-3ef33cb4f5e7}</object>
+                         <a>{b93ec9f0-14af-47fc-b247-64804a8a1a4a}</a>
+                         <b>{3d9f5c74-7e8e-487b-9da8-df739caa2f48}</b>
+                        </DRelation>
+                       </base-DRelation>
+                      </DDependency>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DDependency">
+                      <DDependency>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{c34f7c29-f386-4f0a-83b7-cc93cc26e622}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{8370fea8-7f15-4f9c-9fee-ab1515fd1ad5}</object>
+                         <a>{2bd0b646-f22b-4441-9d2a-0d83bfb05a2e}</a>
+                         <b>{73dd9af4-1389-4534-836d-64293c926d02}</b>
+                        </DRelation>
+                       </base-DRelation>
+                      </DDependency>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DDependency">
+                      <DDependency>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{1515d84f-ece7-4d44-8c06-012ad8d02aec}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{2dbf239c-4123-4150-9697-2d29d23c47fc}</object>
+                         <a>{2bd0b646-f22b-4441-9d2a-0d83bfb05a2e}</a>
+                         <b>{a13fa066-15a6-4225-a513-bdfe86d388e8}</b>
+                        </DRelation>
+                       </base-DRelation>
+                      </DDependency>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DItem">
+                      <DItem>
+                       <base-DObject>
+                        <DObject>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{2429bfad-f0a1-48ee-84e0-e5aa4160060d}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{3343d213-a173-4ef8-a05b-59921671071c}</object>
+                         <name>Expander</name>
+                         <pos>x:1385;y:1860</pos>
+                         <rect>x:-10;y:-20;w:20;h:40</rect>
+                         <visual-role>7</visual-role>
+                         <visual-emphasized>true</visual-emphasized>
+                        </DObject>
+                       </base-DObject>
+                       <variety>actor</variety>
+                       <shape-editable>false</shape-editable>
+                      </DItem>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DItem">
+                      <DItem>
+                       <base-DObject>
+                        <DObject>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{78176ea6-9792-488e-b67f-f3d85122f70c}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{c9a6b95c-b817-4ed6-b3f7-ed9a6dee6389}</object>
+                         <name>Expander</name>
+                         <pos>x:2060;y:1185</pos>
+                         <rect>x:-10;y:-20;w:20;h:40</rect>
+                         <visual-role>0</visual-role>
+                         <visual-emphasized>true</visual-emphasized>
+                        </DObject>
+                       </base-DObject>
+                       <variety>actor</variety>
+                       <shape-editable>false</shape-editable>
+                      </DItem>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DDependency">
+                      <DDependency>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{28a6ec92-7c4a-442f-8d8b-2426b1bd7444}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{a1345a4c-3ff6-417a-9841-08410aa8611a}</object>
+                         <a>{b70f1022-6f65-4ed2-a84f-86be23ba9f5e}</a>
+                         <b>{8fccbd89-0932-4286-93ba-247557e6f071}</b>
+                        </DRelation>
+                       </base-DRelation>
+                      </DDependency>
+                     </instance>
+                    </item>
                    </qlist>
                   </elements>
-                  <last-modified>1465201836353</last-modified>
+                  <last-modified>1465208737196</last-modified>
                  </MDiagram>
                 </base-MDiagram>
                </MCanvasDiagram>
@@ -2460,6 +2591,17 @@
                   </relations>
                  </MObject>
                 </base-MObject>
+                <members>
+                 <qlist>
+                  <item>
+                   <MClassMember>
+                    <uid>{24afc245-173c-4d49-a2da-3c76ae456ddc}</uid>
+                    <type>1</type>
+                    <declaration>Here was Amin</declaration>
+                   </MClassMember>
+                  </item>
+                 </qlist>
+                </members>
                </MClass>
               </instance>
              </target>
@@ -2649,7 +2791,7 @@
                  <qlist>
                   <item>
                    <MClassMember>
-                    <uid>{96c62247-4901-4b58-a6e4-48fc3772c733}</uid>
+                    <uid>{bb716e64-48f5-45ab-b143-228c505a56a0}</uid>
                     <visibility>1</visibility>
                     <type>2</type>
                     <declaration>void execute()</declaration>
@@ -3544,6 +3686,17 @@
                              <name>List</name>
                             </MObject>
                            </base-MObject>
+                           <members>
+                            <qlist>
+                             <item>
+                              <MClassMember>
+                               <uid>{c5093f5b-1d19-49b3-aec2-a4b3ac7c6401}</uid>
+                               <type>1</type>
+                               <declaration>Here was Amin</declaration>
+                              </MClassMember>
+                             </item>
+                            </qlist>
+                           </members>
                           </MClass>
                          </instance>
                         </target>
@@ -3596,6 +3749,72 @@
                             </MRelation>
                            </base-MRelation>
                           </MInheritance>
+                         </instance>
+                        </target>
+                       </handle>
+                      </item>
+                      <item>
+                       <handle>
+                        <uid>{8370fea8-7f15-4f9c-9fee-ab1515fd1ad5}</uid>
+                        <target>
+                         <instance type="MDependency">
+                          <MDependency>
+                           <base-MRelation>
+                            <MRelation>
+                             <base-MElement>
+                              <MElement>
+                               <uid>{8370fea8-7f15-4f9c-9fee-ab1515fd1ad5}</uid>
+                              </MElement>
+                             </base-MElement>
+                             <a>{81ede031-6bce-4e9d-a616-8a6efdbaf9f9}</a>
+                             <b>{624bf1b9-1129-4ad9-a734-9c84b807de83}</b>
+                            </MRelation>
+                           </base-MRelation>
+                          </MDependency>
+                         </instance>
+                        </target>
+                       </handle>
+                      </item>
+                      <item>
+                       <handle>
+                        <uid>{58e85fea-c688-4ebc-adc3-f715f6b32c9e}</uid>
+                        <target>
+                         <instance type="MDependency">
+                          <MDependency>
+                           <base-MRelation>
+                            <MRelation>
+                             <base-MElement>
+                              <MElement>
+                               <uid>{58e85fea-c688-4ebc-adc3-f715f6b32c9e}</uid>
+                              </MElement>
+                             </base-MElement>
+                             <a>{81ede031-6bce-4e9d-a616-8a6efdbaf9f9}</a>
+                             <b>{89a4d74d-7b83-4ddd-ad22-1ca951194d8f}</b>
+                            </MRelation>
+                           </base-MRelation>
+                          </MDependency>
+                         </instance>
+                        </target>
+                       </handle>
+                      </item>
+                      <item>
+                       <handle>
+                        <uid>{2dbf239c-4123-4150-9697-2d29d23c47fc}</uid>
+                        <target>
+                         <instance type="MDependency">
+                          <MDependency>
+                           <base-MRelation>
+                            <MRelation>
+                             <base-MElement>
+                              <MElement>
+                               <uid>{2dbf239c-4123-4150-9697-2d29d23c47fc}</uid>
+                              </MElement>
+                             </base-MElement>
+                             <a>{81ede031-6bce-4e9d-a616-8a6efdbaf9f9}</a>
+                             <b>{7b0fce3e-abc1-4810-a6a4-b9987f12abe1}</b>
+                            </MRelation>
+                           </base-MRelation>
+                          </MDependency>
                          </instance>
                         </target>
                        </handle>
@@ -4062,7 +4281,7 @@
                     <uid>{0619144c-8612-4db2-a219-09b66b70393a}</uid>
                    </MElement>
                   </base-MElement>
-                  <name>CompositeObj</name>
+                  <name>CompositeObject</name>
                   <relations>
                    <handles>
                     <handles>
@@ -4176,10 +4395,10 @@
                  <qlist>
                   <item>
                    <MClassMember>
-                    <uid>{79d8fef4-bb72-4ec1-a4de-ba5bac23c05a}</uid>
+                    <uid>{ea965569-dc8b-4324-b0c1-4de8d1cb4d99}</uid>
                     <visibility>3</visibility>
                     <type>1</type>
-                    <declaration>List&lt;SceneObj*&gt; childs</declaration>
+                    <declaration>List&lt;BaseObject*&gt; object</declaration>
                    </MClassMember>
                   </item>
                  </qlist>
@@ -4610,7 +4829,7 @@
                            <a>
                             <MAssociationEnd>
                              <navigable>true</navigable>
-                             <kind>2</kind>
+                             <kind>1</kind>
                             </MAssociationEnd>
                            </a>
                           </MAssociation>
@@ -4645,6 +4864,17 @@
                   <name>ModelImp</name>
                  </MObject>
                 </base-MObject>
+                <members>
+                 <qlist>
+                  <item>
+                   <MClassMember>
+                    <uid>{b0e1826a-cbad-453b-bca8-2e8346acb4b7}</uid>
+                    <type>1</type>
+                    <declaration>Here was Amin</declaration>
+                   </MClassMember>
+                  </item>
+                 </qlist>
+                </members>
                </MClass>
               </instance>
              </target>
@@ -4832,6 +5062,28 @@
                             </MAssociationEnd>
                            </a>
                           </MAssociation>
+                         </instance>
+                        </target>
+                       </handle>
+                      </item>
+                      <item>
+                       <handle>
+                        <uid>{f015b6e4-762e-4cf1-bbc3-3ef33cb4f5e7}</uid>
+                        <target>
+                         <instance type="MDependency">
+                          <MDependency>
+                           <base-MRelation>
+                            <MRelation>
+                             <base-MElement>
+                              <MElement>
+                               <uid>{f015b6e4-762e-4cf1-bbc3-3ef33cb4f5e7}</uid>
+                              </MElement>
+                             </base-MElement>
+                             <a>{1b1e3047-a4bb-48d5-8fd4-f07f134cf041}</a>
+                             <b>{ebd90df1-a937-46ec-8e88-9e19b6e1f34b}</b>
+                            </MRelation>
+                           </base-MRelation>
+                          </MDependency>
                          </instance>
                         </target>
                        </handle>
@@ -5097,7 +5349,7 @@
                     <uid>{7b0fce3e-abc1-4810-a6a4-b9987f12abe1}</uid>
                    </MElement>
                   </base-MElement>
-                  <name>RefinedCamera</name>
+                  <name>ConreteCamera</name>
                   <relations>
                    <handles>
                     <handles>
@@ -5148,7 +5400,7 @@
                     <uid>{952744cc-cc0a-4f83-8325-3721ed247add}</uid>
                    </MElement>
                   </base-MElement>
-                  <name>CameraImp</name>
+                  <name>ConcreteImp</name>
                   <relations>
                    <handles>
                     <handles>
@@ -5367,6 +5619,17 @@
                   <name>Point</name>
                  </MObject>
                 </base-MObject>
+                <members>
+                 <qlist>
+                  <item>
+                   <MClassMember>
+                    <uid>{3f8bf9a4-2beb-4336-a6af-0be15645d8bc}</uid>
+                    <type>1</type>
+                    <declaration>Here was Amin</declaration>
+                   </MClassMember>
+                  </item>
+                 </qlist>
+                </members>
                </MClass>
               </instance>
              </target>
@@ -5589,6 +5852,17 @@
                   <name>BasePainter</name>
                  </MObject>
                 </base-MObject>
+                <members>
+                 <qlist>
+                  <item>
+                   <MClassMember>
+                    <uid>{1046e775-2586-4ada-9780-f0b09ed191fe}</uid>
+                    <type>1</type>
+                    <declaration>Here was Amin</declaration>
+                   </MClassMember>
+                  </item>
+                 </qlist>
+                </members>
                </MClass>
               </instance>
              </target>
@@ -5751,6 +6025,28 @@
                         </target>
                        </handle>
                       </item>
+                      <item>
+                       <handle>
+                        <uid>{a1345a4c-3ff6-417a-9841-08410aa8611a}</uid>
+                        <target>
+                         <instance type="MDependency">
+                          <MDependency>
+                           <base-MRelation>
+                            <MRelation>
+                             <base-MElement>
+                              <MElement>
+                               <uid>{a1345a4c-3ff6-417a-9841-08410aa8611a}</uid>
+                              </MElement>
+                             </base-MElement>
+                             <a>{e4a10678-ce2c-4c88-aba6-fc6f9627b02d}</a>
+                             <b>{adcacb6e-e424-498e-a31b-4a8668c490b9}</b>
+                            </MRelation>
+                           </base-MRelation>
+                          </MDependency>
+                         </instance>
+                        </target>
+                       </handle>
+                      </item>
                      </qlist>
                     </handles>
                    </handles>
@@ -5880,6 +6176,17 @@
                   </relations>
                  </MObject>
                 </base-MObject>
+                <members>
+                 <qlist>
+                  <item>
+                   <MClassMember>
+                    <uid>{c8b9a551-882c-41e3-9ef9-1a87c04ff92d}</uid>
+                    <type>1</type>
+                    <declaration>asdasd</declaration>
+                   </MClassMember>
+                  </item>
+                 </qlist>
+                </members>
                </MClass>
               </instance>
              </target>
@@ -5953,6 +6260,73 @@
                  </MObject>
                 </base-MObject>
                </MClass>
+              </instance>
+             </target>
+            </handle>
+           </item>
+           <item>
+            <handle>
+             <uid>{62a14421-6c00-4559-b111-73f108be8fd5}</uid>
+             <target>
+              <instance type="MClass">
+               <MClass>
+                <base-MObject>
+                 <MObject>
+                  <base-MElement>
+                   <MElement>
+                    <uid>{62a14421-6c00-4559-b111-73f108be8fd5}</uid>
+                   </MElement>
+                  </base-MElement>
+                  <name>Here Was Amin</name>
+                 </MObject>
+                </base-MObject>
+               </MClass>
+              </instance>
+             </target>
+            </handle>
+           </item>
+           <item>
+            <handle>
+             <uid>{3343d213-a173-4ef8-a05b-59921671071c}</uid>
+             <target>
+              <instance type="MItem">
+               <MItem>
+                <base-MObject>
+                 <MObject>
+                  <base-MElement>
+                   <MElement>
+                    <uid>{3343d213-a173-4ef8-a05b-59921671071c}</uid>
+                   </MElement>
+                  </base-MElement>
+                  <name>Expander</name>
+                 </MObject>
+                </base-MObject>
+                <variety-editable>false</variety-editable>
+                <variety>actor</variety>
+               </MItem>
+              </instance>
+             </target>
+            </handle>
+           </item>
+           <item>
+            <handle>
+             <uid>{c9a6b95c-b817-4ed6-b3f7-ed9a6dee6389}</uid>
+             <target>
+              <instance type="MItem">
+               <MItem>
+                <base-MObject>
+                 <MObject>
+                  <base-MElement>
+                   <MElement>
+                    <uid>{c9a6b95c-b817-4ed6-b3f7-ed9a6dee6389}</uid>
+                   </MElement>
+                  </base-MElement>
+                  <name>Expander</name>
+                 </MObject>
+                </base-MObject>
+                <variety-editable>false</variety-editable>
+                <variety>actor</variety>
+               </MItem>
               </instance>
              </target>
             </handle>
