@@ -10,8 +10,8 @@ class ConcreteFactory : public AbstractFactory
 public:
     ConcreteFactory();
 
-    virtual RefinedCamera *createCamera(double, double, double, double, double, double);
-    virtual RefinedModel  *createModel();
+    virtual ConcreteCamera *createCamera(double, double, double, double, double, double);
+    virtual ConcreteModel  *createModel();
 
 };
 

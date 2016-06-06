@@ -4,6 +4,19 @@
 #include "matrix.h"
 #include "point.h"
 
+enum TransformType
+{
+    TRANSFORM_ROTATE_X,
+    TRANSFORM_ROTATE_Y,
+    TRANSFORM_ROTATE_Z,
+    TRANSFORM_SCALE
+};
+struct TransformInfo
+{
+    TransformType type;
+    double delta;
+};
+
 class BaseTransformer
 {
 protected:

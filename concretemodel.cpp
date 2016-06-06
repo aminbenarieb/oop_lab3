@@ -1,50 +1,50 @@
 #include "concretemodel.h"
 
 
-RefinedModelImp::RefinedModelImp(){}
-RefinedModelImp::~RefinedModelImp()
+ConcreteModelImp::ConcreteModelImp(){}
+ConcreteModelImp::~ConcreteModelImp()
 {
     this->points.clear();
     this->edges.clear();
 }
 
-List<Point>& RefinedModelImp::getPoints()
+List<Point>& ConcreteModelImp::getPoints()
 {
     return this->points;
 }
-List<Edge>& RefinedModelImp::getEdges()
+List<Edge>& ConcreteModelImp::getEdges()
 {
     return this->edges;
 }
 
-void RefinedModelImp::addPoint(Point& point)
+void ConcreteModelImp::addPoint(Point& point)
 {
     this->points.push_front(point);
 }
-void RefinedModelImp::addPoint(double x,double y,double z)
+void ConcreteModelImp::addPoint(double x,double y,double z)
 {
     this->points.push_front(Point(x, y, z));
 }
 
-void RefinedModelImp::addEdge(Edge &edge)
+void ConcreteModelImp::addEdge(Edge &edge)
 {
     this->edges.push_front(edge);
 }
-void RefinedModelImp::addEdge(Point* from, Point* to)
+void ConcreteModelImp::addEdge(Point* from, Point* to)
 {
     this->edges.push_front( Edge(from, to) );
 }
 
-size_t RefinedModelImp::getPointsCount() const
+size_t ConcreteModelImp::getPointsCount() const
 {
     return this->points.size();
 }
-size_t RefinedModelImp::getEdgesCount() const
+size_t ConcreteModelImp::getEdgesCount() const
 {
     return this->edges.size();
 }
 
-void RefinedModelImp::transform(const BaseTransformer &transformer)
+void ConcreteModelImp::transform(const BaseTransformer &transformer)
 {
     Iterator<Point> iterator(this->points);
     while (!iterator.isDone())
@@ -54,61 +54,61 @@ void RefinedModelImp::transform(const BaseTransformer &transformer)
 }
 
 
-RefinedModel::RefinedModel(ModelImp* imp){
+ConcreteModel::ConcreteModel(ModelImp* imp){
     this->imp = imp;
 }
-RefinedModel::RefinedModel(const RefinedModel& model)
+ConcreteModel::ConcreteModel(const ConcreteModel& model)
 {
     (*this) = model;
 }
-RefinedModel& RefinedModel::operator =(const RefinedModel& model)
+ConcreteModel& ConcreteModel::operator =(const ConcreteModel& model)
 {
     this->imp = model.imp; //?????????!!!?!!!!
     return *this;
 }
 
-RefinedModel::~RefinedModel()
+ConcreteModel::~ConcreteModel()
 {
     delete this->imp;
 }
 
-List<Point>& RefinedModel::getPoints()
+List<Point>& ConcreteModel::getPoints()
 {
     return this->imp->getPoints();
 }
-List<Edge>& RefinedModel::getEdges()
+List<Edge>& ConcreteModel::getEdges()
 {
     return this->imp->getEdges();
 }
 
-void RefinedModel::addPoint(Point& point)
+void ConcreteModel::addPoint(Point& point)
 {
     this->imp->addPoint(point);
 }
-void RefinedModel::addPoint(double x,double y,double z)
+void ConcreteModel::addPoint(double x,double y,double z)
 {
     this->imp->addPoint(x,y,z);
 }
 
-void RefinedModel::addEdge(Edge &edge)
+void ConcreteModel::addEdge(Edge &edge)
 {
     this->imp->addEdge(edge);
 }
-void RefinedModel::addEdge(Point* from, Point* to)
+void ConcreteModel::addEdge(Point* from, Point* to)
 {
     this->imp->addEdge(from, to);
 }
 
-size_t RefinedModel::getPointsCount() const
+size_t ConcreteModel::getPointsCount() const
 {
     return this->imp->getPointsCount();
 }
-size_t RefinedModel::getEdgesCount() const
+size_t ConcreteModel::getEdgesCount() const
 {
     return this->imp->getEdgesCount();
 }
 
-void RefinedModel::transform(const BaseTransformer &transformer)
+void ConcreteModel::transform(const BaseTransformer &transformer)
 {
     this->transform(transformer);
 }

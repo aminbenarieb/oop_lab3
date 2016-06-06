@@ -3,7 +3,7 @@
 
 #include "basecamera.h"
 
-class RefinedCameraImp : public CameraImp
+class ConcreteCameraImp : public CameraImp
 {
 private:
     Point center;
@@ -12,8 +12,8 @@ private:
     double scale;
 
 public:
-    RefinedCameraImp(Point,double, double, double);
-    ~RefinedCameraImp();
+    ConcreteCameraImp(Point,double, double, double);
+    ~ConcreteCameraImp();
 
     virtual double getAlpha();
     virtual double getBeta();
@@ -24,11 +24,11 @@ public:
 };
 
 
-class RefinedCamera : public BaseCamera
+class ConcreteCamera : public BaseCamera
 {
 public:
-    RefinedCamera(CameraImp*);
-    ~RefinedCamera();
+    ConcreteCamera(CameraImp*);
+    ~ConcreteCamera();
 
     double getAlpha();
     double getBeta();

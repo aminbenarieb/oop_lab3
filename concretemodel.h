@@ -3,15 +3,15 @@
 
 #include "basemodel.h"
 
-class RefinedModelImp : public ModelImp
+class ConcreteModelImp : public ModelImp
 {
 private:
     List<Point> points;
     List<Edge>  edges;
 
 public:
-    RefinedModelImp();
-    ~RefinedModelImp();
+    ConcreteModelImp();
+    ~ConcreteModelImp();
 
     virtual List<Point>& getPoints();
     virtual List<Edge>& getEdges();
@@ -28,17 +28,17 @@ public:
 
 };
 
-class RefinedModel : public BaseModel
+class ConcreteModel : public BaseModel
 {
 private:
     ModelImp *imp;
 
 public:
-    RefinedModel(ModelImp*);
-    RefinedModel(const RefinedModel&);
-    RefinedModel& operator=(const RefinedModel&);
+    ConcreteModel(ModelImp*);
+    ConcreteModel(const ConcreteModel&);
+    ConcreteModel& operator=(const ConcreteModel&);
 
-    ~RefinedModel();
+    ~ConcreteModel();
 
     List<Point>& getPoints();
     List<Edge>& getEdges();

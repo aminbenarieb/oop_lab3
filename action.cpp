@@ -5,7 +5,7 @@ Action::Action(const CanvasInfo *canvasInfo)
 {
     this->loadManager      = new LoadManager();
     this->paintManager     = new PaintManager(canvasInfo);
-    this->transformManager = BaseManager();
+    this->transformManager = new TransformManager();
     this->sceneManager     = new SceneManager(new ConcreteScene);
 }
 
@@ -14,6 +14,7 @@ Action::~Action(){
     delete this->loadManager;
     delete this->sceneManager;
     delete this->paintManager;
+    delete this->transformManager;
 }
 
 void Action::uploadModel(const StreamInfo *streamInfo)
@@ -37,4 +38,13 @@ void Action::drawScene()
 void Action::clearScene()
 {
     this->sceneManager->clear();
+}
+
+void Action::transformModel(const TransformInfo *transformInfo)
+{
+    this->transformManager->transformObject( *this->sceneManager->currentObject(), transformInfo);
+}
+void Action::transformCamera(const TransformInfo *transformInfo)
+{
+    this->transformManager->transformObject( *this->sceneManager->currentCamera(), transformInfo);
 }
