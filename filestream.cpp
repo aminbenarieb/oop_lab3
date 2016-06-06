@@ -49,9 +49,7 @@ size_t FileStream::readEdges(size_t count, size_t pointsCount, BaseModel*model)
     size_t from, to, i;
     for (i = 0; i < count && readEdge(from, to) && from - 1 < pointsCount && to - 1 < pointsCount; i++)
     {
-        Point fromPoint = model->getPoints()[from-1];
-        Point toPoint   = model->getPoints()[to-1];
-        model->addEdge( &fromPoint, &toPoint );
+        model->addEdge( &( model->getPoints()[from-1] ), &( model->getPoints()[to-1] ) );
     }
 
     return i;
@@ -68,7 +66,7 @@ bool FileStream::processPoints(BaseModel *model)
     size_t readedCount = this->readPoints(count, model);
     if (readedCount != count)
     {
-        return false;
+//        return false;
     }
 
     return true;
@@ -86,6 +84,7 @@ bool FileStream::processEdges(BaseModel *model)
     {
         return false;
     }
+
 
     return true;
 }
@@ -118,6 +117,7 @@ BaseObject* FileStream::loadModel(const char *fileName)
         throw InvalidModelFileException();
     }
     closeFile();
+
 
     return model;
 
