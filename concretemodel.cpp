@@ -44,7 +44,6 @@ size_t ConcreteModelImp::getEdgesCount() const
     return this->edges.size();
 }
 
-
 ConcreteModel::ConcreteModel(ModelImp* imp){
     this->imp = imp;
 }
