@@ -7,7 +7,7 @@
 class Facade
 {
 private:
-    QAlertWindowService* alertWindowService;
+    IOStreamService* alertWindowService;
     Action* action;
 
     void processStream(StreamInfo*);
