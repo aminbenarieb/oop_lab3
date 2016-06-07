@@ -1,7 +1,7 @@
 #ifndef ERROR_ITERATOR_H
 #define ERROR_ITERATOR_H
 
-#include "base_error.h"
+#include "baseexception.h"
 
 class ExceptionIterator : BaseException
 {

@@ -1,23 +1,25 @@
 #ifndef BASESCENE_H
 #define BASESCENE_H
-
+
+#include "basecamera.h"
+#include "compositeobject.h"
+#include "ListContainer/iterator.h"
+
 class BaseScene
 {
-
-private:
-
-
 public:
     virtual ~BaseScene() {}
 
-    virtual void clear_scene() = 0;
-    virtual my_fwd_lst_iterator<Camera*> add_cam(Camera* cam) = 0;
-    virtual CompositeObj::iter add_model(BaseObj* model) = 0;
-    virtual CompositeObj::iter obj_begin() = 0;
-    virtual CompositeObj::iter obj_end() = 0;
+    virtual void clear() = 0;
 
-    virtual size_t model_count() = 0;
-    virtual size_t viewer_count() = 0;
+    virtual Iterator<BaseCamera*>  addCamera(BaseCamera*) = 0;
+    virtual Iterator<BaseObject*>  addObject(BaseObject*) = 0;
+
+    virtual  Iterator<BaseCamera *> cameraBegin() = 0;
+    virtual  Iterator<BaseCamera *> cameraEnd() = 0;
+
+    virtual  Iterator<BaseObject *> compositorBegin() = 0;
+    virtual  Iterator<BaseObject *> compositorEnd() = 0;
 };
 
 

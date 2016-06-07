@@ -2,16 +2,18 @@
 #define BASECAMERA_H
 
 #include "baseobject.h"
-#include "basepoint.h"
+#include "point.h"
 
 class CameraImp
 {
+public:
     virtual ~CameraImp() {}
-    virtual BasePoint devGetCenter() = 0;
-    virtual double devGetAlpha() = 0;
-    virtual double devGetBeta() = 0;
-    virtual double devGetScale() = 0;
-    virtual void transform(const BaseTransformManager&) = 0;
+
+    virtual Point getCenter() = 0;
+    virtual double getAlpha() = 0;
+    virtual double getBeta() = 0;
+    virtual double getScale() = 0;
+
 };
 
 class BaseCamera : public BaseObject
@@ -20,9 +22,9 @@ protected:
     CameraImp* imp;
 
 public:
-    virtual ~Camera() {}
-    virtual BasePoint getCenter() = 0;
-    virtual void transform(const BaseTransformManager&) = 0;
+    virtual ~BaseCamera(){};
+
+    virtual Point getCenter() = 0;
 };
 
 #endif // BASECAMERA_H

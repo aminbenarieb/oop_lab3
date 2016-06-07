@@ -2,6 +2,9 @@
 #define _ITERATOR_H
 
 template <typename type_t>
+Iterator<type_t>::Iterator(){}
+
+template <typename type_t>
 Iterator<type_t>::Iterator(List<type_t> &list)
 {
     this->list = &list;
@@ -45,13 +48,13 @@ void Iterator<type_t>::del()
 template <typename type_t>
 void Iterator<type_t>::begin()
 {
-    this->currentItem = this->list->head();
+    this->currentItem = this->list->head;
 }
 
 template <typename type_t>
 void Iterator<type_t>::end()
 {
-    this->currentItem = this->list->tail();
+    this->currentItem = this->list->tail;
 }
 
 template <typename type_t>
@@ -104,7 +107,7 @@ Iterator<type_t>& Iterator<type_t>::operator++()
 }
 
 template <typename type_t>
-Iterator<type_t> Iterator<type_t>::operator++(type_t)
+Iterator<type_t> Iterator<type_t>::operator++(int)
 {
     Iterator<type_t> temp = *this;
     ++(*this);
@@ -129,7 +132,7 @@ Iterator<type_t>& Iterator<type_t>::operator--()
 }
 
 template <typename type_t>
-Iterator<type_t> Iterator<type_t>::operator--(type_t)
+Iterator<type_t> Iterator<type_t>::operator--(int)
 {
     Iterator<type_t> temp = *this;
     --(*this);

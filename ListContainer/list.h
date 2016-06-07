@@ -1,6 +1,7 @@
 #ifndef LIST_H
 #define LIST_H
 
+#include "iostream"
 #include "base_list.h"
 #include "error_list.h"
 #include "iterator.h"
@@ -12,6 +13,7 @@ class List : BaseList
 
 public:
     List();
+    List(const List<type_t>&);
     List(List<type_t>&&);
     List(size_t, type_t, ...);
     ~List();
@@ -28,22 +30,23 @@ public:
     bool empty() const;
     bool operator!() const;
 
+    List<type_t>& operator=(const List<type_t> &);
+
     List<type_t>  operator+(const List<type_t> &) const;
     List<type_t>& operator+=(const List<type_t> &);
     List<type_t>& operator=(List<type_t> &&);
 
-    bool          operator==(const List<type_t> &) const;
-    bool          operator!=(const List<type_t> &) const;
+
+    type_t&        operator[](size_t);
+    const type_t&  operator[](size_t) const;
+    bool           operator==(const List<type_t> &) const;
+    bool           operator!=(const List<type_t> &) const;
 
     friend class Iterator<type_t>;
     friend class IteratorConst<type_t>;
 
 
 private:
-    List(const List<type_t>&);
-
-    List<type_t>& operator=(const List<type_t> &);
-
     void eject(Node <type_t>*);
     void insert(Node<type_t>*, type_t, bool);
 

@@ -79,7 +79,7 @@ IteratorConst<type_t>& IteratorConst<type_t>::operator++()
 }
 
 template <typename type_t>
-IteratorConst<type_t> IteratorConst<type_t>::operator++(type_t)
+IteratorConst<type_t> IteratorConst<type_t>::operator++(int)
 {
     IteratorConst<type_t> temp = *this;
     ++(*this);
@@ -104,7 +104,7 @@ IteratorConst<type_t>& IteratorConst<type_t>::operator--()
 }
 
 template <typename type_t>
-IteratorConst<type_t> IteratorConst<type_t>::operator--(type_t)
+IteratorConst<type_t> IteratorConst<type_t>::operator--(int)
 {
     IteratorConst<type_t> temp = *this;
     --(*this);

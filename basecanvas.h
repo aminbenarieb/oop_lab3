@@ -1,16 +1,36 @@
 #ifndef BASECANVAS_H
 #define BASECANVAS_H
 
+class QGraphicsScene;
+class QPen;
+
+
+struct CanvasInfo
+{
+    QGraphicsScene* qscene;
+};
+
+
+class BaseCanvasImp {
+public:
+    virtual ~BaseCanvasImp(){}
+
+    virtual void clear() = 0;
+    virtual void drawPoint(double, double) = 0;
+    virtual void drawEdge(double, double, double, double) = 0;
+};
+
 class BaseCanvas
 {
+protected:
+    BaseCanvasImp* imp;
+
 public:
     virtual ~BaseCanvas() {}
 
     virtual void clear() = 0;
-    virtual void draw_line(double x1, double y1, double x2, double y2) = 0;
-    virtual void draw_point(double x, double y) = 0;
-
-    virtual bool exists() = 0;
+    virtual void drawPoint(double, double) = 0;
+    virtual void drawEdge(double, double, double, double) = 0;
 };
 
 #endif // BASECANVAS_H

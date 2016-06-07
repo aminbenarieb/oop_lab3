@@ -16,11 +16,10 @@ class MainWindow : public QMainWindow, public BaseWindow
 
 public:
     Facade *facade;
-//    IOStreamService *uiStreamService;
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
-    void display() override;
+    virtual void display() override;
 
 private:
     Ui::MainWindow *ui;
@@ -29,6 +28,8 @@ private:
 private slots:
     void on_buttonUploadCamera_clicked();
     void on_buttonUploadModel_clicked();
+    void on_buttonDrawScene_clicked();
+    void on_buttonClearScene_clicked();
     void on_buttonQuit_clicked();
 
 };

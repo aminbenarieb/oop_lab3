@@ -7,27 +7,22 @@
 class Facade
 {
 private:
-    AlertWindowService* alertWindowService;
+    QAlertWindowService* alertWindowService;
     Action* action;
 
+    void processStream(StreamInfo*);
+
 public:
-    Facade();
+    Facade(const CanvasInfo *canvasInfo = nullptr);
     ~Facade();
 
-    void rotateModelX(double);
-    void rotateModelY(double);
-    void rotateModelZ(double);
+    void transformModel(TransformInfo);
+    void transformCamera(TransformInfo);
 
-    void rotateCameraX(double);
-    void rotateCameraY(double);
-    void rotateCameraZ(double);
+    void uploadModelFromFile(StreamInfo streamInfo = {SOURCE_UNDEFINED, NULL});
+    void uploadCameraFromFile(StreamInfo streamInfo = {SOURCE_UNDEFINED, NULL});
 
-    void scaleModel(double);
-    void scaleCamera(double);
-
-    void uploadModelFromFile();
-    void uploadCameraFromFile();
-
+    void drawScene();
     void clearScene();
 
 };

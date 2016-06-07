@@ -6,8 +6,24 @@
 class BaseException : public std::exception
 {
 public:
-    virtual const char* what() = 0;
+    using std::exception::what;
+    virtual  const char* what()
+    {
+       return "Unexpected exception occured.";
+    }
 };
+
+class MemoryException : public BaseException
+{
+public:
+    using std::exception::what;
+    virtual const char* what()
+    {
+       return "Unable to allocate memory";
+    }
+};
+
+
 
 
 #endif // EXCEPTION_H

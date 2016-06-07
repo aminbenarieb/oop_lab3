@@ -1,10 +1,12 @@
 #include "facade.h"
 #include "baseexception.h"
+#include "concretecommand.h"
+#include "qdebug.h"
 
-Facade::Facade()
+Facade::Facade(const CanvasInfo* canvasInfo)
 {
-    this->action = new Action();
-    this->alertWindowService = new AlertWindowService();
+    this->action = new Action(canvasInfo);
+    this->alertWindowService = new QAlertWindowService(new QAlertWindowServiceImp);
 }
 
 Facade::~Facade()
@@ -13,18 +15,113 @@ Facade::~Facade()
     delete alertWindowService;
 }
 
-void Facade::uploadModelFromFile()
+void Facade::processStream(StreamInfo *streamInfo)
 {
+    switch(streamInfo->sourceType)
+    {
+        case SOURCE_FILE:
+            if(streamInfo->sourceName == NULL)
+            {
+                streamInfo->sourceName = alertWindowService->selectFile().c_str();;
+            }
+            break;
+        default:
+            throw EmptyStreamSourceException();
+            break;
+    }
+}
 
-    std::string fileName = alertWindowService->selectFile();
+void Facade::uploadModelFromFile(StreamInfo streamInfo)
+{
+    try
+    {
+        processStream(&streamInfo);
+
+        AddModel addModel(this->action, &streamInfo);
+        addModel.execute();
+
+        DrawScene drawScene(this->action);
+        drawScene.execute();
+    }
+    catch(BaseException& exc)
+    {
+        qDebug()<<exc.what();
+        this->alertWindowService->showErrorMessage(exc.what());
+    }
+}
+void Facade::uploadCameraFromFile(StreamInfo streamInfo)
+{
+    try
+    {
+        processStream(&streamInfo);
+
+        AddCamera addCamera(this->action, &streamInfo);
+        addCamera.execute();
+
+        DrawScene drawScene(this->action);
+        drawScene.execute();
+
+    }
+    catch(BaseException& exc)
+    {
+        this->alertWindowService->showErrorMessage(exc.what());
+    }
+}
+
+
+void Facade::drawScene()
+{
+    try
+    {
+        DrawScene drawScene(this->action);
+        drawScene.execute();
+    }
+    catch(BaseException& exc)
+    {
+        this->alertWindowService->showErrorMessage(exc.what());
+    }
+}
+void Facade::clearScene()
+{
+    try
+    {
+        ClearScene clearScene(this->action);
+        clearScene.execute();
+
+        DrawScene drawScene(this->action);
+        drawScene.execute();
+
+    }
+    catch(BaseException& exc)
+    {
+        this->alertWindowService->showErrorMessage(exc.what());
+    }
+}
+
+void Facade::transformModel(TransformInfo transformInfo){
 
     try
     {
-//        AddModel add(task, filename.c_str());
-//        add.execute();
+        TransformModel transformModel(this->action, &transformInfo);
+        transformModel.execute();
 
-//        Draw dr(task);
-//        dr.execute();
+        DrawScene drawScene(this->action);
+        drawScene.execute();
+    }
+    catch(BaseException& exc)
+    {
+        this->alertWindowService->showErrorMessage(exc.what());
+    }
+}
+void Facade::transformCamera(TransformInfo transformInfo){
+
+    try
+    {
+        TransformCamera transformCamera(this->action, &transformInfo);
+        transformCamera.execute();
+
+        DrawScene drawScene(this->action);
+        drawScene.execute();
     }
     catch(BaseException& exc)
     {
@@ -32,23 +129,3 @@ void Facade::uploadModelFromFile()
     }
 
 }
-
-void Facade::uploadCameraFromFile()
-{
-}
-
-void Facade::clearScene()
-{
-
-}
-
-void Facade::rotateModelX(double angle){}
-void Facade::rotateModelY(double angle){}
-void Facade::rotateModelZ(double angle){}
-
-void Facade::rotateCameraX(double angle){}
-void Facade::rotateCameraY(double angle){}
-void Facade::rotateCameraZ(double angle){}
-
-void Facade::scaleModel(double scale){}
-void Facade::scaleCamera(double scale){}

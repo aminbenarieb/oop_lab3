@@ -10,6 +10,7 @@ template <typename type_t>
 class Iterator
 {
 public:
+    Iterator();
     Iterator(List<type_t> &);
     ~Iterator();
 
@@ -32,10 +33,10 @@ public:
 
     Iterator<type_t>&   operator =(const Iterator<type_t>&);
     Iterator<type_t>&   operator ++();								 // ++it
-    Iterator<type_t>    operator ++(type_t);                         // it++
+    Iterator<type_t>    operator ++(int);                            // it++
     Iterator<type_t>&   operator +=(const size_t);
     Iterator<type_t>&   operator --();								 // --it
-    Iterator<type_t>    operator --(type_t);                         // it--
+    Iterator<type_t>    operator --(int);                            // it--
     Iterator<type_t>&   operator -=(const size_t);
 
     const type_t*       operator ->() const;

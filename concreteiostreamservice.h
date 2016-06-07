@@ -6,7 +6,7 @@
 
 #include "iostreamservice.h"
 
-class AlertWindowService : public QDialog, public IOStreamService
+class QAlertWindowServiceImp :  public QDialog, public IOStreamServiceImp
 {
     Q_OBJECT
 
@@ -14,14 +14,30 @@ private:
     QString fileName;
 
 public:
-    AlertWindowService();
+    QAlertWindowServiceImp();
+    ~QAlertWindowServiceImp();
 
-    void showErrorMessage(const char*);
-    void showInfoMessage(const char*);
+    virtual void showErrorMessage(const char*) override;
+    virtual void showInfoMessage(const char*) override;
 
-    bool saveFileWithName(const char*);
+    virtual std::string selectFile() override;
+    virtual bool saveFileWithName(const char*) override;
 
-    std::string selectFile();
+};
+
+class QAlertWindowService :  public IOStreamService
+{
+
+public:
+    QAlertWindowService(IOStreamServiceImp *);
+    ~QAlertWindowService();
+
+    virtual void showErrorMessage(const char*) override;
+    virtual void showInfoMessage(const char*) override;
+
+    virtual bool saveFileWithName(const char*) override;
+
+    virtual std::string selectFile() override;
 };
 
 

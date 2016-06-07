@@ -3,6 +3,7 @@
 
 #include "baseobject.h"
 #include "ListContainer/list.h"
+#include "ListContainer/iterator.h"
 
 class CompositeObject : public BaseObject
 {
@@ -13,13 +14,14 @@ public:
     CompositeObject();
     ~CompositeObject();
 
-    virtual void addObject(BaseObject*) override;
-    virtual void transform() override;
+    virtual bool addObject(BaseObject*) override;
+    void removeAll();
 
+    Iterator<BaseObject *> begin();
+    Iterator<BaseObject *> end();
 
     size_t getSize();
 
-    void clear();
 };
 
 
