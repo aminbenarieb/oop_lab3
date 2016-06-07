@@ -3,6 +3,7 @@
 
 #include "matrix.h"
 #include "point.h"
+#include "baseexception.h"
 
 enum TransformType
 {
@@ -15,6 +16,15 @@ struct TransformInfo
 {
     TransformType type;
     double delta;
+};
+
+class InvalidTransformException : public BaseException
+{
+public:
+    virtual const char* what()
+    {
+        return "Transform type is not set!";
+    }
 };
 
 class BaseTransformer
@@ -32,35 +42,8 @@ public:
     virtual ~BaseTransformer() {}
 
     static double convertRadToDeg(double angle) { return (angle * M_PI) / 180.0; }
-    virtual void transformPoint(Point* const) const = 0;
+    virtual void transformPoint(Point* const, const TransformInfo *) const = 0;
     virtual void transformParams(double*,double*,double*) const = 0;
-
-    virtual double getBeta() const
-    {
-        return beta;
-    }
-    virtual void setBeta(double value)
-    {
-        this->beta = value;
-    }
-
-    virtual double getDelta() const
-    {
-        return delta;
-    }
-    virtual void setDelta(double value)
-    {
-        this->delta = value;
-    }
-
-    virtual double getScale() const
-    {
-        return scale;
-    }
-    virtual void setScale(double value)
-    {
-        this->scale = value;
-    }
 
 };
 

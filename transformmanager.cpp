@@ -13,14 +13,14 @@ TransformManager::~TransformManager()
     delete this->transformer;
 }
 
-void TransformManager::transformModel(BaseObject*, const TransformInfo*)
+void TransformManager::transformModel(BaseObject* object, const TransformInfo *transformInfo)
 {
 
-//    BaseModel *model = static_cast<BaseModel*>(object);
-
-//    foreach modelPoint in modelPoint
-//        this->transformer->transformPoint( modelPoint, tranformInfo );
-
+    BaseModel *model = static_cast<BaseModel*>(object);
+    for (Iterator<Point> it(model->getPoints()); !it.isDone(); it++)
+    {
+        this->transformer->transformPoint(&(*it), transformInfo);
+    }
 
 }
 

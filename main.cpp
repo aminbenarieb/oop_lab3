@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
     Tester t(w.facade, &a);
     t.loadCamera();
     t.loadModel();
-    t.drawScene();
+    t.transformModel();
 
     return a.exec();
 }
