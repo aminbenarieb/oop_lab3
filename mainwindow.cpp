@@ -4,7 +4,7 @@
 #include <QKeyEvent>
 #include <QApplication>
 
-#define TRANSFORM_DELTA 5
+#define TRANSFORM_DELTA 1.0
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -49,7 +49,7 @@ void MainWindow::keyPressEvent(QKeyEvent *event)
     case Qt::Key_Q:
         facade->transformModel({TRANSFORM_ROTATE_Z, TRANSFORM_DELTA});
         break;
-    case Qt::Key_R:
+    case Qt::Key_E:
         facade->transformModel({TRANSFORM_ROTATE_Z, -TRANSFORM_DELTA});
         break;
 
@@ -74,17 +74,17 @@ void MainWindow::keyPressEvent(QKeyEvent *event)
 
 
     case Qt::Key_Z:
-        facade->transformCamera({TRANSFORM_SCALE, TRANSFORM_DELTA});
+        facade->transformModel({TRANSFORM_SCALE, 2*TRANSFORM_DELTA});
         break;
     case Qt::Key_X:
-        facade->transformCamera({TRANSFORM_SCALE, -TRANSFORM_DELTA});
+        facade->transformModel({TRANSFORM_SCALE, (TRANSFORM_DELTA/2)});
         break;
 
     case Qt::Key_N:
-        facade->transformCamera({TRANSFORM_SCALE, TRANSFORM_DELTA});
+        facade->transformCamera({TRANSFORM_SCALE, 2*TRANSFORM_DELTA});
         break;
     case Qt::Key_M:
-        facade->transformCamera({TRANSFORM_SCALE, -TRANSFORM_DELTA});
+        facade->transformCamera({TRANSFORM_SCALE, (TRANSFORM_DELTA/2)});
         break;
 
     case Qt::Key_Escape:
